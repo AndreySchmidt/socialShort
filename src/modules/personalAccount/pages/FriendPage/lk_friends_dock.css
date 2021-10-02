@@ -1,0 +1,89 @@
+/* c_lk_friends_dock */
+
+.c_lk_friends_dock .list_title {
+    color: #009ACF;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 6px 9px 8px;
+}
+
+.c_lk_friends_dock .actions2all {
+    padding: 4px 8px;
+    white-space: nowrap;
+    border: 1px solid #FFD64D;
+}
+
+.c_lk_friends_dock .actions2all a {
+    margin: 0 6px;
+}
+
+.c_lk_friends_dock .list_item .actions {
+    margin: 10px 0 4px;
+}
+
+
+/* correct some styles on the page */
+
+.c_lk_friends_dock .c_type_select {
+    margin: 0 0 8px -4px;
+}
+
+.c_lk_friends_dock .c_type_select a {
+    margin: 0 6px;
+}
+
+.c_header_section_title .link_right:first-child {
+    margin-left: 6px;
+}
+
+
+.c_settings_layout .setting_sections_block {
+    font-weight: normal;
+}
+
+.c_settings_layout .section_title {
+    margin-bottom: 18px;
+}
+
+.c_settings_layout .section_title,
+.setting_sections_block .section_link {
+    font-weight: bold;
+}
+
+.setting_sections_block .c_form_input {
+    width: 100%;
+    margin: 1px 0 8px;
+}
+
+.setting_sections_block select.width-third {
+    width: 68px;
+    margin: 1px 0 8px;
+}
+
+.setting_sections_block .mdash {
+    margin: 0 6px 0 5px;
+    padding: 0 0 8px;
+    vertical-align: middle;
+}
+
+.setting_sections_block .element {
+    line-height: 21px;
+}
+
+.setting_sections_block .dot-separator-3c3c3c {
+    margin-top: 18px;
+    margin-left: 2px;
+}
+
+.setting_sections_block .form_line {
+    margin-left: 4px;
+}
+
+.setting_sections_block .form_line:first-child {
+    margin-top: 10px;
+}
+
+
+.setting_sections_block .form_line:last-child {
+    margin-bottom: 10px;
+}

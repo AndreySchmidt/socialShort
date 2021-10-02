@@ -1,0 +1,110 @@
+/*c_news_block*/
+
+.c_news_block {
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border: 1px solid #e8e8e8;
+    background-color: #fdfdfd;
+}
+
+.c_news_block .header {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 7px;
+    padding: 5px 8px;
+}
+
+.c_news_block .header > i {
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    background: url("./../../../app/AppPageLayout/img/menu-block-arrow-down.png") 0 0 no-repeat;
+}
+
+.c_news_block ul {
+    margin: 0 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.c_news_block .teaser {
+    /*margin: 9px 0 8px;*/
+    margin: 0 0 5px;
+    padding: 0 0 10px;
+    background: url("./../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
+}
+
+.c_news_block .teaser:last-child {
+    background: none;
+}
+
+.c_news_block .teaser .title {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.c_news_block .teaser img {
+    margin: 0 0 2px;
+}
+
+.c_news_block .teaser .date,
+.c_news_block .teaser .views {
+    display: block;
+    color: #959595;
+    font-size: 11px;
+}
+
+.c_news_block .teaser .date {
+    float: right;
+    padding-right: 32px;
+}
+
+.c_news_block .teaser .goto {
+    color: #ad0505;
+    font-size: 11px;
+    padding-left: 13px;
+    background: url("./../../../app/AppPageLayout/img/icon-talk.png") 0 50% no-repeat;
+}
+
+
+/* same block in after content region */
+.main_content .c_news_block {
+    margin: 20px 0 10px;
+    padding: 0;
+    border: 0 none;
+    background: none;
+}
+
+.main_content .c_news_block .header {
+    font-size: 18px;
+    margin: 0 0 5px;
+    padding: 0px;
+}
+
+.main_content .c_news_block ul {
+    list-style: none;
+    margin: 0px;
+    padding: 11px 13px 0;
+    border: 1px solid #e8e8e8;
+}
+
+.main_content .c_news_block .teaser {
+    float: left;
+    width: 180px;
+    margin: 0 0 20px 60px;
+    padding: 0 0 0px;
+    background: none;
+}
+
+.main_content .c_news_block .clear-left {
+    margin-left: 0;
+}
+
+.c_news_block .teaser .date {
+    padding-right: 0;
+}

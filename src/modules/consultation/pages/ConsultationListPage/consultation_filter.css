@@ -1,0 +1,14 @@
+/* c_consultation_filter */
+
+.c_consultation_filter {
+    margin: 5px 0 10px;
+    border: 1px solid #eaeaea;
+}
+
+.c_consultation_filter .c_type_select {
+    background: none;
+}
+
+.c_consultation_filter .c_type_select a {
+	padding: 4px 15px;
+}

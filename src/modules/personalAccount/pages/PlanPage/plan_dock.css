@@ -1,0 +1,70 @@
+/* c_lk_schedule_dock */
+
+.c_lk_schedule_dock {
+	font-weight: normal;
+}
+
+.c_lk_schedule_dock .section_title {
+	font-weight: bold;
+}
+
+.c_lk_schedule_dock .form_line {
+	margin: 12px -4px 8px -7px;
+	white-space: nowrap;
+}
+
+.c_lk_schedule_dock .form_line img {
+	vertical-align: middle;
+}
+
+.c_lk_schedule_dock .month,
+.c_lk_schedule_dock .year {
+	color: #00659b;
+	padding: 1px;
+}
+
+.c_lk_schedule_dock .month {
+	width: 87px;
+}
+
+.c_lk_schedule_dock .year {
+	width: 63px;
+}
+
+
+.c_lk_schedule_dock table {
+	width: 100%;
+	margin: 8px -6px 3px;
+	border: 0 none;
+}
+
+.c_lk_schedule_dock thead td {
+	color: #009ACF;
+	font-size: 11px;
+}
+
+.c_lk_schedule_dock thead td,
+.c_lk_schedule_dock tbody td {
+	font-weight: normal;
+	text-align: center;
+	width: 14%;
+	padding: 3px 0;
+}
+
+.c_lk_schedule_dock td.holiday,
+.c_lk_schedule_dock td.holiday a {
+	color: #fe0104;
+}
+
+.c_lk_schedule_dock td a {
+	color: #000;
+	padding: 1px 6px 2px;
+}
+
+.c_lk_schedule_dock table .today,
+.c_lk_schedule_dock table .current {
+	cursor: default;
+	text-decoration: none;
+	background: #ffdb60;
+}
+

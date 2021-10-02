@@ -1,0 +1,71 @@
+/* c_lk_im_messages */
+
+.c_lk_im_messages {
+	float: left;
+	width: 452px;
+	min-height: 586px; /* 586 */
+	border-right: 1px solid #f2f2f2;
+}
+
+
+.c_lk_im_messages .info {
+	color: #009ACF;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 14px;
+}
+
+.c_lk_im_messages .info span {
+    padding-right: 45px;
+	background: url(./../../PageLayout/img/arrow-right.gif) 100% 80% no-repeat;
+}
+
+.c_lk_im_messages .message-list {
+	height: 465px; /* 493 */
+	padding: 16px 0 12px;
+	overflow-y: auto;
+}
+
+
+
+.c_lk_im_messages .message {
+	margin: 0 0 3px;
+	padding: 0 4px 0 10px;
+}
+
+.c_lk_im_messages .message .inner {
+	padding: 3px 0 4px;
+	padding-left: 63px;
+	padding-right: 84px;
+}
+
+.c_lk_im_messages .message .ava {
+    float: left;
+    margin-left: -56px;
+}
+
+.c_lk_im_messages .message .msg {
+    color: #545454;
+    margin: 0;
+}
+
+.c_lk_im_messages .message .date {
+    float: right;
+    color: #717171;
+    font-size: 11px;
+    padding: 0 4px;
+    margin: 0 -84px 0 0;
+}
+
+
+.c_lk_im_messages .message:hover {
+	background: #f8f8f8;
+}
+
+.c_lk_im_messages .message:hover .inner {
+	background: none;
+}
+
+.c_lk_im_messages .new .inner {
+    background: #fff4d4;
+}

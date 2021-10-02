@@ -1,0 +1,31 @@
+/* c_photos_container */
+
+.c_photos_container .photos_summary {
+  color: #009ACF;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 0 0 2px;
+}
+
+.c_photos_container .photo_row {
+  display: inline-block;
+  padding: 9px 9px 9px 10px;
+  /*width: 130px;
+  height: 87px;*/
+  width: 142px;
+  height: 95px;
+}
+
+.c_photos_container .photo_row a {
+  display: block;
+  text-align: center;
+  width: 142px;
+  height: 95px;
+  overflow: hidden;
+  background: #F1F1F1;
+}
+
+.c_photos_container .photo_row img {
+  vertical-align: top;
+  max-width: 142px;
+}

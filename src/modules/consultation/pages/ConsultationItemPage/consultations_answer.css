@@ -1,0 +1,179 @@
+/* c_consultations_answer */
+
+.c_consultations_answer {
+	/*min-height: 1240px;*/
+	margin: 10px 0 10px;
+    padding: 8px 22px 8px 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.c_consultations_answer .blue {
+	color: #009ACF;
+}
+
+.c_consultations_answer .bid {
+    margin: 0 0 13px;
+    padding: 0 0 13px 106px;
+    background: url(./../../../app/AppPageLayout/img/dot-gray.gif) 0 100% repeat-x;
+}
+
+.c_consultations_answer .bid.last,
+.c_consultations_answer .bid:last-child {
+    margin-bottom: 0;
+    background: none;
+}
+
+.c_consultations_answer .first-line {
+	max-height: 2.75em;
+	overflow: hidden;
+    margin: 0 0 2px;
+}
+
+.c_consultations_answer .photo {
+    float: left;
+    margin: 0 6px 0 -106px;
+}
+
+.c_consultations_answer .photo img {
+    vertical-align: top;
+}
+
+.c_consultations_answer .name {
+    color: #009ACF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.c_consultations_answer .status {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    margin: 2px 0 0;
+    padding: 0 8px 1px;
+    background-color: #009900;
+
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.c_consultations_answer .offline {
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+
+.c_consultations_answer .bid .title {
+	color: #009ACF;
+    font-size: 14px;
+	margin: 6px 0 5px;
+	padding: 0;
+}
+
+.c_consultations_answer .bid .title a {
+	text-decoration: none;
+}
+
+.c_consultations_answer .bid .text {
+	color: #545454;
+    margin: 6px 0;
+}
+
+.c_consultations_answer .bid .date {
+	color: #727272;
+}
+
+.c_consultations_answer .bid .completive {
+	margin: 6px 0 0;
+}
+
+.c_consultations_answer .bid .completive a {
+	color: #3c3c3c;
+	margin-right: 5px;
+}
+
+.c_consultations_answer .vote {
+    line-height: 22px;
+    margin: 18px 0 ;
+}
+
+.c_consultations_answer .rating {
+    color: #333;
+    font-size: 16px;
+}
+
+.c_consultations_answer .vote strong,
+.c_consultations_answer .vote span,
+.c_consultations_answer .vote img {
+    vertical-align: middle;
+}
+
+.c_consultations_answer .vote img {
+    margin: 0 3px;
+}
+
+.c_consultations_answer .social_links img {
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.c_consultations_answer .social_links {
+    float: right;
+    color: #009ACF;
+    line-height: 22px;
+    margin: 0;
+}
+
+.c_consultations_answer .question_controls {
+    line-height: 1.4;
+    height: 20px;
+    padding: 3px 6px;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid #ffda5e;
+    background: #FFF;
+}
+
+.c_consultations_answer .edit,
+.c_consultations_answer .remove,
+.c_consultations_answer .more,
+.c_consultations_answer .close,
+.c_consultations_answer .answer_controls > a,
+.c_consultations_answer .question_controls > a {
+    color: #333;
+    margin: 0 6px;
+    padding-left: 17px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+
+.c_consultations_answer .question_controls .last {
+    margin-right: 0;
+}
+
+.c_consultations_answer .question_controls .edit {
+    background-image: url("./../../../app/AppPageLayout/img/icon-edit.gif");
+}
+
+.c_consultations_answer .question_controls .remove {
+    background-image: url("./../../../app/AppPageLayout/img/icon-remove.gif");
+}
+
+.c_consultations_answer .question_controls .report {
+    background-image: url("./../../../app/AppPageLayout/img/icon-report.png");
+}
+
+.c_consultations_answer .question_controls .close {
+    background-image: url("./../../../app/AppPageLayout/img/icon-close.gif");
+    background-position: left bottom;
+}
+
+.c_consultations_answer .answer_controls .vote {
+    margin: 10px 0;
+}
+
+.c_consultations_answer .answer_controls .report {
+    float: right;
+    margin: 4px 6px 0;
+    background-image: url("./../../../app/AppPageLayout/img/icon-report.png");
+}

@@ -1,0 +1,115 @@
+/* c_lk_cart_items */
+
+.c_lk_cart_items {
+    margin: 30px 0 18px;
+    padding: 11px 15px 11px 25px;
+    background: #f9f9f9;
+}
+
+.c_lk_cart_items .list_item {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    background: url(../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif) 0 100% repeat-x;
+}
+
+.c_lk_cart_items .image_container {
+    float: left;
+    text-align: center;
+    width: 150px;
+    min-height: 100px;
+    margin: 0 15px 0 0;
+    overflow: hidden;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+}
+
+.c_lk_cart_items .image_container img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.c_lk_cart_items .title {
+    color: #009ACF;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 16px;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.c_lk_cart_items .text_line {
+    font-size: 14px;
+    margin: 10px 0 7px;
+}
+
+.c_lk_cart_items .total,
+.c_lk_cart_items .bold,
+.c_lk_cart_items .price,
+.c_lk_cart_items .label {
+    font-weight: bold;
+}
+
+.c_lk_cart_items .price {
+    display: inline-block;
+    text-align: center;
+    width: 105px;
+    padding: 3px 20px;
+    padding: 3px 5px;
+    margin: 0 7px;
+    background-color: #ffda5f;
+}
+
+.c_lk_cart_items .total {
+    color: #009ACF;
+    font-size: 20px;
+    margin: 0 10px 0 3px;
+    vertical-align: baseline;
+    /*position: relative;
+    bottom: -2px;*/
+}
+
+.c_lk_cart_items .type-text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    height: 14px;
+    width: 43px;
+    padding: 5px 5px 2px;
+    margin: 0 5px;
+    border: 1px solid #b8b8b8;
+}
+
+.c_lk_cart_items .remove {
+    font-size: 12px;
+    margin-right: 6px;
+    padding: 4px;
+    padding-left: 17px;
+    white-space: nowrap;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: url("../../../app/AppPageLayout/img/icon-remove.gif");
+}
+
+
+.c_lk_cart_items .submit_order {
+    padding-left: 167px;
+
+}
+
+.c_lk_cart_items .submit_order .total {
+    vertical-align: middle;
+}
+
+.c_lk_cart_items .submit_order .c_button_large {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+}

@@ -1,0 +1,68 @@
+/*c_news_job_estate*/
+
+.c_news_job_estate {
+    padding: 0;
+    margin: 14px 0 11px;
+}
+
+.c_news_job_estate .header {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0 0 11px;
+}
+
+.c_news_job_estate .header a {
+    color: #3c3c3c;
+}
+
+.c_news_job_estate ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.c_news_job_estate .teaser {
+    margin: 0 0 13px;
+    padding: 0px;
+}
+
+.c_news_job_estate .teaser .title {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.c_news_job_estate .teaser .description {
+    overflow: hidden;
+    margin: 0 0 8px;
+}
+
+.c_news_job_estate .teaser img {
+    float: left;
+    margin: 3px 6px 2px 0;
+}
+
+.c_news_job_estate .teaser .text {
+    margin: 0 0 5px;
+}
+
+.c_news_job_estate .teaser .date,
+.c_news_job_estate .teaser .views {
+    color: #959595;
+    font-size: 11px;
+}
+
+.c_news_job_estate .views {
+    margin: 0 6px;
+}
+
+.c_news_job_estate .teaser .goto {
+    color: #ad0505;
+    font-size: 11px;
+    padding-left: 13px;
+    background: url("./../../../app/AppPageLayout/img/icon-talk.png") 0 50% no-repeat;
+}

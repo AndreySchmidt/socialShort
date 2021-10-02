@@ -1,0 +1,88 @@
+
+/*c_list_extended_view*/
+/* this is content from r_e_list_page.css */
+
+.c_list_extended_view {
+    margin-bottom: 10px;
+}
+
+.c_list_extended_view .list_item {
+    padding: 7px 9px;
+}
+
+.c_list_extended_view .colored {
+    background-color: #fcf5db;
+}
+
+.c_list_extended_view .gray {
+    background-color: #F9F9F9;
+}
+
+.c_list_extended_view .image_container {
+    float: left;
+    margin-right: 8px;
+}
+
+.c_list_extended_view .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #009acf;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.c_list_extended_view .blue {
+    color: #009ACF;
+}
+
+.c_list_extended_view a.inverted {
+    text-decoration: none;
+}
+
+.c_list_extended_view a.inverted:hover {
+    text-decoration: underline;
+}
+
+.c_list_extended_view .title a {
+    text-decoration: none;
+}
+
+.c_list_extended_view .title a:hover {
+    text-decoration: underline;
+}
+
+.c_list_extended_view .price {
+    margin: 2px 0 2px;
+}
+
+.c_list_extended_view .price .price-down {
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+.c_list_extended_view .date {
+    margin-top: 14px;
+    color: #727272;
+}
+
+.c_list_extended_view .right_block {
+    float: right;
+    width: 130px;
+    padding-top: 26px;
+    text-align: right;
+}
+
+.c_list_extended_view .icons_container {
+    margin-top: 14px;
+}
+
+.c_list_extended_view .icons_container .icon {
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+.c_list_extended_view .icons_container .icon:first-child {
+    margin-left: 0;
+}

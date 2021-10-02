@@ -1,0 +1,13 @@
+/* c_share_this */
+
+.c_share_this {
+    text-align: right;
+    line-height: 22px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.c_share_this img {
+    vertical-align: bottom;
+    /*margin-top: -2px;*/
+}

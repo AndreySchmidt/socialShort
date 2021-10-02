@@ -1,0 +1,34 @@
+/* c_lk_blog_page */
+
+.c_lk_blog_page .title {
+    color: #009ACF;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.c_lk_blog_page .date {
+    color: #727272;
+}
+
+.c_lk_blog_page .publication {
+    color: #545454;
+    line-height: 1.2em;
+    margin: 0 0 14px;
+}
+
+.c_lk_blog_page .publication img {
+    max-width: 470px;
+}
+
+.c_lk_blog_page .c_lk_inner_breadcrumbs {
+    margin: -7px 0 10px;
+}
+
+.c_lk_blog_page .delete {
+    float: right;
+    padding-left: 18px;
+    margin-right: 5px;
+    background: url(./../img/icon-remove.gif) 0 50% no-repeat;
+}

@@ -1,0 +1,56 @@
+/*c_news_page*/
+
+.c_news_page {
+    font-size: 1em;
+    margin: 0px 0 10px;
+    text-align: justify;
+}
+
+/*
+.c_news_page .list_item {
+    padding: 0px 2px 6px;
+    margin: 0 0 10px;
+    background: url("./../img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
+}
+
+.c_news_page .list_item:last-child {
+    background-image: none;
+}
+*/
+
+.c_news_page .title {
+    color: #009acf;
+    font-size: 22px;
+    /*font-size: 1.6em;*/
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.c_news_page .image_container {
+    float: left;
+    margin: 2px 4px .5em 0;
+}
+
+.c_news_page .description {
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+.c_news_page .date,
+.c_news_page .views {
+    color: #959595;
+    font-size: 11px;
+}
+
+.c_news_page .views {
+    margin: 0 6px 0 0;
+}
+
+.c_news_page .goto {
+    color: #ad0505;
+    font-size: 11px;
+    padding-left: 13px;
+    background: url("./../../../app/AppPageLayout/img/icon-talk.png") 0 50% no-repeat;
+}

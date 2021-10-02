@@ -1,0 +1,103 @@
+/* c_announcement_controls */
+
+.c_announcement_controls {
+    position: relative;
+    text-align: right;
+    padding: 3px 5px;
+    margin: 10px 0;
+    border: 1px solid #ffda5e;
+}
+
+.c_announcement_controls .edit,
+.c_announcement_controls .remove,
+.c_announcement_controls .more,
+.c_announcement_controls > a {
+    margin-right: 17px;
+    padding-left: 17px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+
+.c_announcement_controls .edit {
+    background-image: url("../../../app/AppPageLayout/img/icon-edit.gif");
+}
+
+.c_announcement_controls .remove {
+    background-image: url("../../../app/AppPageLayout/img/icon-remove.gif");
+}
+
+.c_announcement_controls .more {
+    padding-left: 0;
+    padding-right: 10px;
+    background-position: 100% 50%;
+    background-image: url("../../../app/AppPageLayout/img/icon-more.gif");
+}
+
+.c_announcement_controls .submenu {
+    display: inline;
+    /*display: inline-block;*/
+}
+
+.c_announcement_controls .submenu:hover .extended_menu_shadow {
+    display: block;
+}
+
+.c_announcement_controls .extended_menu_shadow {
+    display: none;
+    /*float: right;
+    margin-left: -100%;
+    margin-right: -100%;
+    */
+    position: absolute;
+    right: -1px;
+    top: 17px;
+    padding: 5px 0 0;
+    /* background: url("../../../app/AppPageLayout/img/extended_menu_shadow.png"); */
+}
+
+.c_announcement_controls .options_list {
+
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+    border: 1px solid #c7c7c7;
+    background: #FFF;
+    z-index: 10;
+}
+
+.c_announcement_controls .options_list li {
+    margin-bottom: 2px;
+}
+
+.c_announcement_controls .options_list .last {
+    margin-bottom: 0;
+}
+
+.c_announcement_controls .options_list a {
+    display: block;
+    padding: 7px 7px 7px 33px;
+    color: #cb0000;
+    background-position: 9px 50%;
+    background-repeat: no-repeat;
+}
+
+.c_announcement_controls .options_list li:hover {
+    background-color: #F2F2F2;
+}
+
+.c_announcement_controls .options_list .vip a {
+    background-image: url("../../../app/AppPageLayout/img/icon-vip.png");
+}
+
+.c_announcement_controls .options_list .pin a {
+    background-image: url("../../../app/AppPageLayout/img/icon-pin.png");
+}
+
+.c_announcement_controls .options_list .emp a {
+    background-image: url("../../../app/AppPageLayout/img/icon-emp.png");
+}
+
+.c_announcement_controls .options_list .lift a {
+    background-image: url("../../../app/AppPageLayout/img/icon-lift.png");
+}

@@ -1,0 +1,220 @@
+/* c_lk_my_list */
+
+.c_lk_my_list {
+    margin: 0;
+}
+
+.c_lk_my_list .c_type_select a {
+    text-align: center;
+    padding: 4px 14px;
+}
+
+
+.c_lk_my_list .list_item {
+    margin: 0 0 6px;
+    padding: 0 0 10px;
+    background: url(./../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+}
+
+.c_lk_my_list .list_item.last,
+.c_lk_my_list .list_item:last-child {
+    background: none;
+}
+
+
+
+.c_lk_my_list .list_item .title {
+    color: #009ACF;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.c_lk_my_list .list_item .title-line {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.c_lk_my_list .list_item .title-catalog {
+    margin: 0 0 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.c_lk_my_list .list_item .title a,
+.c_lk_my_list .list_item .links a {
+    text-decoration: none;
+}
+
+.c_lk_my_list .list_item .title a:hover,
+.c_lk_my_list .list_item .links a:hover {
+    text-decoration: underline;
+}
+
+
+.c_lk_my_list .list_item .inner {
+    overflow: hidden;
+    position: relative;
+    padding-right: 22px;
+}
+
+
+.c_lk_my_list .list_item .pic_container {
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 120px;
+    min-height: 80px;
+    margin: 0 5px 3px 0;
+    margin-right: 9px;
+    background: #F9F9F9;
+}
+
+.c_lk_my_list .list_item .image_event {
+  float: left;
+  margin-right: 8px;
+}
+
+.c_lk_my_list .list_item .image_event img,
+.c_lk_my_list .list_item .pic_container img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+.c_lk_my_list .list_item .text {
+    color: #535353;
+    margin: 2px 0;
+}
+
+.c_lk_my_list .list_item .date {
+    display: block;
+    color: #727272;
+    margin: 12px 0 0;
+}
+
+.c_lk_my_list .list_item .links {
+    margin: 2px 0 0;
+}
+
+.c_lk_my_list .list_item .links a {
+    margin-right: 3px;
+}
+
+.c_lk_my_list .list_item .category {
+    display: inline;
+    white-space: nowrap;
+    margin: 0 4px;
+}
+
+
+
+.c_lk_my_list .list_item .image_catalog {
+    float: left;
+    text-align: center;
+    width: 150px;
+    /*min-height: 100px;*/
+    margin: 0 15px 0 0;
+    overflow: hidden;
+    border: 1px solid #EAEAEA;
+}
+
+.c_lk_my_list .list_item .image_catalog img {
+    vertical-align: middle;
+}
+
+
+.c_lk_my_list .list_item .text_line {
+    font-size: 14px;
+    margin: 0px 0 10px;
+}
+
+.c_lk_my_list .list_item .rate,
+.c_lk_my_list .list_item .price,
+.c_lk_my_list .list_item .label {
+    font-weight: bold;
+}
+
+.c_lk_my_list .list_item .price {
+    margin: 0 7px;
+    padding: 3px 20px;
+    background-color: #ffda5f;
+}
+
+.c_lk_my_list .list_item .rate {
+    color: #009ACF;
+    font-size: 18px;
+    margin: 0 10px 0 3px;
+    vertical-align: middle;
+}
+
+.c_lk_my_list .list_item .reviews {
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.c_lk_my_list .list_item .more {
+    font-size: 14px;
+}
+
+.c_lk_my_list .list_item .avalible {
+    color: #1AB301;
+}
+
+.c_lk_my_list .list_item .noavalible {
+    color: #b90000;
+}
+
+
+
+
+.c_lk_my_list .list_item .contacts {
+    line-height: normal;
+    overflow: hidden;
+    margin: 5px 0 5px;
+}
+
+.c_lk_my_list .list_item .contacts a,
+.c_lk_my_list .list_item .contacts .phone {
+    color: #3c3c3c;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    margin-right: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: none 0 50% no-repeat;
+}
+
+.c_lk_my_list .list_item .contacts .phone {
+    padding-left: 14px;
+    background-image: url("./../../PageLayout/img/icon-phone.png");
+}
+
+.c_lk_my_list .list_item .contacts .mail {
+    background-image: url("./../../PageLayout/img/icon-mail.png");
+}
+
+.c_lk_my_list .list_item .contacts .site {
+    background-image: url("./../../PageLayout/img/icon-web.png");
+}
+
+
+
+
+.c_lk_my_list .list_item .bold {
+    font-weight: bold;
+}
+
+.c_lk_my_list .list_item .gray {
+    color: #727272;
+}
+
+.c_lk_my_list .list_item .blue {
+    color: #009ACF;
+}

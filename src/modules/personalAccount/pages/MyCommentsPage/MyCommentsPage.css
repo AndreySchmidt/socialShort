@@ -1,0 +1,65 @@
+/* c_lk_comments */
+
+.c_lk_comments {
+    margin: 0;
+}
+
+
+.c_lk_comments .comment {
+    margin: 0 0 6px;
+    padding: 0 0 5px;
+    background: url(./../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+}
+
+.c_lk_comments .comment.last,
+.c_lk_comments .comment:last-child {
+    background: none;
+}
+
+.c_lk_comments .comment .title {
+    color: #009ACF;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 13px;
+    padding: 0;
+}
+
+.c_lk_comments .comment .inner {
+    overflow: hidden;
+    position: relative;
+    padding-right: 22px;
+}
+
+.c_lk_comments .comment .text {
+
+}
+
+.c_lk_comments .comment .date {
+    display: block;
+    color: #009ACF;
+    font-size: 11px;
+    margin: 0 0 11px;
+}
+
+.c_lk_comments .comment .preview {
+    float: left;
+    padding: 0;
+    margin: 0 5px 3px 0;
+}
+
+.c_lk_comments .comment .preview img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.c_lk_comments .comment .delete {
+    text-indent: -100em;
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(./../../PageLayout/img/icon-remove.gif) 0 50% no-repeat;
+}

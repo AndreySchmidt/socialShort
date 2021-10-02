@@ -1,0 +1,9 @@
+/* c_print_this */
+
+.c_print_this {
+	color: #000;
+	padding: 4px 10px 6px;
+	padding-left: 26px;
+	border: 1px solid #eaeaea;
+	background: url("../../../app/AppPageLayout/img/icon-print.png") 7px 50% no-repeat;
+}

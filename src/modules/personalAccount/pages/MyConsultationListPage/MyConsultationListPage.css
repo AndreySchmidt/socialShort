@@ -1,0 +1,97 @@
+/* c_lk_consultations */
+
+.c_lk_consultations {
+	/*min-height: 1240px;*/
+	margin: 10px 0 10px;
+	padding: 6px 11px 11px 10px;
+	border: 1px solid #EAEAEA;
+}
+
+.c_lk_consultations .blue {
+	color: #009ACF;
+}
+
+.c_lk_consultations .bid {
+    margin: 11px 0 13px;
+    padding: 0 0 13px 60px;
+    background: url(./../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+}
+
+.c_lk_consultations .bid.last,
+.c_lk_consultations .bid:last-child {
+    margin-bottom: 0;
+    background: none;
+}
+
+.c_lk_consultations .first-line {
+	max-height: 2.75em;
+	overflow: hidden;
+    margin: 0 0 2px;
+}
+
+.c_lk_consultations .photo {
+    float: left;
+    margin: 0 9px 0 -60px;
+}
+
+.c_lk_consultations .photo img {
+    vertical-align: top;
+}
+
+.c_lk_consultations .name {
+    color: #009ACF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.c_lk_consultations .status {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    margin: 2px 0 0;
+    padding: 0 8px 1px;
+    background-color: #009900;
+
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.c_lk_consultations .offline {
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+/*
+.c_lk_consultations .bid .title {
+	color: #009ACF;
+	margin: 0 0 3px;
+	padding: 0;
+}
+
+.c_lk_consultations .bid .title a {
+	text-decoration: none;
+}
+*/
+.c_lk_consultations .bid .text {
+	font-weight: bold;
+	margin: 0 0 6px;
+}
+
+.c_lk_consultations .bid .date {
+	color: #727272;
+}
+
+.c_lk_consultations .bid .completive {
+	margin: 6px 0 0;
+}
+
+.c_lk_consultations .bid .completive a {
+	color: #3c3c3c;
+	margin-right: 5px;
+}
+
+
+.c_header_section_title .link_right:first-child {
+    margin-left: 6px;
+}

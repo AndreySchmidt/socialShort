@@ -1,0 +1,124 @@
+/* c_lk_friends */
+
+.c_lk_friends {
+    margin: 0;
+    min-height: 400px;
+}
+
+.c_lk_friends h2.title {
+    color: #009ACF;
+    float: right;
+    font-size: 14px;
+    margin: 3px 0 5px;
+    padding: 0;
+}
+
+.c_lk_friends .info {
+  color: #009ACF;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin: 24px 0 10px;
+}
+
+.c_lk_friends p.blue {
+  color: #009ACF;
+  margin: 10px 8px 15px;
+}
+
+.c_lk_friends .invite_tabs {
+	font-weight: bold;
+	margin: 5px 0 0;
+	border: 1px solid #b8b8b8;
+}
+
+.c_lk_friends .invite_tabs a {
+	padding: 3px 10px;
+}
+
+
+
+.c_lk_friends .friend {
+    margin: 0 0 6px;
+    padding: 0 0 8px;
+    background: url(../../../app/AppPageLayout/img/dot-gray.gif) 0 100% repeat-x;
+}
+
+.c_lk_friends .friend.last,
+.c_lk_friends .friend:last-child {
+	background: none;
+}
+
+.c_lk_friends .photo {
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+.c_lk_friends .photo img {
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+
+.c_lk_friends .name {
+    /*display: inline-block;*/
+    color: #009ACF;
+    font-weight: bold;
+    text-decoration: none;
+    width: 190px;
+    margin: 7px 0 0;
+}
+
+.c_lk_friends .status {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    margin: 2px 0 0;
+    padding: 0 8px 1px;
+    background-color: #009900;
+
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.c_lk_friends .offline {
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+.c_lk_friends .action-buttons {
+	margin: 14px 0;
+}
+
+
+
+.c_lk_friends .rightside {
+	float: right;
+	line-height: 22px;
+	width: 160px;
+	margin: 0px 0 0;
+}
+
+.c_lk_friends .rightside a {
+	color: #CB0000;
+	white-space: nowrap;
+	padding: 0 0 0 20px;
+	background: none 0 50% no-repeat;
+}
+
+.c_lk_friends .rightside .write {
+	background-image: url(../../../app/AppPageLayout/img/icon-write.png);
+}
+
+.c_lk_friends .rightside .delete {
+	background-image: url(../../../app/AppPageLayout/img/icon-friend-del.png);
+}
+
+.c_lk_friends .rightside .fave-add {
+	background-image: url(../../../app/AppPageLayout/img/fave-add.png);
+}
+
+.c_lk_friends .rightside .fave-del {
+	background-image: url(../../../app/AppPageLayout/img/fave-del.png);
+}

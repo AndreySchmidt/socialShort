@@ -1,0 +1,26 @@
+/* c_consultation_answer_form */
+
+.c_consultation_answer_form {
+    margin: 0 0 13px;
+    padding: 0;
+}
+
+.c_consultation_answer_form textarea {
+    height: 140px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 3px 0 0 3px;
+    margin: 0 0 8px;
+    border: 1px solid #c3c3c3;
+    background: #FFF;
+}
+
+.c_consultation_answer_form > div {
+    margin-right: 5px;
+}
+
+.c_consultation_answer_form .submit {
+    font-weight: bold;
+    padding: 6px 12px 2px;
+}

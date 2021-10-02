@@ -1,0 +1,21 @@
+/* c_lk_foto_all */
+
+.c_lk_foto_all {
+  margin: 10px 0;
+  padding: 13px 13px 20px;
+  border: 1px solid #EAEAEA;
+}
+
+.c_lk_foto_all .albums_summary,
+.c_lk_foto_all .photos_summary {
+  color: #009ACF;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 0 0 2px;
+}
+
+.c_lk_foto_all .c_albums_container {
+  padding-left: 5px;
+  margin-bottom: 19px;
+}
+

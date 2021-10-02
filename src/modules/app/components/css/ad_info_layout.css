@@ -1,0 +1,227 @@
+/* c_ad_page */
+
+.c_ad_info_layout {
+    margin-bottom: 13px;
+}
+
+.c_ad_info_layout .large_column {
+    float: left;
+    width: 413px;
+}
+
+.c_ad_info_layout .small_column {
+    float: right;
+    width: 270px;
+}
+
+/*END c_ad_info_layout*/
+
+/*c_ad_primary_info*/
+
+.c_ad_primary_info  {
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted #a33235;
+}
+
+.c_ad_primary_info .data_item  {
+    margin: 9px 0;
+}
+
+.c_ad_primary_info .write_to_seller  {
+    font-size: 11px;
+    color: #3c3c3c;
+}
+
+.c_ad_primary_info .phone  {
+    font-weight: bold;
+    color: #009acf;
+}
+
+.c_ad_primary_info .district  {
+    color: #009acf;
+}
+
+.c_ad_primary_info .caption {
+    font-weight: bold;
+}
+
+.c_ad_primary_info .banner-1 {
+    float: right;
+}
+
+.c_ad_primary_info .price {
+    display: inline-block;
+    padding: 3px 16px;
+    font-weight: bold;
+    background-color: #ffda5e;
+}
+
+/*END c_ad_primary_info*/
+
+/*c_ad_secondary_info*/
+
+.c_ad_secondary_info {
+    font-size: 14px;
+}
+
+.c_ad_secondary_info .category a {
+    text-decoration: none;
+}
+
+.c_ad_secondary_info .category .divider {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 3px;
+    background: url("./../../AppPageLayout/img/category-divider.png") 0 0 no-repeat;
+}
+
+.c_ad_secondary_info .category a:hover {
+    text-decoration: underline;
+}
+
+.c_ad_secondary_info .data_item {
+    margin: 3px 0;
+}
+
+.c_ad_secondary_info .data_item .emp {
+    color: #009acf;
+}
+
+/*END c_ad_secondary_info*/
+
+/*c_ad_text*/
+
+.c_ad_text {
+    margin-top: 20px;
+}
+
+.c_ad_text p {
+    margin: 0.8em 0;
+}
+
+/*END c_ad_text*/
+
+
+
+.c_ad_info_blocks {
+
+}
+
+.c_ad_info_blocks .caption {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.c_ad_info_blocks .data-block {
+    color: #555;
+    margin: 10px 0 15px 17px;
+}
+
+.c_ad_info_blocks .blue {
+    color: #009acf;
+}
+
+.c_ad_info_blocks .experience div {
+    margin: 6px 0;
+}
+
+.c_ad_info_blocks .experience .resp p {
+    overflow: hidden;
+    margin: 0;
+}
+
+.c_ad_info_blocks .experience .resp strong {
+    float: left;
+    margin: 0 3px 0 0;
+}
+
+
+.profile_block {
+    /*font-size: 14px;*/
+    line-height: 1.5em;
+    margin: 0 0 10px;
+    padding: 7px 9px 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.profile_block .person img {
+    margin: 0 0 0 -2px;
+}
+
+.profile_block .blue {
+    color: #009acf;
+}
+
+.profile_block h5 {
+    font-size: 1em;
+    margin: 0 0 0;
+}
+
+.profile_block .c_button_large {
+    text-align: center;
+    width: 218px;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+/*c_emphasized_ad_info*/
+
+.c_emphasized_ad_info {
+    padding: 7px 9px 0;
+    border: 1px solid #ffda5e;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.c_emphasized_ad_info .views .value {
+    font-size: 12px;
+    color: #009acf;
+}
+
+.c_emphasized_ad_info .options_title {
+    margin: 14px 0 16px;
+    font-weight: bold;
+}
+
+.c_emphasized_ad_info .options_list {
+    padding: 7px;
+    margin: 0;
+    list-style: none;
+}
+
+.c_emphasized_ad_info .options_list li {
+    margin-bottom: 12px;
+}
+
+.c_emphasized_ad_info .options_list a {
+    padding-left: 24px;
+    color: #cb0000;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.c_emphasized_ad_info .options_list .vip a {
+    background-image: url("./../../AppPageLayout/img/icon-vip.png");
+}
+
+.c_emphasized_ad_info .options_list .pin a {
+    background-image: url("./../../AppPageLayout/img/icon-pin.png");
+}
+
+.c_emphasized_ad_info .options_list .emp a {
+    background-image: url("./../../AppPageLayout/img/icon-emp.png");
+}
+
+.c_emphasized_ad_info .options_list .lift a {
+    background-image: url("./../../AppPageLayout/img/icon-lift.png");
+}
+
+/*END c_emphasized_ad_info*/

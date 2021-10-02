@@ -1,0 +1,64 @@
+/* c_albums_container */
+
+.c_albums_container {
+  padding-left: 5px;
+  margin-bottom: 19px;
+}
+
+.c_albums_container .albums_summary {
+  padding-left: 5px;
+}
+
+.c_albums_container .album_row {
+  display: inline-block;
+  padding: 9px 9px 9px 10px;
+  padding: 9px 5px 14px;
+  /*width: 130px;
+  height: 87px;*/
+  width: 156px;
+  height: 195px;
+}
+
+.c_albums_container .album_row .album_img_container {
+  display: block;
+  text-align: center;
+  width: 156px;
+  max-height: 120px;
+  overflow: hidden;
+  background: #F1F1F1;
+}
+
+.c_albums_container .album_row img {
+  vertical-align: top;
+  max-width: 156px;
+}
+
+.c_albums_container .album_row .title {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 5px 0 0;
+  padding: 0;
+    width: 100%;
+    max-height: 2.5em;
+    overflow: hidden;
+}
+
+.c_albums_container .album_row .total {
+  color: #ccc;
+  font-size: 11px;
+  margin: 8px 0 3px;
+}
+
+.c_albums_container .album_row .edit {
+    padding-left: 17px;
+    background: url("../../../app/AppPageLayout/img/icon-edit.gif") 0 50% no-repeat;
+}
+
+.c_albums_container .dot-line {
+  display: block;
+  margin: 0 12px 0 5px;
+  height: 5px;
+  overflow: hidden;
+  border: 0 none;
+  background: url("../../../app/AppPageLayout/img/dot-gray.gif") 0 50% repeat-x;
+}

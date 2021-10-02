@@ -1,0 +1,19 @@
+/*c_otziv_filter*/
+
+.c_otziv_filter {
+    margin: 5px 0 10px;
+    border: 1px solid #eaeaea;
+}
+
+.c_otziv_filter .c_type_select {
+    float: right;
+    background: none;
+}
+
+.c_otziv_filter .c_type_select a {
+	padding: 4px 20px;
+}
+
+.c_otziv_filter .filter-sort {
+    float: left;
+}

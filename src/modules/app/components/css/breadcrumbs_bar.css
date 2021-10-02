@@ -1,0 +1,33 @@
+/*c_breadcrumbs_bar*/
+
+.c_breadcrumbs_bar {
+    margin: 0 0 12px;
+    padding: 4px 12px 4px 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.c_breadcrumbs_bar .breadcrumbs a {
+    color: #545454;
+    white-space: nowrap;
+}
+
+.c_breadcrumbs_bar .breadcrumbs .separator {
+    display: inline-block;
+    text-indent: -10em;
+    margin: 0 2px;
+    width: 9px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(./../../AppPageLayout/img/breadcrumbs_separator.png) 0 50% no-repeat;
+}
+
+.c_breadcrumbs_bar .breadcrumbs .active {
+    cursor: default;
+    text-decoration: none;
+}
+
+.c_breadcrumbs_bar .back {
+    float: right;
+    padding: 0 0 0 19px;
+    background: url(./../../AppPageLayout/img/arrow-back.png) 0 50% no-repeat;
+}

@@ -1,0 +1,35 @@
+/* c_lk_my_list_controls */
+
+.c_lk_my_list_controls {
+    /*clear: left;*/
+    float: right;
+    padding: 3px 5px;
+    margin: 7px 0 0;
+    border: 1px solid #ffda5e;
+}
+
+.c_lk_my_list_controls .add,
+.c_lk_my_list_controls .edit,
+.c_lk_my_list_controls .remove,
+.c_lk_my_list_controls > a {
+    margin-right: 17px;
+    padding-left: 17px;
+    background-position: 0 80%;
+    background-repeat: no-repeat;
+}
+
+.c_lk_my_list_controls .add {
+    background-image: url("./../../PageLayout/img/icon-add.gif");
+}
+
+.c_lk_my_list_controls .edit {
+    background-image: url("./../../PageLayout/img/icon-edit.gif");
+}
+
+.c_lk_my_list_controls .remove {
+    background-image: url("./../../PageLayout/img/icon-remove.gif");
+}
+
+.c_lk_my_list_controls .last {
+    margin-right: 0;
+}

@@ -1,0 +1,48 @@
+/* c_lk_my_list_remark */
+
+.c_lk_my_list_remark {
+	clear: both;
+	padding: 1px 0 0;
+}
+
+.c_lk_my_list_remark .remark {
+	color: #525252;
+	padding: 16px;
+	margin: 5px 0 0;
+	background: #fcf5db;
+}
+
+.c_lk_my_list_remark .remark_form {
+    margin: -1px 0 0;
+    padding: 10px 7px 7px;
+    background-color: #f2f2f2;
+}
+
+.c_lk_my_list_remark .remark_form textarea {
+    color: #808080;
+    color: #525252;
+    height: 40px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 7px 0 0 7px;
+    margin: 0 0 4px;
+    border: 1px solid #d9d9d9;
+    background: #FFF;
+}
+
+.c_lk_my_list_remark .remark_form > div {
+    margin-right: 9px;
+}
+
+.c_lk_my_list_remark .remark_form .submit {
+    font-weight: bold;
+    padding: 4px 17px 1px;
+}
+
+.c_lk_my_list_remark textarea::-attach-input-placeholder,
+.c_lk_my_list_remark textarea:-moz-placeholder,
+.c_lk_my_list_remark textarea::-moz-placeholder,
+.c_lk_my_list_remark textarea:-ms-input-placeholder {
+	color: #808080;
+}

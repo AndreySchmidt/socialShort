@@ -1,0 +1,177 @@
+/* c_desk_add */
+
+.c_breadcrumbs_bar { /* redefine */
+    margin: 0 0 6px; 
+}
+
+.c_desk_add {
+    margin: 0 0 12px;
+}
+
+.c_desk_add .header {
+    color: #009ACF;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 6px 10px;
+}
+
+.c_desk_add .fieldset {
+    margin: 0;
+    padding: 11px 19px 1em 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.c_desk_add .element-container {
+    clear: left;
+    padding-left: 160px;
+    margin: 0 0 7px;
+}
+
+.c_desk_add .element-container label {
+    float: left;
+    font-weight: bold;
+    text-align: right;
+    width: 152px;
+    margin-left: -160px;
+    padding: 3px 0 0;
+}
+
+
+
+.c_desk_add .element-container .type-text {
+    line-height: 14px;
+    height: 14px;
+    width: 295px; /* 305px */
+    padding: 5px 5px 2px;
+    border: 1px solid #DDDDDD;
+}
+
+.c_desk_add .element-container textarea.type-text {
+    line-height: 14px;
+    height: 14px;
+    width: 300px; /* 305px */
+    height: 140px;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 5px 0 0 5px;
+    margin: 0 0 0px;
+    border: 1px solid #DDDDDD;
+}
+
+.c_desk_add .element-container select {
+    /*display: block;*/
+    height: 21px;
+    line-height: 21px;
+    width: 307px; /* 305px */
+    vertical-align: top;
+    outline: 0 none;
+    border: 1px solid #D1D1D1;
+}
+
+.c_desk_add .element-container select option {
+    padding: 5px 5px 2px;
+    vertical-align: middle;
+}
+
+
+.c_desk_add .element-container .width-half {
+    width: 173px;
+    margin-right: 8px; 
+}
+
+.c_desk_add .element-container .width-third {
+    width: 84px;
+    margin-right: 6px; 
+}
+
+.c_desk_add .element-container select.width-half {
+    width: 185px;
+}
+
+.c_desk_add .element-container select.width-third {
+    width: 96px;
+}
+
+.c_desk_add .element-container .select-init {
+    float: left;
+    line-height: 14px;
+    padding: 4px 0px 2px;
+}
+
+.c_desk_add .element-container .select-result {
+    clear: left;
+    margin: 0 0 10px;
+}
+
+
+.c_desk_add .element-container label.normal {
+    float: none;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: left;
+    width: auto;
+    margin-left: 0;
+    padding: 0;
+}
+
+.c_desk_add .element-container label.normal input {
+    margin: 5px 0 2px;
+}
+
+
+
+.c_desk_add .notification-block {
+    color: #cb0000;
+    padding: 4px 15px 4px;
+    border: 1px solid #eaeaea;
+}
+
+.c_desk_add .notification-block p {
+    margin: 5px 0 6px;
+}
+
+
+
+.c_desk_add .file-result {
+    margin: 12px 0 12px;
+}
+
+.c_desk_add .file-result img {
+    margin: 0 0 0;
+}
+
+
+
+.c_desk_add .captcha-input {
+    /*vertical-align: bottom;*/
+}
+
+.c_desk_add img.captcha-image {
+    vertical-align: top;
+}
+
+
+
+.c_desk_add a.red {
+    color: #cb0000;
+}
+
+.c_desk_add .notification {
+    color: #7e7e7e;
+    margin: 0 5px;
+}
+
+
+
+.c_desk_add .first-element {
+    margin-bottom: 14px;
+}
+
+.c_desk_add .button-container {
+    margin-bottom: 20px;
+}
+
+.c_desk_add .button-container .c_add_ad_button {
+    width: auto;
+    padding: 10px;
+}

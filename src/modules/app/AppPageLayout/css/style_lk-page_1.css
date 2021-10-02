@@ -1,0 +1,138 @@
+/*c_header_section_title*/
+
+.c_header_section_title {
+    margin-bottom: 6px;
+    padding: 6px 15px 6px 10px;
+    border: 1px solid #eaeaea;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.c_header_section_title .link_right {
+    float: right;
+    margin-top: -3px;
+}
+
+/*END c_header_section_title*/
+
+
+/*c_settings_layout*/
+
+.c_settings_layout {
+    padding-left: 200px;
+    border: 1px solid #eaeaea;
+    background-color: #F2F2F2;
+}
+
+.c_settings_layout .layout_inner {
+    background-color: #ffffff;
+}
+
+.c_settings_layout .setting_sections_block {
+    float: left;
+    width: 170px;
+    margin: 5px 0 5px -197px;
+    padding: 2px 7px 7px 11px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-weight: bold;
+}
+
+.c_settings_layout .section_title {
+    margin: 10px 0 9px;
+}
+
+.c_settings_layout .section_link {
+    padding-left: 4px;
+}
+
+.c_settings_layout .section_link a {
+    display: block;
+    padding: 4px 6px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.c_settings_layout .section_link a:hover,
+.c_settings_layout .section_link.active a {
+    background-color: #ffd751;
+}
+
+.c_settings_layout .layout_inner {
+    float: left;
+    width: 100%;
+}
+
+.c_settings_layout .layout_inner_space {
+    padding: 13px 10px 120px 15px;
+}
+
+.c_settings_layout .layout_section_title {
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.c_settings_layout .title_underline {
+    height: 1px;
+    margin: 9px 0 13px 13px;
+    background-color: #dddddd;
+}
+
+.c_settings_layout .form_line_horiz {
+    padding-left: 200px;
+    margin-bottom: 13px;
+    *zoom: 1;
+}
+
+.c_settings_layout .form_line_horiz:before,
+.c_settings_layout .form_line_horiz:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.c_settings_layout .form_line_horiz:after {
+    clear: both;
+}
+
+.c_settings_layout .caption {
+    float: left;
+    width: 160px;
+    margin-top: 3px;
+    margin-left: -165px;
+    text-align: right;
+}
+
+.c_settings_layout input.c_input.full_width {
+    width: 263px;
+}
+
+.c_settings_layout select.full_width {
+    width: 275px;
+}
+
+.c_settings_layout select.third_part {
+    width: 87px;
+    margin-right: 4px;
+}
+
+.c_settings_layout select.third_part_last {
+    width: 88px;
+    padding-right: 0;
+}
+
+.c_settings_layout select.third_part_last {
+    width: 88px;
+    padding-right: 0;
+}
+
+.c_settings_layout select {
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 2px;
+    border: 1px solid #d1d1d1;
+
+}
+
+/*END c_settings_layout*/

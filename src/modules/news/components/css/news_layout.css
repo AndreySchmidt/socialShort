@@ -1,0 +1,22 @@
+/*
+    redefines some elements style 
+    to news layout news-list
+ */
+
+div.c_breadcrumbs_bar .breadcrumbs,
+div.c_breadcrumbs_bar .breadcrumbs a {
+    color: #7e7e7e;
+}
+
+div.c_pagination_view {
+    margin-top: 0;
+}
+
+h1.grandHeader {
+    color: #009ACF;
+    font-size: 1.2em;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0;
+    margin: -6px 0 6px;
+}

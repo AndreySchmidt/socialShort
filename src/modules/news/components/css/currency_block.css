@@ -1,0 +1,34 @@
+/*c_currency_block*/
+
+.c_currency_block {
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border: 1px solid #e8e8e8;
+    background-color: #fdfdfd;
+}
+
+.c_currency_block .header {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 4px;
+    padding: 5px 8px;
+}
+
+.c_currency_block .header > i {
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    background: url("./../../../app/AppPageLayout/img/menu-block-arrow-down.png") 0 0 no-repeat;
+}
+
+.c_currency_block .curRates {
+    color: #009ACF;
+    margin: 0 8px;
+}
+
+.c_currency_block .rate {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}

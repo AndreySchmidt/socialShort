@@ -1,0 +1,30 @@
+/*c_calk_list*/
+
+.c_calk_list {
+    /*padding: 15px 20px 15px 15px;*/
+    padding: 15px;
+    margin: 0 0 12px;
+    background-color: #FCF5DB;
+}
+
+.c_calk_list .name {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.c_calk_list .control {
+    float: right;
+    text-indent: -100em;
+    padding-left: 14px;
+    margin: 0 5px;
+    overflow: hidden;
+}
+
+.c_calk_list .delete {
+    background: url(../../../app/AppPageLayout/img/icon-remove.gif) 0 50% no-repeat;
+}
+
+.c_calk_list .edit {
+    background: url(../../../app/AppPageLayout/img/icon-edit.gif) 0 50% no-repeat;
+}

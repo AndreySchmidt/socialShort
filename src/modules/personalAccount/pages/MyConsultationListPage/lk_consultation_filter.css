@@ -1,0 +1,13 @@
+/* c_lk_consultation_filter */
+
+.c_lk_consultation_filter .c_quick_search {
+    margin: 5px 0 0px;
+}
+
+.c_lk_consultation_filter .c_type_select {
+    background: none;
+}
+
+.c_lk_consultation_filter .c_type_select a {
+	margin: 0 10px;
+}

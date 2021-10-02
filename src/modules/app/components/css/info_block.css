@@ -1,0 +1,22 @@
+/*c_info_block*/
+
+.c_info_block {
+    position: relative;
+    margin-bottom: 11px;
+    padding: 13px 40px 0 13px;
+    color: #5c5c5c;
+    border: 1px solid #fedb5d;
+}
+
+.c_info_block .text_line {
+    margin-bottom: 14px;
+}
+
+.c_info_block .close_button {
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    width: 20px;
+    height: 19px;
+    background: url("./../../AppPageLayout/img/info-block-close.png") 0 0 no-repeat;
+}

@@ -1,0 +1,29 @@
+/*c_share_new*/
+
+.c_share_new {
+    margin: 13px 0 18px;
+    padding: 4px 0;
+    border: 1px dotted #E8E8E8;
+    border: 1px dotted #000;
+    border-width: 1px 0;
+}
+
+.c_share_new .social_links {
+    float: right;
+    color: #009ACF;
+    line-height: 22px;
+    /*font-weight: bold;*/
+}
+
+.c_share_new .social_links img {
+    vertical-align: bottom;
+    /*margin-top: -2px;*/
+}
+
+.c_share_new h3 {
+    color: #3c3c3c;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,210 @@
+/* c_button*/
+
+.c_button {
+    display: inline-block;
+    padding: 2px 8px;
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
+    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+}
+
+.c_button:hover {
+    text-decoration: none;
+}
+
+/*END c_button*/
+
+/* c_button*/
+
+.c_button_large {
+    display: inline-block;
+    padding: 4px 15px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
+    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+}
+
+.c_button_large:hover {
+    text-decoration: none;
+}
+
+/*END c_button*/
+
+/* c_button_like*/
+
+.c_button_like {
+    float: right;
+    margin-left: 8px;
+    padding: 2px 12px;
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
+    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+}
+
+.c_button_like > .icon_like {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 14px;
+    margin-right: 5px;
+    background: url("../img/icon-like.png") 0 0 no-repeat;
+}
+
+.c_button:hover {
+    text-decoration: none;
+}
+
+/*END c_button_like*/
+
+/* c_button_settings*/
+
+.c_button_settings {
+    display: inline-block;
+    padding: 2px 11px;
+    color: #000000;
+    font-size: 13px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
+    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+}
+
+.c_button_settings:hover {
+    text-decoration: none;
+}
+
+
+/*END c_button_settings*/
+
+/*c_wall_button*/
+
+.c_wall_button {
+    display: inline-block;
+    padding: 2px 15px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
+    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    font-weight: bold;
+}
+
+.c_wall_button:hover {
+    text-decoration: none;
+}
+
+/*END c_wall_button*/
+
+/*c_show_more_button*/
+
+.c_show_more_button {
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+.c_show_more_button a {
+    display: block;
+    padding: 3px 0;
+    background-color: #f1f2f2;
+    text-decoration: none;
+}
+
+.c_show_more_button a:hover {
+    background-color: #e7e8e8;
+    text-decoration: none;
+}
+
+.c_show_more_button a > i {
+    display: inline-block;
+    margin: 0 4px;
+    width: 9px;
+    height: 9px;
+    vertical-align: middle;
+    background: url("../img/show-more-arrow.png") 0 0 no-repeat;
+}
+
+/*END c_show_more_button*/
+
+/*c_status_button*/
+
+.c_status_button {
+    display: inline-block;
+    padding: 2px 15px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
+    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    font-weight: bold;
+}
+
+.c_status_button:hover {
+    text-decoration: none;
+}
+
+/*END c_status_button*/
+
+/*c_post_comment_area*/
+
+.c_post_comment_area {
+    padding: 5px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #dadbdb;
+    resize: none;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ie7 .c_post_comment_area {
+    width: 96%;
+}
+
+/*END c_post_comment_area*/
+
+/*c_post_comment_area*/
+
+.c_input {
+    padding: 3px 6px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+}
+
+/*END c_post_comment_area*/
+
+/*c_form_checkbox*/
+
+.c_form_checkbox input[type="checkbox"],
+.c_form_checkbox > span {
+    vertical-align: middle;
+}
+
+/*END c_form_checkbox*/
+
+/*c_delete_link*/
+
+.c_delete_link {
+    padding-left: 17px;
+    background: url("../img/icon-close.png") 0 1px no-repeat;
+}
+
+/*END c_delete_link*/

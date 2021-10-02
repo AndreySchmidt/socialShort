@@ -1,0 +1,59 @@
+/* c_video_last_comments */
+
+.c_video_last_comments {
+  padding: 8px 8px;
+  margin: 5px 0px 10px;
+  border: 1px solid #EAEAEA;
+  background: #FAFAFA;
+}
+
+.c_video_last_comments .header {
+  color: #3c3c3c;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.c_video_last_comments .video_container {
+	float: left;
+	width: 183px;
+}
+
+
+
+
+.c_video_last_comments .comment_list {
+	margin: 0 0 0 190px;
+}
+
+.c_video_last_comments .comment_list .comment {
+    margin: 0 0 5px;
+    padding: 0px;
+    position: relative;
+}
+
+.c_video_last_comments .comment_list .comment:last-child {
+	margin-bottom: 0;
+}
+
+.c_video_last_comments .comment_list .comment img {
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+
+.c_video_last_comments .comment_list .comment .name {
+    color: #009ACF;
+    text-decoration: none;
+}
+
+.c_video_last_comments .comment_list .comment .date {
+    display: block;
+    color: #009ACF;
+    font-size: 11px;
+    margin: 0 0 0 58px;
+}
+
+.c_video_last_comments .comment_list .comment .text {
+    line-height: 1.2em;
+    margin: 5px 0 5px 58px;
+}

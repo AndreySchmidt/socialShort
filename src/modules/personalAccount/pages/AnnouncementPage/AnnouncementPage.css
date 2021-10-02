@@ -1,0 +1,57 @@
+/*c_announcement_list*/
+
+.c_announcement_item {
+    margin: 10px 0;
+}
+
+.c_announcement_item .title {
+    color: #009ACF;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 0 0;
+    text-overflow: ellipsis;
+}
+
+.c_announcement_item .title a {
+    text-decoration: none;
+}
+
+.c_announcement_item .pic_container {
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 120px;
+    min-height: 80px;
+    margin-right: 9px;
+    background: #F9F9F9;
+}
+
+/*.c_announcement_item .pic_container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}*/
+
+.c_announcement_item .pic_container img {
+    vertical-align: bottom;
+}
+
+.c_announcement_item .date {
+    color: #727272;
+    /*margin-top: 14px;*/
+    margin-top: .5em;
+}
+
+/* control class */
+.withpicture .date {
+    margin-top: 14px;
+}
+
+.dot-separator-3c3c3c {
+    height: 1px;
+    margin: 9px 0 8px;
+    overflow: hidden;
+    background: url(../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif) 0 0 repeat-x;
+}

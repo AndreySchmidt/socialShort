@@ -1,0 +1,210 @@
+/* c_lk_foto_add */
+
+.c_lk_foto_add {
+    margin: 0 0 12px;
+    padding: 15px 38px 14px 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.c_lk_foto_add .header {
+    color: #009ACF;
+    font-size: 12px;
+    font-weight: bold;
+    /*margin: 6px 10px;*/
+    margin: 0 0 1.35em;
+    padding: 0 0 3px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.c_lk_foto_add .fieldset {
+    margin: 0 0 24px;
+}
+
+.c_lk_foto_add .element-container {
+    clear: left;
+    padding-left: 190px;
+    margin: 0 0 7px;
+}
+
+.c_lk_foto_add .element-container label {
+    float: left;
+    font-weight: bold;
+    text-align: right;
+    width: 182px;
+    margin-left: -190px;
+    padding: 3px 0 0;
+}
+
+
+
+.c_lk_foto_add .element-container .type-text {
+    line-height: 14px;
+    height: 14px;
+    width: 385px;
+    padding: 5px 5px 2px;
+    border: 1px solid #b8b8b8;
+}
+
+.c_lk_foto_add .element-container textarea.type-text {
+    line-height: 14px;
+    width: 300px;
+    height: 140px;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 5px 0 0 5px;
+    margin: 0 0 0px;
+    border: 1px solid #b8b8b8;
+}
+
+.c_lk_foto_add .element-container select {
+    /*display: block;*/
+    height: 21px;
+    line-height: 21px;
+    width: 397px;
+    margin: 0 0 3px;
+    vertical-align: top;
+    outline: 0 none;
+    border: 1px solid #b8b8b8;
+}
+
+.c_lk_foto_add .element-container select option {
+    padding: 5px 5px 2px;
+    vertical-align: middle;
+}
+
+
+.c_lk_foto_add .element-container .width-half {
+    width: 173px;
+    margin-right: 8px;
+}
+
+.c_lk_foto_add .element-container .width-third {
+    width: 84px;
+    margin-right: 6px;
+}
+
+.c_lk_foto_add .element-container select.width-half {
+    width: 185px;
+}
+
+.c_lk_foto_add .element-container select.width-third {
+    width: 96px;
+}
+
+.c_lk_foto_add .element-container .select-init {
+    float: left;
+    line-height: 14px;
+    padding: 4px 0px 2px;
+}
+
+.c_lk_foto_add .element-container .select-result {
+    clear: left;
+    margin: 0 0 10px;
+}
+
+
+.c_lk_foto_add .element-container label.normal {
+    float: none;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: left;
+    width: auto;
+    margin-left: 0;
+    padding: 0;
+}
+
+.c_lk_foto_add .element-container label.normal input {
+    margin: 5px 0 2px;
+}
+
+
+.c_lk_foto_add .notification-block {
+    color: #cb0000;
+    padding: 4px 15px 4px;
+    border: 1px solid #eaeaea;
+}
+
+.c_lk_foto_add .notification-block p {
+    margin: 5px 0 6px;
+}
+
+.c_lk_foto_add .file-result {
+    margin: 7px 0 10px;
+}
+
+.c_lk_foto_add .file-result img {
+    margin: 0;
+}
+
+
+
+.c_lk_foto_add .photo_row {
+    margin: 23px 0;
+    padding: 0 68px 13px 190px;
+    background: url("../../../app/AppPageLayout/img/dot-gray.gif") 0 100% repeat-x;
+}
+
+.c_lk_foto_add .photo_row .photo_img_cont {
+    float: left;
+    text-align: center;
+    margin: -11px 0 0 -140px;
+    width: 130px;
+    max-height: 104px;
+    overflow: hidden;
+}
+
+.c_lk_foto_add .photo_row .remove {
+    float: right;
+    padding: 0 0 0 17px;
+
+}
+
+.c_lk_foto_add .photo_row label {
+    display: block;
+    color: #009ACF;
+    font-weight: bold;
+    margin: 0 0 4px;
+}
+
+.c_lk_foto_add .photo_row textarea {
+    line-height: 14px;
+    width: 385px;
+    height: 65px;
+    max-width: 390px;
+    min-width: 390px;
+    padding: 5px 0 0 5px;
+    margin: 0 0 0px;
+    border: 1px solid #b8b8b8;
+}
+
+.c_lk_foto_add .photo_row.last,
+.c_lk_foto_add .photo_row:last-child {
+    margin-bottom: 13px;
+    background: none;
+}
+
+.c_lk_foto_add a.red {
+    color: #cb0000;
+}
+
+.c_lk_foto_add .notification {
+    color: #7e7e7e;
+    margin: 0 5px;
+}
+
+.c_lk_foto_add .remove {
+    padding: 0 0 0 17px;
+    white-space: nowrap;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: url("../../../app/AppPageLayout/img/icon-remove.gif");
+}
+
+.c_lk_foto_add .button-container {
+    margin-bottom: 0px;
+}
+
+.c_lk_foto_add .button-container .c_add_ad_button {
+    width: auto;
+    padding: 10px;
+}
