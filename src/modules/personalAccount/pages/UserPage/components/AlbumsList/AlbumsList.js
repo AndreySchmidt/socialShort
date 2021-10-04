@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import album1 from './../../../../PageLayout/images/album-1.jpg'
-import album2 from './../../../../PageLayout/images/album-2.jpg'
+import album1 from './../../../../../../images/album-1.jpg'
+import album2 from './../../../../../../images/album-2.jpg'
 
 const AlbumsList = () => {
   return (

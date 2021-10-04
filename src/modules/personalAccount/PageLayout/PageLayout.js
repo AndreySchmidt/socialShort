@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './css/lk_page.css'
+import './../../app/AppPageLayout/css/lk_page.css'
 import AppPageLayout from './../../app/AppPageLayout/AppPageLayout'
 
 import Footer from './../../app/components/Footer/Footer'

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import avatarpossiblefriend from './../../../../PageLayout/images/avatar-possible-friend.jpg'
+import avatarpossiblefriend from './../../../../../../images/avatar-possible-friend.jpg'
 
 const PossibleFriendsList = () => {
   return (

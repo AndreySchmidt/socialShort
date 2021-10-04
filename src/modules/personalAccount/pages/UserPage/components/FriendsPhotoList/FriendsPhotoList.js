@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import friend1 from './../../../../PageLayout/images/friend-1.jpg'
-import friend2 from './../../../../PageLayout/images/friend-2.jpg'
-import friend3 from './../../../../PageLayout/images/friend-3.jpg'
+import friend1 from './../../../../../../images/friend-1.jpg'
+import friend2 from './../../../../../../images/friend-2.jpg'
+import friend3 from './../../../../../../images/friend-3.jpg'
 
 const FriendsPhotoList = () => {
   return (

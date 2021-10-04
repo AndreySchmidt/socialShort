@@ -9,7 +9,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_button:hover {
@@ -29,7 +29,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_button_large:hover {
@@ -50,7 +50,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_button_like > .icon_like {
@@ -59,7 +59,7 @@
     width: 15px;
     height: 14px;
     margin-right: 5px;
-    background: url("../img/icon-like.png") 0 0 no-repeat;
+    background: url("./../../../../img/icon-like.png") 0 0 no-repeat;
 }
 
 .c_button:hover {
@@ -79,7 +79,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_button_settings:hover {
@@ -100,7 +100,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
     font-weight: bold;
 }
 
@@ -135,7 +135,7 @@
     width: 9px;
     height: 9px;
     vertical-align: middle;
-    background: url("../img/show-more-arrow.png") 0 0 no-repeat;
+    background: url("./../../../../img/show-more-arrow.png") 0 0 no-repeat;
 }
 
 /*END c_show_more_button*/
@@ -151,7 +151,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
     font-weight: bold;
 }
 
@@ -212,7 +212,7 @@
 
 .c_delete_link {
     padding-left: 17px;
-    background: url("../img/icon-close.png") 0 1px no-repeat;
+    background: url("./../../../../img/icon-close.png") 0 1px no-repeat;
 }
 
 /*END c_delete_link*/
@@ -284,7 +284,7 @@ select.c_form_input {
 .c_type_select a:hover {
 
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 /*END c_type_select*/
@@ -303,7 +303,7 @@ select.c_form_input {
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_after_input_search_button:hover {
@@ -321,7 +321,7 @@ select.c_form_input {
     width: 14px;
     height: 14px;
     margin-left: 10px;
-    background: url("../img/view-sprite.png") 0 0 no-repeat;
+    background: url("./../../../../img/view-sprite.png") 0 0 no-repeat;
 
     *zoom: 1;
     *display: inline;
@@ -369,7 +369,7 @@ select.c_form_input {
     border-style: solid;
     text-transform: uppercase;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_add_ad_button .icon_add {
@@ -425,7 +425,7 @@ select.c_form_input {
     height: 6px;
     bottom: -6px;
     left: 0;
-    background: url("../img/add-list-hover-arrow.png") center 0 no-repeat;
+    background: url("./../../../../img/add-list-hover-arrow.png") center 0 no-repeat;
 }
 
 .c_add_to_list_button .list-hover a {
@@ -456,7 +456,7 @@ select.c_form_input {
 .c_add_to_list_button .button_element:hover {
     text-decoration: none;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
 }
 
 .c_add_to_list_button .button_element.added {
@@ -485,7 +485,7 @@ select.c_form_input {
     width: 557px;
     height: 56px;
     margin-bottom: 5px;
-    /* background: url("../img/slider-bg.png") 0 0 no-repeat; */
+    /* background: url("./../../../../img/slider-bg.png") 0 0 no-repeat; */
 }
 
 .c_slider .slider_handle {
@@ -495,7 +495,7 @@ select.c_form_input {
     margin-left: -2px;
     width: 19px;
     height: 29px;
-    /* background: url("../img/slider-handle.png") 0 0 no-repeat; */
+    /* background: url("../public/img/slider-handle.png") 0 0 no-repeat; */
     cursor: pointer;
 }
 

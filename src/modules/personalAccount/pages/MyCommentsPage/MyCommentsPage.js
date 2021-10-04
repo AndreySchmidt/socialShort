@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import adsearchextlist from './../../../app/AppPageLayout/images/ad-search-ext-list.jpg'
-import videolastcomment from './../../../app/AppPageLayout/images/video-last-comment.jpg'
+import adsearchextlist from './../../../../images/ad-search-ext-list.jpg'
+import videolastcomment from './../../../../images/video-last-comment.jpg'
 
 import './MyCommentsPage.css'
 import './../../components/css/lk_user_data.css'

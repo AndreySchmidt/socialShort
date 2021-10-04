@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import wallavatar2 from './../../../../PageLayout/images/wall-avatar-2.jpg'
+import wallavatar2 from './../../../../../../images/wall-avatar-2.jpg'
 
 import PostCommentArea from './../PostCommentArea/PostCommentArea'
 

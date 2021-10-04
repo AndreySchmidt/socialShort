@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import video1 from './../../../../PageLayout/images/video-1.jpg'
+import video1 from './../../../../../../images/video-1.jpg'
 
 const VideoList = () => {
   return (

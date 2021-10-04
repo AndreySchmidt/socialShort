@@ -18,7 +18,7 @@
     width: 9px;
     overflow: hidden;
     vertical-align: middle;
-    background: url(./../../AppPageLayout/img/breadcrumbs_separator.png) 0 50% no-repeat;
+    background: url("./../../../../img/breadcrumbs_separator.png") 0 50% no-repeat;
 }
 
 .c_breadcrumbs_bar .breadcrumbs .active {
@@ -29,5 +29,5 @@
 .c_breadcrumbs_bar .back {
     float: right;
     padding: 0 0 0 19px;
-    background: url(./../../AppPageLayout/img/arrow-back.png) 0 50% no-repeat;
+    background: url("./../../../../img/arrow-back.png") 0 50% no-repeat;
 }

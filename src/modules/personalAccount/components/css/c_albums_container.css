@@ -51,7 +51,7 @@
 
 .c_albums_container .album_row .edit {
     padding-left: 17px;
-    background: url("../../../app/AppPageLayout/img/icon-edit.gif") 0 50% no-repeat;
+    background: url("./../../../../img/icon-edit.gif") 0 50% no-repeat;
 }
 
 .c_albums_container .dot-line {
@@ -60,5 +60,5 @@
   height: 5px;
   overflow: hidden;
   border: 0 none;
-  background: url("../../../app/AppPageLayout/img/dot-gray.gif") 0 50% repeat-x;
+  background: url("./../../../../img/dot-gray.gif") 0 50% repeat-x;
 }

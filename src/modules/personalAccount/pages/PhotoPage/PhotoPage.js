@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import vipimage3 from './../../../app/AppPageLayout/images/vip-image-3.jpg'
-import picava100x100 from './../../../app/AppPageLayout/images/pic-ava-100x100.jpg'
+import vipimage3 from './../../../../images/vip-image-3.jpg'
+import picava100x100 from './../../../../images/pic-ava-100x100.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 

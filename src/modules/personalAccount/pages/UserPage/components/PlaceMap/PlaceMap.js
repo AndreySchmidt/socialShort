@@ -1,7 +1,7 @@
 import React from 'react'
 
-import myplacesample from './../../../../PageLayout/images/my-place-sample.jpg'
-import myplacesampleimg from './../../../../PageLayout/images/my-place-sample-img.png'
+import myplacesample from './../../../../../../images/my-place-sample.jpg'
+import myplacesampleimg from './../../../../../../images/my-place-sample-img.png'
 
 const styleConfig = {top: '58px', left: '191px'}
 

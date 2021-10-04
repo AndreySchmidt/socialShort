@@ -2,7 +2,7 @@
 
 .column_wrapper {
     margin: 10px 0;
-    background: url("./../../../app/AppPageLayout/img/vertical-dots-gray.gif") 351px 0 repeat-y;
+    background: url("./../../../../img/vertical-dots-gray.gif") 351px 0 repeat-y;
 }
 
 .c_news_by_rubrik {
@@ -67,5 +67,5 @@
     color: #ad0505;
     font-size: 11px;
     padding-left: 13px;
-    background: url("./../../../app/AppPageLayout/img/icon-talk.png") 0 50% no-repeat;
+    background: url("./../../../../img/icon-talk.png") 0 50% no-repeat;
 }

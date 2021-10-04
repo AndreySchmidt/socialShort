@@ -1,9 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import wallavatar1 from './../../../../PageLayout/images/wall-avatar-1.jpg'
-import wallimagesample from './../../../../PageLayout/images/wall-image-sample.jpg'
-
+import wallavatar1 from './../../../../../../images/wall-avatar-1.jpg'
+import wallimagesample from './../../../../../../images/wall-image-sample.jpg'
 import PostComment from './../PostComment/PostComment'
 
 const WallPostsItem = () => {

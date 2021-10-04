@@ -19,7 +19,7 @@
     display: inline-block;
     width: 12px;
     height: 6px;
-    background: url("./../../../app/AppPageLayout/img/menu-block-arrow-down.png") 0 0 no-repeat;
+    background: url("./../../../../img/menu-block-arrow-down.png") 0 0 no-repeat;
 }
 
 .c_news_block ul {
@@ -32,7 +32,7 @@
     /*margin: 9px 0 8px;*/
     margin: 0 0 5px;
     padding: 0 0 10px;
-    background: url("./../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
+    background: url("./../../../../img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
 }
 
 .c_news_block .teaser:last-child {
@@ -68,7 +68,7 @@
     color: #ad0505;
     font-size: 11px;
     padding-left: 13px;
-    background: url("./../../../app/AppPageLayout/img/icon-talk.png") 0 50% no-repeat;
+    background: url("./../../../../img/icon-talk.png") 0 50% no-repeat;
 }
 
 

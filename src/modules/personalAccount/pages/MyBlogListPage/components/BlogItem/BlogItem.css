@@ -15,7 +15,7 @@
 .c_lk_blog_list .list_item {
     margin: 0 0 8px;
     padding: 0 0 10px;
-    background: url(./../../../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+    background: url("./../../../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_lk_blog_list .list_item.last,
@@ -56,5 +56,5 @@
 .c_lk_blog_list .list_item .delete {
     float: right;
     padding-left: 18px;
-    background: url(./../../../../PageLayout/img/icon-remove.gif) 0 50% no-repeat;
+    background: url("./../../../../../../img/icon-remove.gif") 0 50% no-repeat;
 }

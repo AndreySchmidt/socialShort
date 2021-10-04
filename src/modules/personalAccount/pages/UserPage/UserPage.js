@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import contentbg from './../../PageLayout/img/content-bg.jpg'
+import contentbg from './../../../../img/content-bg.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 

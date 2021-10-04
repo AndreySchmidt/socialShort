@@ -22,9 +22,9 @@
 }
 
 .c_calk_list .delete {
-    background: url(../../../app/AppPageLayout/img/icon-remove.gif) 0 50% no-repeat;
+    background: url("./../../../../img/icon-remove.gif") 0 50% no-repeat;
 }
 
 .c_calk_list .edit {
-    background: url(../../../app/AppPageLayout/img/icon-edit.gif) 0 50% no-repeat;
+    background: url("./../../../../img/icon-edit.gif") 0 50% no-repeat;
 }

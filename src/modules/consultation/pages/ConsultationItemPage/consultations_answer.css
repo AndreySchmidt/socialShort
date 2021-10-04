@@ -14,7 +14,7 @@
 .c_consultations_answer .bid {
     margin: 0 0 13px;
     padding: 0 0 13px 106px;
-    background: url(./../../../app/AppPageLayout/img/dot-gray.gif) 0 100% repeat-x;
+    background: url("./../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_consultations_answer .bid.last,
@@ -152,19 +152,19 @@
 }
 
 .c_consultations_answer .question_controls .edit {
-    background-image: url("./../../../app/AppPageLayout/img/icon-edit.gif");
+    background-image: url("./../../../../img/icon-edit.gif");
 }
 
 .c_consultations_answer .question_controls .remove {
-    background-image: url("./../../../app/AppPageLayout/img/icon-remove.gif");
+    background-image: url("./../../../../img/icon-remove.gif");
 }
 
 .c_consultations_answer .question_controls .report {
-    background-image: url("./../../../app/AppPageLayout/img/icon-report.png");
+    background-image: url("./../../../../img/icon-report.png");
 }
 
 .c_consultations_answer .question_controls .close {
-    background-image: url("./../../../app/AppPageLayout/img/icon-close.gif");
+    background-image: url("./../../../../img/icon-close.gif");
     background-position: left bottom;
 }
 
@@ -175,5 +175,5 @@
 .c_consultations_answer .answer_controls .report {
     float: right;
     margin: 4px 6px 0;
-    background-image: url("./../../../app/AppPageLayout/img/icon-report.png");
+    background-image: url("./../../../../img/icon-report.png");
 }

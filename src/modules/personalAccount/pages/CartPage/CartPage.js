@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 import PageLayout from './../../PageLayout/PageLayout'
 
-import pic1 from './../../../app/AppPageLayout/images/pic-1.jpg'
+import pic1 from './../../../../images/pic-1.jpg'
 
 import './CartPage.css'
 import './lk_cart_items.css'

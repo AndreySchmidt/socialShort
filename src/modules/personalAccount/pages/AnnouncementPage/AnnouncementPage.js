@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import pic1 from './../../../app/AppPageLayout/images/pic-1.jpg'
+import pic1 from './../../../../images/pic-1.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 
@@ -17,7 +17,7 @@ const AnnouncementPage = () => {
   return (
     <PageLayout>
       <div className="c_header_section_title">
-        <Link className="c_button_large link_right" to="http://4trader.ru/user/15/edit_user_data/main">Добавить объявление</Link> Мои объявления
+        <Link className="c_button_large link_right" to="/user/15/edit_user_data/main">Добавить объявление</Link> Мои объявления
       </div>
 
       <div className="c_settings_layout clearfix">

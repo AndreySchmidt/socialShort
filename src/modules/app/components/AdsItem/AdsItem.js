@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import adsimage from './../../AppPageLayout/images/ads-image.jpg'
+import adsimage from './../../../../images/ads-image.jpg'
 
 const AdsItem = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import imava from './../../../app/AppPageLayout/images/im-ava.jpg'
+import imava from './../../../../images/im-ava.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 

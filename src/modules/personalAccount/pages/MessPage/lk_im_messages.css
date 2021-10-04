@@ -17,7 +17,7 @@
 
 .c_lk_im_messages .info span {
     padding-right: 45px;
-	background: url(./../../PageLayout/img/arrow-right.gif) 100% 80% no-repeat;
+	background: url("./../../../../img/arrow-right.gif") 100% 80% no-repeat;
 }
 
 .c_lk_im_messages .message-list {

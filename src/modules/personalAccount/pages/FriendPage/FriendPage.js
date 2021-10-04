@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import picava100x100 from './../../../app/AppPageLayout/images/pic-ava-100x100.jpg'
+import picava100x100 from './../../../../images/pic-ava-100x100.jpg'
 
 import './lk_friends_dock.css'
 import './FriendPage.css'

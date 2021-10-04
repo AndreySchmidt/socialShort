@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import videothumb from './../../../app/AppPageLayout/images/video-thumb.jpg'
+import videothumb from './../../../../images/video-thumb.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 import Pagination from './../../../app/components/Pagination/Pagination'

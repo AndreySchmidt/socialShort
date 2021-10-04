@@ -51,7 +51,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: #E9DAA4 #F5DE8D #ECC431 #E9CD65;
-    background: url("../../../app/AppPageLayout/img/button-bg.jpg") repeat-x scroll 0 0 #FFD32D;
+    background: url("./../../../../img/button-bg.jpg") repeat-x scroll 0 0 #FFD32D;
 }
 
 .c_blog_search .search_reset {
@@ -63,5 +63,5 @@
     right: 5px;
     top: 3px;
     border: 0 none;
-    background: url("../../../app/AppPageLayout/img/search_clear.png") 0 0 no-repeat;
+    background: url("./../../../../img/search_clear.png") 0 0 no-repeat;
 }

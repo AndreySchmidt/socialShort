@@ -26,15 +26,15 @@
 }
 
 .c_bid_controls .edit {
-    background-image: url("../../../app/AppPageLayout/img/icon-edit.gif");
+    background-image: url("./../../../../img/icon-edit.gif");
 }
 
 .c_bid_controls .remove {
-    background-image: url("../../../app/AppPageLayout/img/icon-remove.gif");
+    background-image: url("./../../../../img/icon-remove.gif");
 }
 
 .c_bid_controls .close {
-    background-image: url("../../../app/AppPageLayout/img/icon-close.gif");
+    background-image: url("./../../../../img/icon-close.gif");
     background-position: left bottom;
 }
 
@@ -42,7 +42,7 @@
     padding-left: 0;
     padding-right: 10px;
     background-position: 100% 50%;
-    background-image: url("../../../app/AppPageLayout/img/icon-more.gif");
+    background-image: url("./../../../../img/icon-more.gif");
 }
 
 .c_bid_controls .submenu {
@@ -64,7 +64,7 @@
     right: -1px;
     top: 17px;
     padding: 5px 0 0;
-    /* background: url("../../../app/AppPageLayout/img/extended_menu_shadow.png"); */
+    /* background: url("./../../../../img/extended_menu_shadow.png"); */
 }
 
 .c_bid_controls .options_list {
@@ -99,17 +99,17 @@
 }
 
 .c_bid_controls .options_list .vip a {
-    background-image: url("../../../app/AppPageLayout/img/icon-vip.png");
+    background-image: url("./../../../../img/icon-vip.png");
 }
 
 .c_bid_controls .options_list .pin a {
-    background-image: url("../../../app/AppPageLayout/img/icon-pin.png");
+    background-image: url("./../../../../img/icon-pin.png");
 }
 
 .c_bid_controls .options_list .emp a {
-    background-image: url("../../../app/AppPageLayout/img/icon-emp.png");
+    background-image: url("./../../../../img/icon-emp.png");
 }
 
 .c_bid_controls .options_list .lift a {
-    background-image: url("../../../app/AppPageLayout/img/icon-lift.png");
+    background-image: url("./../../../../img/icon-lift.png");
 }

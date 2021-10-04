@@ -8,7 +8,7 @@
 .c_lk_comments .comment {
     margin: 0 0 6px;
     padding: 0 0 5px;
-    background: url(./../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+    background: url("./../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_lk_comments .comment.last,
@@ -61,5 +61,5 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: url(./../../PageLayout/img/icon-remove.gif) 0 50% no-repeat;
+    background: url("./../../../../img/icon-remove.gif") 0 50% no-repeat;
 }

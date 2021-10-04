@@ -13,15 +13,13 @@
 .c_lk_my_list .list_item {
     margin: 0 0 6px;
     padding: 0 0 10px;
-    background: url(./../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+    background: url("./../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_lk_my_list .list_item.last,
 .c_lk_my_list .list_item:last-child {
     background: none;
 }
-
-
 
 .c_lk_my_list .list_item .title {
     color: #009ACF;
@@ -193,19 +191,16 @@
 
 .c_lk_my_list .list_item .contacts .phone {
     padding-left: 14px;
-    background-image: url("./../../PageLayout/img/icon-phone.png");
+    background-image: url("./../../../../img/icon-phone.png");
 }
 
 .c_lk_my_list .list_item .contacts .mail {
-    background-image: url("./../../PageLayout/img/icon-mail.png");
+    background-image: url("./../../../../img/icon-mail.png");
 }
 
 .c_lk_my_list .list_item .contacts .site {
-    background-image: url("./../../PageLayout/img/icon-web.png");
+    background-image: url("./../../../../img/icon-web.png");
 }
-
-
-
 
 .c_lk_my_list .list_item .bold {
     font-weight: bold;

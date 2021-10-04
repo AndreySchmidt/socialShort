@@ -18,7 +18,7 @@
     width: 9px;
     overflow: hidden;
     vertical-align: middle;
-    background: url(../../../app/AppPageLayout/img/breadcrumbs_separator.png) 0 50% no-repeat;
+    background: url("./../../../../img/breadcrumbs_separator.png") 0 50% no-repeat;
 }
 
 .c_lk_inner_breadcrumbs .breadcrumbs .active {
@@ -28,5 +28,5 @@
 
 .c_lk_inner_breadcrumbs .back {
     padding: 0 0 0 19px;
-    background: url(../../../app/AppPageLayout/img/arrow-back.png) 0 50% no-repeat;
+    background: url("./../../../../img/arrow-back.png") 0 50% no-repeat;
 }

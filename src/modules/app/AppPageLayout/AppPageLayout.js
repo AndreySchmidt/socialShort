@@ -2,7 +2,6 @@ import React from 'react'
 import './css/normalize.css'
 import './css/buttons-forms.css'
 import './css/page.css'
-// import './css/lk_page.css'
 
 import JumpToTopBtn from './components/JumpToTopBtn/JumpToTopBtn'
 import Header from './components/Header/Header'

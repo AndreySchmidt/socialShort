@@ -140,7 +140,7 @@ a:active {
     width: 8px;
     height: 5px;
     vertical-align: middle;
-    background: url("../img/arrow-small-down-black.png") 0 0 no-repeat;
+    background: url("./../../../../img/arrow-small-down-black.png") 0 0 no-repeat;
 }
 
 .c_district_select .hover_district_list {
@@ -254,11 +254,11 @@ a:active {
     vertical-align: middle;
     width: 8px;
     height: 5px;
-    background: url("../img/arrow-small-down-white.png") 0 0 no-repeat;
+    background: url("./../../../../img/arrow-small-down-white.png") 0 0 no-repeat;
 }
 
 .c_menu_top_stick .menu_left > .parent:hover > a > .more-arrow {
-    background-image: url("../img/arrow-small-down-black.png");
+    background-image: url("./../../../../img/arrow-small-down-black.png");
 }
 
 .c_menu_top_stick .menu_left > .parent ul {
@@ -415,7 +415,7 @@ a:active {
     bottom: -6px;
     left: 50%;
     margin-left: -5px;
-    background: url("../img/menu-top-arrow.png");
+    background: url("./../../../../img/menu-top-arrow.png");
 }
 
 .ie9 .c_menu_top li a:hover {
@@ -526,7 +526,7 @@ a:active {
     display: inline-block;
     width: 12px;
     height: 6px;
-    background: url("../img/menu-block-arrow-down.png") 0 0 no-repeat;
+    background: url("./../../../../img/menu-block-arrow-down.png") 0 0 no-repeat;
 }
 
 .c_menu_block ul {
@@ -654,7 +654,7 @@ a:active {
     width: 9px;
     height: 9px;
     vertical-align: middle;
-    background: url("../img/show-more-arrow.png") 0 0 no-repeat;
+    background: url("./../../../../img/show-more-arrow.png") 0 0 no-repeat;
 }
 /*END c_menu_block*/
 
@@ -675,7 +675,7 @@ a:active {
     display: inline-block;
     width: 12px;
     height: 6px;
-    background: url("../img/menu-block-arrow-down.png") 0 0 no-repeat;
+    background: url("./../../../../img/menu-block-arrow-down.png") 0 0 no-repeat;
 }
 
 .c_ads_list .ads_list {
@@ -819,7 +819,7 @@ a:active {
     margin: 0 4px;
     width: 9px;
     height: 9px;
-    background: url("../img/jump-to-top-arrow.png") 0 0 no-repeat;
+    background: url("./../../../../img/jump-to-top-arrow.png") 0 0 no-repeat;
 }
 
 .ie7 .c_jump_to_top a > i {
@@ -841,7 +841,7 @@ a:active {
     width: 100%;
     top: 0;
     bottom: 0;
-    background: #014e82 url("../images/bg-image.jpg") 50% 0 no-repeat;
+    background: #014e82 url("./../../../../images/bg-image.jpg") 50% 0 no-repeat;
 }
 
 /*END c_back_ads*/
@@ -864,7 +864,7 @@ a:active {
     right: 1px;
     padding-left: 26px;
     padding-bottom: 6px;
-    background: url("../img/how-to-arrow.png") 0 6px no-repeat;
+    background: url("./../../../../img/how-to-arrow.png") 0 6px no-repeat;
 }
 
 .c_ads_list_top_section .how_to a {
@@ -973,7 +973,7 @@ a:active {
     border-width: 1px;
     border-style: solid;
     border-color: #e9daa4 #f5de8d #ecc431 #e9cd65;
-    background: #ffd32d url("../img/button-bg.jpg") 0 0 repeat-x;
+    background: #ffd32d url("./../../../../img/button-bg.jpg") 0 0 repeat-x;
     cursor: default;
 }
 
@@ -1175,7 +1175,7 @@ a:active {
     padding: 4px 8px 0 8px;
     border-top: 1px solid #e8e8e8;
     color: #ffffff;
-    background: #101010 url("../img/vip-header-bg.png") 0 0 repeat-x;
+    background: #101010 url("./../../../../img/vip-header-bg.png") 0 0 repeat-x;
 }
 
 .c_vip_ads .header .how_to_question {
@@ -1318,13 +1318,13 @@ a:active {
     width: 9px;
     height: 9px;
     margin: 0 4px;
-    background: url("../img/breadcrumbs-divider.png") 0 0 no-repeat;
+    background: url("./../../../../img/breadcrumbs-divider.png") 0 0 no-repeat;
 }
 
 .c_breadcrumbs .back {
     float: right;
     padding-left: 20px;
-    background: url("../img/breadcrumbs-back.png") 0 60% no-repeat;
+    background: url("./../../../../img/breadcrumbs-back.png") 0 60% no-repeat;
 }
 
 .c_breadcrumbs .main-links {
@@ -1354,7 +1354,7 @@ a:active {
 .c_ad_header .edit_ad a {
     padding-left: 16px;
     color: #000000;
-    background: url("../img/icon-edit.png") 0 50% no-repeat;
+    background: url("./../../../../img/icon-edit.png") 0 50% no-repeat;
 }
 
 .c_ad_header .title {
@@ -1424,12 +1424,12 @@ a:active {
 
 .ad_photo_presentation .slider_up {
     top: 2px;
-    background: url("../img/ad_thumbs_up.jpg") 0 0 no-repeat;
+    background: url("./../../../../img/ad_thumbs_up.jpg") 0 0 no-repeat;
 }
 
 .ad_photo_presentation .slider_down {
     bottom: 1px;
-    background: url("../img/ad_thumbs_down.jpg") 0 0 no-repeat;
+    background: url("./../../../../img/ad_thumbs_down.jpg") 0 0 no-repeat;
 }
 
 /*END ad_photo_presentation*/
@@ -1511,7 +1511,7 @@ a:active {
     width: 9px;
     height: 9px;
     margin: 0 3px;
-    background: url("../img/category-divider.png") 0 0 no-repeat;
+    background: url("./../../../../img/category-divider.png") 0 0 no-repeat;
 }
 
 .c_ad_secondary_info .category a:hover {
@@ -1577,19 +1577,19 @@ a:active {
 }
 
 .c_emphasized_ad_info .options_list .vip a {
-    background-image: url("../img/icon-vip.png");
+    background-image: url("./../../../../img/icon-vip.png");
 }
 
 .c_emphasized_ad_info .options_list .pin a {
-    background-image: url("../img/icon-pin.png");
+    background-image: url("./../../../../img/icon-pin.png");
 }
 
 .c_emphasized_ad_info .options_list .emp a {
-    background-image: url("../img/icon-emp.png");
+    background-image: url("./../../../../img/icon-emp.png");
 }
 
 .c_emphasized_ad_info .options_list .lift a {
-    background-image: url("../img/icon-lift.png");
+    background-image: url("./../../../../img/icon-lift.png");
 }
 
 /*END c_emphasized_ad_info*/
@@ -1621,11 +1621,11 @@ a:active {
 }
 
 .ad_options .add_to_list {
-    background-image: url("../img/icon-add.png");
+    background-image: url("./../../../../img/icon-add.png");
 }
 
 .ad_options .report {
-    background-image: url("../img/icon-report.png");
+    background-image: url("./../../../../img/icon-report.png");
 }
 
 /*END ad_options*/
@@ -1710,14 +1710,14 @@ a:active {
     height: 1px;
     margin: 9px 0 8px;
     overflow: hidden;
-    background: url(./../img/dot-separator-3c3c3c.gif) 0 0 repeat-x;
+    background: url(././../../../../img/dot-separator-3c3c3c.gif) 0 0 repeat-x;
 }
 
 .dot-separator-black {
     height: 1px;
     margin: 9px 0 8px;
     overflow: hidden;
-    background: url(./../img/dot-separator-black.gif) 0 0 repeat-x;
+    background: url(././../../../../img/dot-separator-black.gif) 0 0 repeat-x;
 }
 
 .c_form_checkbox {

@@ -53,5 +53,5 @@
     height: 1px;
     margin: 9px 0 8px;
     overflow: hidden;
-    background: url(../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif) 0 0 repeat-x;
+    background: url("./../../../../img/dot-separator-3c3c3c.gif") 0 0 repeat-x;
 }

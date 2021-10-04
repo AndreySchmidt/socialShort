@@ -14,7 +14,7 @@
 .c_lk_consultations .bid {
     margin: 11px 0 13px;
     padding: 0 0 13px 60px;
-    background: url(./../../PageLayout/img/dot-gray.gif) 0 100% repeat-x;
+    background: url("./../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_lk_consultations .bid.last,

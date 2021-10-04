@@ -126,23 +126,18 @@
     width: 9px;
     height: 9px;
     vertical-align: middle;
-    background: url("./../../AppPageLayout/img/arrow-double-up.png") 0 0 no-repeat;
-    /* background: url("./../../AppPageLayout/img/show-more-arrow-up.png") 0 0 no-repeat; */
+    background: url("./../../../../img/arrow-double-up.png") 0 0 no-repeat;
 }
 
 .c_ad_search_section .full_data.show_full a > i {
-    background: url("./../../AppPageLayout/img/arrow-double-down.png") 0 0 no-repeat;
-    /* background: url("./../../AppPageLayout/img/show-more-arrow.png") 0 0 no-repeat; */
+    background: url("./../../../../img/arrow-double-down.png") 0 0 no-repeat;
 }
 
 .c_ad_search_section .search_input_with_button {
     position: relative;
 }
 
-
 /*END c_ad_search_section*/
-
-
 
 /*c_list_extended_view*/
 
@@ -520,15 +515,15 @@
 }
 
 .c_list_extended_org_view  .contacts_section .contact_item.phone {
-    background-image: url("../../../app/AppPageLayout/img/icon-phone.png");
+    background-image: url("./../../../../img/icon-phone.png");
 }
 
 .c_list_extended_org_view  .contacts_section .contact_item.mail {
-    background-image: url("../../../app/AppPageLayout/img/icon-mail.png");
+    background-image: url("./../../../../img/icon-mail.png");
 }
 
 .c_list_extended_org_view  .contacts_section .contact_item.site {
-    /* background-image: url("../../../app/AppPageLayout/img/icon-earth.png"); */
+    /* background-image: url("./../../../../img/icon-earth.png"); */
 }
 
 .c_list_extended_org_view  .bottom_link {

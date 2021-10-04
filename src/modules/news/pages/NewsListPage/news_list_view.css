@@ -7,7 +7,7 @@
 .c_news_list_view .list_item {
     padding: 0px 2px 6px;
     margin: 0 0 10px;
-    background: url("./../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
+    background: url("./../../../../img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
 }
 
 .c_news_list_view .list_item:last-child {
@@ -68,5 +68,5 @@
     color: #ad0505;
     font-size: 11px;
     padding-left: 13px;
-    background: url("./../../../app/AppPageLayout/img/icon-talk.png") 0 50% no-repeat;
+    background: url("./../../../../img/icon-talk.png") 0 50% no-repeat;
 }

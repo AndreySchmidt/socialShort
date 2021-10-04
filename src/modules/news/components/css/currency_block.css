@@ -19,7 +19,7 @@
     display: inline-block;
     width: 12px;
     height: 6px;
-    background: url("./../../../app/AppPageLayout/img/menu-block-arrow-down.png") 0 0 no-repeat;
+    background: url("./../../../../img/menu-block-arrow-down.png") 0 0 no-repeat;
 }
 
 .c_currency_block .curRates {

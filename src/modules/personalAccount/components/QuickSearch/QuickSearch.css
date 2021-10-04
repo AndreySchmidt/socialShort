@@ -39,7 +39,7 @@
     right: 5px;
     top: 3px;
     border: 0 none;
-    background: url(./../../PageLayout/img/search_clear.png) 0 0 no-repeat;
+    background: url("./../../../../img/search_clear.png") 0 0 no-repeat;
 }
 
 .c_quick_search:hover .search_results { display: block;}

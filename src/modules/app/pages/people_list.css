@@ -4,7 +4,6 @@
 	margin: 0 -8px 0 0;
 }
 
-
 .c_people_list .person {
     float: left;
     margin: 0 8px 8px 0;
@@ -30,8 +29,6 @@
 .c_people_list .dd {
 	color: #2489bd;
 }
-
-
 
 .c_people_list .photo {
     float: left;
@@ -77,9 +74,6 @@
 	margin-right: 5px;
 }
 
-
-
-
 .c_people_list .actions {
 	line-height: 20px;
 	margin: 5px 0 0;
@@ -93,21 +87,21 @@
 }
 
 .c_people_list .actions .write {
-	background-image: url(./../AppPageLayout/img/icon-write.png);
+	background-image: url("./../../../img/icon-write.png");
 }
 
 .c_people_list .actions .add {
-	background-image: url(./../AppPageLayout/img/icon-friend-add.png);
+	background-image: url("./../../../img/icon-friend-add.png");
 }
 
 .c_people_list .actions .delete {
-	background-image: url(./../AppPageLayout/img/icon-friend-del.png);
+	background-image: url("./../../../img/icon-friend-del.png");
 }
 
 .c_people_list .actions .fave-add {
-	background-image: url(./../AppPageLayout/img/fave-add.png);
+	background-image: url("./../../../img/fave-add.png");
 }
 
 .c_people_list .actions .fave-del {
-	background-image: url(./../AppPageLayout/img/fave-del.png);
+	background-image: url("./../../../img/fave-del.png");
 }

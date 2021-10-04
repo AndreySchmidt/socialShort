@@ -50,15 +50,15 @@
 
 .c_lk_cart .company_block .contacts_section .phone {
     padding-left: 14px;
-    background-image: url("../../../app/AppPageLayout/img/icon-phone.png");
+    background-image: url("./../../../../img/icon-phone.png");
 }
 
 .c_lk_cart .company_block .contacts_section .mail {
-    background-image: url("../../../app/AppPageLayout/img/icon-mail.png");
+    background-image: url("./../../../../img/icon-mail.png");
 }
 
 .c_lk_cart .company_block .contacts_section .site {
-    background-image: url("../../../app/AppPageLayout/img/icon-web.png");
+    background-image: url("./../../../../img/icon-web.png");
 }
 
 .c_lk_cart .company_block .bottom_link {
@@ -87,5 +87,5 @@
     bottom: -24px;
     left: 80px;
     position: absolute;
-    background: url("../../../app/AppPageLayout/img/comment-corner.gif") 50% 100% no-repeat;
+    background: url("./../../../../img/comment-corner.gif") 50% 100% no-repeat;
 }

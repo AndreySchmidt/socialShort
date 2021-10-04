@@ -79,7 +79,7 @@
     margin-left: -31px;
     width: 62px;
     height: 28px;
-    background: url("../img/gallery-vert-arrows.png") 0 0 no-repeat;
+    background: url("./../../../../img/gallery-vert-arrows.png") 0 0 no-repeat;
 }
 
 .c_photoGallery_small_slider .prev.buttons {
@@ -112,7 +112,7 @@
     right: -36px;
     width: 30px;
     height: 30px;
-    background: url("../img/gallery-close.png") 0 0 no-repeat;
+    background: url("./../../../../img/gallery-close.png") 0 0 no-repeat;
 }
 
 .c_photoGallery_large_slider .slider-container {
@@ -181,7 +181,7 @@
     margin-top: -31px;
     width: 29px;
     height: 62px;
-    background: url("../img/gallery-hor-arrows.png") 0 0 no-repeat;
+    background: url("./../../../../img/gallery-hor-arrows.png") 0 0 no-repeat;
 }
 
 .c_photoGallery_large_slider .prev.buttons {
@@ -242,7 +242,7 @@
     right: 5px;
     width: 13px;
     height: 14px;
-    background: url("../img/icon-close.png") 0 0 no-repeat;
+    background: url("./../../../../img/icon-close.png") 0 0 no-repeat;
 }
 
 .c_comments_block .list_item .user_avatar {

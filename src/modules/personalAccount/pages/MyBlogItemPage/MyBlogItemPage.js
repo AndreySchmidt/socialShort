@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import blog_files57 from './../../../app/AppPageLayout/images/57.jpg'
+import blog_files57 from './../../../../images/57.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 

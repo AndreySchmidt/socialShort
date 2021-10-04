@@ -9,7 +9,7 @@
 .c_lk_cart_items .list_item {
     margin: 0 0 8px;
     padding: 0 0 8px;
-    background: url(../../../app/AppPageLayout/img/dot-separator-3c3c3c.gif) 0 100% repeat-x;
+    background: url("./../../../../img/dot-separator-3c3c3c.gif") 0 100% repeat-x;
 }
 
 .c_lk_cart_items .image_container {
@@ -91,7 +91,7 @@
     white-space: nowrap;
     background-position: 0 50%;
     background-repeat: no-repeat;
-    background-image: url("../../../app/AppPageLayout/img/icon-remove.gif");
+    background-image: url("./../../../../img/icon-remove.gif");
 }
 
 

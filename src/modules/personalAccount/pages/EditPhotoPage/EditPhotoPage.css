@@ -141,7 +141,7 @@
 .c_lk_foto_add .photo_row {
     margin: 23px 0;
     padding: 0 68px 13px 190px;
-    background: url("../../../app/AppPageLayout/img/dot-gray.gif") 0 100% repeat-x;
+    background: url("./../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_lk_foto_add .photo_row .photo_img_cont {
@@ -197,7 +197,7 @@
     white-space: nowrap;
     background-position: 0 50%;
     background-repeat: no-repeat;
-    background-image: url("../../../app/AppPageLayout/img/icon-remove.gif");
+    background-image: url("./../../../../img/icon-remove.gif");
 }
 
 .c_lk_foto_add .button-container {

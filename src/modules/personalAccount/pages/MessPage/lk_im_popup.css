@@ -27,7 +27,7 @@
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	background: url("./../../PageLayout/img/close-x.png") 0 0 no-repeat;
+	background: url("./../../../../img/close-x.png") 0 0 no-repeat;
 }
 
 
@@ -146,7 +146,7 @@
 .c_lk_im_popup .button-container {
 	padding: 14px 0 0;
 	margin: 10px 0 17px;
-	background: url(./../../PageLayout/img/dot-separator-black.gif) 0 0 repeat-x;
+	background: url("./../../../../img/dot-separator-black.gif") 0 0 repeat-x;
 }
 
 .c_lk_im_popup .submit {

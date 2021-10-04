@@ -3,16 +3,13 @@ import Page404 from './pages/Page404'
 import HomePage from './pages/HomePage'
 
 import UserPage from './../personalAccount/pages/UserPage/UserPage'
-import DocPage from './../personalAccount/pages/DocPage/DocPage'
 import MyCommentsPage from './../personalAccount/pages/MyCommentsPage/MyCommentsPage'
 import MyListPage from './../personalAccount/pages/MyListPage/MyListPage'
 import MyBlogListPage from './../personalAccount/pages/MyBlogListPage/MyBlogListPage'
 import MyBlogItemPage from './../personalAccount/pages/MyBlogItemPage/MyBlogItemPage'
-import FavoritePage from './../personalAccount/pages/FavoritePage/FavoritePage'
 import MyConsultationListPage from './../personalAccount/pages/MyConsultationListPage/MyConsultationListPage'
 import MessPage from './../personalAccount/pages/MessPage/MessPage'
 import EditProfilePage from './../personalAccount/pages/EditProfilePage/EditProfilePage'
-import DemandPage from './../personalAccount/pages/DemandPage/DemandPage'
 import FriendPage from './../personalAccount/pages/FriendPage/FriendPage'
 import PhotoPage from './../personalAccount/pages/PhotoPage/PhotoPage'
 import EditPhotoPage from './../personalAccount/pages/EditPhotoPage/EditPhotoPage'
@@ -21,12 +18,11 @@ import CalcItemPage from './../personalAccount/pages/CalcItemPage/CalcItemPage'
 import PlanPage from './../personalAccount/pages/PlanPage/PlanPage'
 import CartPage from './../personalAccount/pages/CartPage/CartPage'
 import VideoPage from './../personalAccount/pages/VideoPage/VideoPage'
-import CompanyPage from './../personalAccount/pages/CompanyPage/CompanyPage'
 import AnnouncementPage from './../personalAccount/pages/AnnouncementPage/AnnouncementPage'
+
 import AdvertisementListPage from './../advertisement/pages/AdvertisementListPage/AdvertisementListPage'
 import AdvertisementPage from './../advertisement/pages/AdvertisementPage/AdvertisementPage'
 import AdvertisementAddPage from './../advertisement/pages/AdvertisementAddPage/AdvertisementAddPage'
-import ReviewListPage from './pages/ReviewListPage'
 import PeopleListPage from './pages/PeopleListPage'
 import BlogListPage from './../blog/pages/BlogListPage/BlogListPage'
 import BlogItemPage from './../blog/pages/BlogItemPage/BlogItemPage'
@@ -51,13 +47,11 @@ const App = (props) => {
       <Route path='/blog_item' component={BlogItemPage} />
       <Route path='/blogs' component={BlogListPage} />
       <Route path='/people' component={PeopleListPage} />
-      <Route path='/review' component={ReviewListPage} />
       <Route path='/advertisement_add' component={AdvertisementAddPage} />
       <Route path='/advertisement' component={AdvertisementPage} />
       <Route path='/advertisements' component={AdvertisementListPage} />
 
       <Route path='/user/:id(\d+)/announcement' component={AnnouncementPage} />
-      <Route path='/user/:id(\d+)/company' component={CompanyPage} />
       <Route path='/user/:id(\d+)/video' component={VideoPage} />
       <Route path='/user/:id(\d+)/cart' component={CartPage} />
       <Route path='/user/:id(\d+)/plan' component={PlanPage} />
@@ -66,17 +60,15 @@ const App = (props) => {
       <Route path='/user/:id(\d+)/photo_edit' component={EditPhotoPage} />
       <Route path='/user/:id(\d+)/photo' component={PhotoPage} />
       <Route path='/user/:id(\d+)/friend' component={FriendPage} />
-      <Route path='/user/:id(\d+)/demand' component={DemandPage} />
       <Route path='/user/:id(\d+)/edit_profile' component={EditProfilePage} />
       <Route path='/user/:id(\d+)/mess' component={MessPage} />
       <Route path='/user/:id(\d+)/consultation' component={MyConsultationListPage} />
-      <Route path='/user/:id(\d+)/favorite' component={FavoritePage} />
       <Route path='/user/:id(\d+)/blog_item' component={MyBlogItemPage} />
       <Route path='/user/:id(\d+)/blog' component={MyBlogListPage} />
       <Route path='/user/:id(\d+)/my_list' component={MyListPage} />
       <Route path='/user/:id(\d+)/comment' component={MyCommentsPage} />
-      <Route path='/user/:id(\d+)/doc' component={DocPage} />
       <Route path='/user/:id(\d+)' component={UserPage} />
+      <Route path='/me' component={UserPage} />
 
       <Route component={Page404} />
     </Switch>

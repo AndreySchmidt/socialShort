@@ -75,7 +75,7 @@
     width: 9px;
     height: 9px;
     margin: 0 3px;
-    background: url("./../../AppPageLayout/img/category-divider.png") 0 0 no-repeat;
+    background: url("./../../../../img/category-divider.png") 0 0 no-repeat;
 }
 
 .c_ad_secondary_info .category a:hover {
@@ -209,19 +209,19 @@
 }
 
 .c_emphasized_ad_info .options_list .vip a {
-    background-image: url("./../../AppPageLayout/img/icon-vip.png");
+    background-image: url("./../../../../img/icon-vip.png");
 }
 
 .c_emphasized_ad_info .options_list .pin a {
-    background-image: url("./../../AppPageLayout/img/icon-pin.png");
+    background-image: url("./../../../../img/icon-pin.png");
 }
 
 .c_emphasized_ad_info .options_list .emp a {
-    background-image: url("./../../AppPageLayout/img/icon-emp.png");
+    background-image: url("./../../../../img/icon-emp.png");
 }
 
 .c_emphasized_ad_info .options_list .lift a {
-    background-image: url("./../../AppPageLayout/img/icon-lift.png");
+    background-image: url("./../../../../img/icon-lift.png");
 }
 
 /*END c_emphasized_ad_info*/

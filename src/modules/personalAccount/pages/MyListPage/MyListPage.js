@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import pic1 from './../../../app/AppPageLayout/images/pic-1.jpg'
-import catalog from './../../../app/AppPageLayout/images/catalog.jpg'
-import eventpic from './../../../app/AppPageLayout/images/event-pic.jpg'
+import pic1 from './../../../../images/pic-1.jpg'
+import catalog from './../../../../images/catalog.jpg'
+import eventpic from './../../../../images/event-pic.jpg'
 
 import PageLayout from './../../PageLayout/PageLayout'
 import Pagination from './../../../app/components/Pagination/Pagination'

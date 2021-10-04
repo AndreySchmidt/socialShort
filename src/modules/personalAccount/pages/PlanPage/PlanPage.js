@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import arrowblackleft from './../../../app/AppPageLayout/img/arrow-black-left.png'
-import arrowblackright from './../../../app/AppPageLayout/img/arrow-black-right.png'
+import arrowblackleft from './../../../../img/arrow-black-left.png'
+import arrowblackright from './../../../../img/arrow-black-right.png'
 
 import PageLayout from './../../PageLayout/PageLayout'
 import Pagination from './../../../app/components/Pagination/Pagination'

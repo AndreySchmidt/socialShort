@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import nophoto from './../../../../PageLayout/images/no-photo.gif'
+import nophoto from './../../../../../../images/no-photo.gif'
 
 import AsideLinks from './../AsideLinks/AsideLinks'
 import BirthdayList from './../BirthdayList/BirthdayList'

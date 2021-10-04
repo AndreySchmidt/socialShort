@@ -41,7 +41,7 @@
 .c_lk_friends .friend {
     margin: 0 0 6px;
     padding: 0 0 8px;
-    background: url(../../../app/AppPageLayout/img/dot-gray.gif) 0 100% repeat-x;
+    background: url("./../../../../img/dot-gray.gif") 0 100% repeat-x;
 }
 
 .c_lk_friends .friend.last,
@@ -108,17 +108,17 @@
 }
 
 .c_lk_friends .rightside .write {
-	background-image: url(../../../app/AppPageLayout/img/icon-write.png);
+	background-image: url("./../../../../img/icon-write.png");
 }
 
 .c_lk_friends .rightside .delete {
-	background-image: url(../../../app/AppPageLayout/img/icon-friend-del.png);
+	background-image: url("./../../../../img/icon-friend-del.png");
 }
 
 .c_lk_friends .rightside .fave-add {
-	background-image: url(../../../app/AppPageLayout/img/fave-add.png);
+	background-image: url("./../../../../img/fave-add.png");
 }
 
 .c_lk_friends .rightside .fave-del {
-	background-image: url(../../../app/AppPageLayout/img/fave-del.png);
+	background-image: url("./../../../../img/fave-del.png");
 }

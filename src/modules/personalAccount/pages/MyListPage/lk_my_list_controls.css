@@ -19,15 +19,15 @@
 }
 
 .c_lk_my_list_controls .add {
-    background-image: url("./../../PageLayout/img/icon-add.gif");
+    background-image: url("./../../../../img/icon-add.gif");
 }
 
 .c_lk_my_list_controls .edit {
-    background-image: url("./../../PageLayout/img/icon-edit.gif");
+    background-image: url("./../../../../img/icon-edit.gif");
 }
 
 .c_lk_my_list_controls .remove {
-    background-image: url("./../../PageLayout/img/icon-remove.gif");
+    background-image: url("./../../../../img/icon-remove.gif");
 }
 
 .c_lk_my_list_controls .last {
