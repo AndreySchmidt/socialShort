@@ -1,3 +1,4 @@
+// Switch -> Router
 import React from 'react'
 import Page404 from './pages/Page404'
 import HomePage from './pages/HomePage'
