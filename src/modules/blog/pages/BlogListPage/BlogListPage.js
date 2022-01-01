@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
+import './../../actions'
+
 import PageLayout from './../../PageLayout/PageLayout'
 import Pagination from './../../../app/components/Pagination/Pagination'
 
@@ -41,11 +43,15 @@ const BlogListPage = () => {
 }
 
 const mapStateToProps = (state) => {
-
+  return {
+    blogLP: state.blogLP
+  }
 }
 
 const mapDispatchToProps = (dispatch) => {
-
+  return {
+     toggleBlogList: () => {dispatch.loadBlogList()}
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BlogListPage)

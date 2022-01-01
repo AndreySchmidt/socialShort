@@ -5,9 +5,13 @@ import App from './modules/app/App'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import configStore from './configStore'
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'
 
-const store = configStore();
+const initialState = {
+  blogLP : {},
+  someLP : {}
+}
+const store = configStore(initialState)
 
 ReactDOM.render(
   <React.StrictMode>
