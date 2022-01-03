@@ -11,7 +11,9 @@ import './../../../app/components/css/ad_list_page.css'
 import Search from './../../../app/components/Search/Search'
 import './blog_list.css'
 
-const BlogListPage = () => {
+import BlogItem from './BlogItem'
+
+const BlogListPage = (props) => {
   return (
     <PageLayout>
       <div className="c_blog_list">
@@ -22,21 +24,16 @@ const BlogListPage = () => {
           <Link to="#">Наиболее обсуждаемые</Link>
         </div>
         <Pagination />
-        <div className="blog_announce clearfix">
-          <Link className="author-photo" to="#"><img src="images/pic-ava-100x100.jpg" title="Елизавета Владимировна" alt="Елизавета Владимировна" /></Link>
-          <Link className="author-name" to="#">Елизавета Владимировна</Link><br />
-          <span className="status online">online</span>
-          <h3 className="title"><Link to="/blog_item">Заглавие публикации</Link></h3>
-          <div className="text">
-            В ходе валового анализа пространственная вариабельность почвенного покрова выбирает гештальт одинаково по всем направлениям.
-          </div>
-          <div className="completive">
-            <span className="date">29.10.2013</span>
-            <Link to="">Общество</Link>
-            <Link to="">14 комментариев</Link>
-          </div>
-        </div>
-        <div className="dot-line"></div>
+        { props.blogLP.map(item => <BlogItem
+            key={item.id}
+            name={item.name}
+            online={item.online}
+            subject={item.subject}
+            description={item.description}
+            category={item.category}
+            commentQuan={item.commentQuan}
+            dateTime={item.dateTime}
+          />) }
       </div>
     </PageLayout>
   )

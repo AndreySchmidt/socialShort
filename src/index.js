@@ -6,11 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import configStore from './configStore'
 import reportWebVitals from './reportWebVitals'
+import initialState from './initialStateMock'
 
-const initialState = {
-  blogLP : {},
-  someLP : {}
-}
 const store = configStore(initialState)
 
 ReactDOM.render(
