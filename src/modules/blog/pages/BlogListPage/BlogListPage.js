@@ -34,6 +34,7 @@ const BlogListPage = (props) => {
             commentQuan={item.commentQuan}
             dateTime={item.dateTime}
           />) }
+        <Pagination />
       </div>
     </PageLayout>
   )

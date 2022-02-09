@@ -1,11 +1,22 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import * as axios from 'axios'
+
 import PageLayout from './../PageLayout/PageLayout'
 import Pagination from './../components/Pagination/Pagination'
 
 import './../components/css/ad_list_page.css'
 import './people_list.css'
+
+
+const getListHandler = () => {
+  axios.get("https://social-network.samuraijs.com/api/1.0/users")
+  .then(response => {
+    // dispatch setUserList(response.data.items)
+    console.log(response.data.items);
+  })
+}
 
 const ReviewListPage = () => {
   return (
@@ -48,7 +59,7 @@ const ReviewListPage = () => {
                 <label>Статус:</label>
               </div>
               <div className="elements">
-                <label className="c_form_checkbox with_sizing"><input type="checkbox" name="" checked="" /> <span>Не важно</span></label>
+                <label className="c_form_checkbox with_sizing"><input type="checkbox" name="" /> <span>Не важно</span></label>
                 <label className="c_form_checkbox with_sizing"><input type="checkbox" name="" /> <span>Текущие</span></label>
                 <label className="c_form_checkbox with_sizing"><input type="checkbox" name="" /> <span>Грядущие</span></label>
                 <label className="c_form_checkbox"><input type="checkbox" name="" /> <span>Завершенные</span></label>
