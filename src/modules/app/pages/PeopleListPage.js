@@ -1,5 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+
+import {follow, unfollow} from './../actions'
 
 import * as axios from 'axios'
 
@@ -18,7 +21,8 @@ const getListHandler = () => {
   })
 }
 
-const ReviewListPage = () => {
+
+const PeopleListPage = (props) => {
   return (
     <PageLayout>
       <div className="c_ad_search_section">
@@ -90,6 +94,25 @@ const ReviewListPage = () => {
       <Pagination />
 
       <div className="c_people_list clearfix">
+
+        {
+          props.users.map(user => (
+            <div className="person" key = {user.id}>
+              <Link className="photo" to="#"><img alt="" src={user.photo.small != null ? user.photo.small : "images/pic-ava-100x100.jpg"} /></Link>
+              <div className="first-line">
+                <Link className="name" to="#">{user.fullname}</Link>
+              </div>
+              <div className="actions">
+                {
+                  user.followed ?
+                  <button onClick = {() => {props.unfollow(user.id)}}>Unfollow</button> :
+                  <button onClick = {() => {props.follow(user.id)}}>follow</button>
+                }
+              </div>
+            </div>
+          ))
+        }
+
         <div className="person">
           <Link className="photo" to="#"><img src="images/pic-ava-100x100.jpg" alt="" /></Link>
           <div className="first-line">
@@ -107,23 +130,7 @@ const ReviewListPage = () => {
             <Link to="#" className="add">Добавить в друзья</Link>
           </div>
         </div>
-        <div className="person">
-          <Link className="photo" to="#"><img src="images/pic-ava-100x100.jpg" alt="" /></Link>
-          <div className="first-line">
-            <Link className="name" to="#">Елизавета Бондарчук</Link>
-            <span className="status online">online</span>
-          </div>
-          <div className="gray-line">
-            29 лет, Лодейное поле и Лодейнопольск р-н
-          </div>
-          <div className="dd">
-            <span className="distance">~12 000 км</span> от тебя
-          </div>
-          <div className="actions">
-            <Link to="#" className="write">Написать сообщение</Link>
-            <Link to="#" className="add">Добавить в друзья</Link>
-          </div>
-        </div>
+
         <div className="person">
           <Link className="photo" to="#"><img src="images/pic-ava-100x100.jpg" alt="" /></Link>
           <div className="first-line">
@@ -147,4 +154,20 @@ const ReviewListPage = () => {
   )
 }
 
-export default ReviewListPage
+const mapStateToProps = (state) => {
+  return {
+    users: state.users
+  }
+}
+// function follow(){}
+// function unfollow(){}
+const mapDispatchToProps = (dispatch) => {
+  return {
+     follow: (userId) => {dispatch(follow(userId))},
+     unfollow: (userId) => {dispatch(unfollow(userId))}
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
+
+// export default PeopleListPage

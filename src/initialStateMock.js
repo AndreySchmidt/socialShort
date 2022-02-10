@@ -61,7 +61,15 @@ const initialState = {
       dateTime: "29.10.2013",
     },
   ],
-  someLP : {}
+  someLP : {},
+  users : [
+    {
+      id:1,
+      fullname:"Name Some",
+      photo:{small:null},
+      followed:true
+    }
+  ],
 }
 
 export default initialState
