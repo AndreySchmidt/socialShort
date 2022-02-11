@@ -1,5 +1,5 @@
 import { LOAD_ARTICLE_LIST_SUCCESSED_ACTION, LOAD_ARTICLE_LIST_ACTION, QUANTITY_CHANGED_ACTION } from './constants'
-export default function reducer (state = [], action) {
+export default function commonReducer (state = {}, action) {
   switch (action.type) {
     case LOAD_ARTICLE_LIST_SUCCESSED_ACTION:
       return {
@@ -18,7 +18,7 @@ export default function reducer (state = [], action) {
       }
       // break
     default:
-      console.log('default reducer')
+      // console.log('default commonReducer', action)
       return state
   }
 }

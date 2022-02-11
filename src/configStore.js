@@ -1,8 +1,22 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import reducer from './reducers'
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
+import appReducer from './modules/app/reducers'
+import commonReducer from './reducers'
 // import createSagaMiddleware from 'redux-saga'
 import thunk from 'redux-thunk'
 // import rootSaga from './sagas'
+
+// let reducers = combineReducers({
+//     appReducer,
+//     reducer
+// });
+// let reducers = combineReducers({
+//     appReducer:appReducer,
+//     commonReducer:commonReducer,
+// });
+let reducers = combineReducers({
+    appReducer,
+    commonReducer,
+});
 
 // const sagaMiddleware = createSagaMiddleware()
 // const middlewares = [sagaMiddleware]
@@ -18,7 +32,8 @@ export default function configStore (initialState = {}) {
   /* eslint-enable */
 
   const store = createStore(
-    reducer,
+    reducers,
+    // appReducer,
     initialState,
     composeEnhancers(...enhancers),
     // composeEnhancers(compose()),

@@ -24,7 +24,7 @@ const BlogListPage = (props) => {
           <Link to="#">Наиболее обсуждаемые</Link>
         </div>
         <Pagination />
-        { props.blogLP.map(item => <BlogItem
+        { props.blogLP && props.blogLP.map(item => <BlogItem
             key={item.id}
             name={item.name}
             online={item.online}
@@ -40,16 +40,17 @@ const BlogListPage = (props) => {
   )
 }
 
-const mapStateToProps = (state) => {
-  return {
-    blogLP: state.blogLP
-  }
-}
+// const mapStateToProps = (state) => {
+//   return {
+//     blogLP: state.blogLP
+//   }
+// }
+//
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//      toggleBlogList: () => {dispatch.loadBlogList()}
+//   }
+// }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-     toggleBlogList: () => {dispatch.loadBlogList()}
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BlogListPage)
+// export default connect(mapStateToProps, mapDispatchToProps)(BlogListPage)
+export default BlogListPage

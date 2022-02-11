@@ -6,14 +6,16 @@ import {//TODO
 
 
 //toggleBlogList + payload
-export function follow () {
+export function follow (userId) {
   return {
     type: FOLLOW_ACTION,
+    payload: { userId }
   }
 }
-export function unfollow () {
+export function unfollow (userId) {
   return {
     type: UNFOLLOW_ACTION,
+    payload: { userId }
   }
 }
 
@@ -22,37 +24,3 @@ export function loadPage () {
     type: PAGE_NUMBER_ACTION,
   }
 }
-
-// export function loadArticlesListFailed (error) {
-//   return {
-//     type: LOAD_ARTICLE_LIST_FAILED_ACTION,
-//     payload: {
-//       error
-//     }
-//   }
-// }
-//
-// export function loadArticlesList () {
-//   return {
-//     type: LOAD_ARTICLE_LIST_ACTION,
-//   }
-// }
-//
-// export function loadArticlesListSuccessed (list) {
-//   return {
-//     type: LOAD_ARTICLE_LIST_SUCCESSED_ACTION,
-//     payload: {
-//       list
-//       // list : list
-//     }
-//   }
-// }
-//
-// export function quantityChangeAction (quantity) {
-//   return {
-//     type: QUANTITY_CHANGED_ACTION,
-//     payload: {
-//       quantity
-//     }
-//   }
-// }

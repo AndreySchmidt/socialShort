@@ -96,7 +96,7 @@ const PeopleListPage = (props) => {
       <div className="c_people_list clearfix">
 
         {
-          props.users.map(user => (
+          props.users && props.users.map(user => (
             <div className="person" key = {user.id}>
               <Link className="photo" to="#"><img alt="" src={user.photo.small != null ? user.photo.small : "images/pic-ava-100x100.jpg"} /></Link>
               <div className="first-line">
@@ -156,18 +156,19 @@ const PeopleListPage = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    users: state.users
-  }
-}
-// function follow(){}
-// function unfollow(){}
-const mapDispatchToProps = (dispatch) => {
-  return {
-     follow: (userId) => {dispatch(follow(userId))},
-     unfollow: (userId) => {dispatch(unfollow(userId))}
+    users: state.appReducer.users
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//      follow: (userId) => {dispatch(follow(userId))},
+//      unfollow: (userId) => {dispatch(unfollow(userId))}
+//   }
+// }
+//
+// export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
+
+export default connect(mapStateToProps, {follow, unfollow})(PeopleListPage)
 
 // export default PeopleListPage

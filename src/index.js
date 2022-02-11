@@ -8,6 +8,7 @@ import configStore from './configStore'
 import reportWebVitals from './reportWebVitals'
 import initialState from './initialStateMock'
 
+// const store = configStore()
 const store = configStore(initialState)
 
 ReactDOM.render(
