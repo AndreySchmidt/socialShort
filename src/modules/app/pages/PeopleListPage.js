@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-import {followBtn, unfollowBtn} from './../actions'
-import {getUserList} from './../../../thunk'
+// import {followBtn, unfollowBtn} from './../actions'
+import {getUserList, follow, unfollow} from './../../../thunk'
 
 // import * as axios from 'axios'
 
@@ -24,7 +24,7 @@ import './people_list.css'
 
 
 
-const PeopleListPage = (props) => {
+const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
   // let i = 0
   // if (!i){
   //   props.getUserList(1, 10)
@@ -103,7 +103,7 @@ const PeopleListPage = (props) => {
       <div className="c_people_list clearfix">
 
         {
-          props.users && props.users.map(user => (
+          users && users.map(user => (
             <div className="person" key = {user.id}>
               <Link className="photo" to="#"><img alt="" src={user.photo.small != null ? user.photo.small : "images/pic-ava-100x100.jpg"} /></Link>
               <div className="first-line">
@@ -112,8 +112,8 @@ const PeopleListPage = (props) => {
               <div className="actions">
                 {
                   user.followed ?
-                  <button onClick = {() => {props.unfollow(user.id)}}>Unfollow</button> :
-                  <button onClick = {() => {props.follow(user.id)}}>follow</button>
+                  <button onClick = {() => {unfollow(user.id)}}>Unfollow</button> :
+                  <button onClick = {() => {follow(user.id)}}>Follow</button>
                 }
               </div>
             </div>
@@ -176,6 +176,7 @@ const mapStateToProps = (state) => {
 //
 // export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
 
-export default connect(mapStateToProps, {followBtn, unfollowBtn, getUserList})(PeopleListPage)
+export default connect(mapStateToProps, {follow, unfollow, getUserList})(PeopleListPage)
+// export default connect(mapStateToProps, {followBtn, unfollowBtn, getUserList})(PeopleListPage)
 
 // export default PeopleListPage
