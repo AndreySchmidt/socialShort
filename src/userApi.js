@@ -13,17 +13,18 @@ const axiosInstance = axios.create({
 // return response.data.items
 // console.log(response.data.items, 'userApi');
 
-export defalt const userApi ={
+export const userApi = {
   getList(currentPage = 1, pageSize = 10) {
-      return axiosInstance.get(`users?page=${currentPage}&count=${pageSize}`)
-      .then(response => {
-        return response.data
-      })
+    return axiosInstance.get(`users?page=${currentPage}&count=${pageSize}`)
+    .then(response => {
+      return response.data
+      console.log(response.data.items, 'userApi');
+    })
   },
-  follow(userId){
+  follow(userId) {
     return axiosInstance.post(`follow/${userId}`)
   },
-  unfollow(userId){
-      return axiosInstance.delete(`follow/${userId}`)
+  unfollow(userId) {
+    return axiosInstance.delete(`follow/${userId}`)
   }
 }

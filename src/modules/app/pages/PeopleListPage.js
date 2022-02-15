@@ -2,9 +2,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-import {follow, unfollow} from './../actions'
+import {followBtn, unfollowBtn} from './../actions'
+import {getUserList} from './../../../thunk'
 
-import * as axios from 'axios'
+// import * as axios from 'axios'
 
 import PageLayout from './../PageLayout/PageLayout'
 import Pagination from './../components/Pagination/Pagination'
@@ -13,16 +14,22 @@ import './../components/css/ad_list_page.css'
 import './people_list.css'
 
 
-const getListHandler = () => {
-  axios.get("https://social-network.samuraijs.com/api/1.0/users")
-  .then(response => {
-    // dispatch setUserList(response.data.items)
-    console.log(response.data.items);
-  })
-}
+// const getListHandler = () => {
+//   axios.get("https://social-network.samuraijs.com/api/1.0/users")
+//   .then(response => {
+//     dispatch setUserList(response.data.items)
+//     console.log(response.data.items);
+//   })
+// }
+
 
 
 const PeopleListPage = (props) => {
+  // let i = 0
+  // if (!i){
+  //   props.getUserList(1, 10)
+  //   i++
+  // }
   return (
     <PageLayout>
       <div className="c_ad_search_section">
@@ -169,6 +176,6 @@ const mapStateToProps = (state) => {
 //
 // export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
 
-export default connect(mapStateToProps, {follow, unfollow})(PeopleListPage)
+export default connect(mapStateToProps, {followBtn, unfollowBtn, getUserList})(PeopleListPage)
 
 // export default PeopleListPage

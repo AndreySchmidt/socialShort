@@ -1,10 +1,31 @@
-import userApi from './userApi.js'
+import {userApi} from './userApi.js'
+import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan} from './modules/app/actions'
 
-export default const getUserList = (currentPage, pageSize) => {
+export const getUserList = (currentPage, pageSize) => {
   return  (dispatch) => {
     userApi.getList(currentPage, pageSize).then(data => {
-      dispatch(setUserList(data.list))
-      dispatch(setTotalUsersQuan(data.totalCount))
+      dispatch(setUserList(data.items))//TODO
+      dispatch(setTotalUsersQuan(data.totalCount))//TODO
+    })
+  }
+}
+
+export const follow = (userId) => {
+  return  (dispatch) => {
+    userApi.follow(userId).then(response => {
+      if(response.data.resultCode === 0){
+        dispatch(followBtn(userId))
+      }
+    })
+  }
+}
+
+export const unfollow = (userId) => {
+  return  (dispatch) => {
+    userApi.unfollow(userId).then(response => {
+      if(response.data.resultCode === 0){
+        dispatch(unfollowBtn(userId))
+      }
     })
   }
 }
