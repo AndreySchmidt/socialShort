@@ -4,9 +4,31 @@ const initialState = {
       {
         id:1,
         fullname:"Name Some",
+        status:"status",
         photo:{small:null},
         followed:true
-      }
+      },
+      {
+        id:2,
+        fullname:"Name Some",
+        status:"status",
+        photo:{small:null},
+        followed:false
+      },
+      {
+        id:3,
+        fullname:"Name Some",
+        status:"status",
+        photo:{small:null},
+        followed:false
+      },
+      {
+        id:4,
+        fullname:"Name Some",
+        status:"status",
+        photo:{small:null},
+        followed:true
+      },
     ],
   },
   commonReducer:{},
