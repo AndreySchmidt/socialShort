@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
@@ -22,14 +22,31 @@ import './people_list.css'
 //   })
 // }
 
-
+// useEffect(() => {
+//   document.title = `Вы нажали ${count} раз`;
+// }, [count]); // Перезапускать эффект только если count поменялся
 
 const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
-  // let i = 0
-  // if (!i){
-  //   props.getUserList(1, 10)
-  //   i++
+
+  // const [count, setCount] = useState(0);
+  // useEffect(() => {
+  //   console.log("--1--")
+  //   if(!count){
+  //     getUserList(1, 10)
+  //     setCount(1)
+  //     console.log("--2--")
+  //   }
+  // }, [count])
+
+  useEffect(() => {
+    console.log("--1--")
+    getUserList(1, 10)
+  }, [])
+
+  // if (!users.length || users.length === 1){
+  //   getUserList(1, 10)
   // }
+  console.log(users, "users")
   return (
     <PageLayout>
       <div className="c_ad_search_section">
@@ -105,9 +122,9 @@ const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
         {
           users && users.map(user => (
             <div className="person" key = {user.id}>
-              <Link className="photo" to="#"><img alt="" src={user.photo.small != null ? user.photo.small : "images/pic-ava-100x100.jpg"} /></Link>
+              <Link className="photo" to="#"><img alt="" src={user.photos.small != null ? user.photos.small : "images/pic-ava-100x100.jpg"} /></Link>
               <div className="first-line">
-                <Link className="name" to="#">{user.fullname}</Link>
+                <Link className="name" to="#">{user.name}</Link>
               </div>
               <div className="actions">
                 {

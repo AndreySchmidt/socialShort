@@ -1,34 +1,34 @@
 const initialState = {
   appReducer: {
     users : [
-      {
-        id:1,
-        fullname:"Name Some",
-        status:"status",
-        photo:{small:null},
-        followed:true
-      },
-      {
-        id:2,
-        fullname:"Name Some",
-        status:"status",
-        photo:{small:null},
-        followed:false
-      },
-      {
-        id:3,
-        fullname:"Name Some",
-        status:"status",
-        photo:{small:null},
-        followed:false
-      },
-      {
-        id:4,
-        fullname:"Name Some",
-        status:"status",
-        photo:{small:null},
-        followed:true
-      },
+      // {
+      //   id:1,
+      //   name:"Name Some",
+      //   status:"status",
+      //   photos:{small:null},
+      //   followed:true
+      // },
+      // {
+      //   id:2,
+      //   name:"Name Some",
+      //   status:"status",
+      //   photos:{small:null},
+      //   followed:false
+      // },
+      // {
+      //   id:3,
+      //   name:"Name Some",
+      //   status:"status",
+      //   photos:{small:null},
+      //   followed:false
+      // },
+      // {
+      //   id:4,
+      //   name:"Name Some",
+      //   status:"status",
+      //   photos:{small:null},
+      //   followed:true
+      // },
     ],
   },
   commonReducer:{},

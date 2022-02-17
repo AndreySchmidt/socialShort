@@ -1,12 +1,12 @@
-import { SET_USER_LIST_ACTION, FOLLOW_ACTION, UNFOLLOW_ACTION, PAGE_NUMBER_ACTION } from './../../constants'
+import { SET_USER_LIST_ACTION, SET_TOTAL_USERS_QUANTITY_ACTION, FOLLOW_ACTION, UNFOLLOW_ACTION, PAGE_NUMBER_ACTION } from './../../constants'
 
 let initialState = {
   users : [
     // {
     //   id:1,
-    //   fullname:"Name Some",
+    //   name:"Name Some",
     //   status:"status",
-    //   photo:{small:null},
+    //   photos:{small:null},
     //   followed:true
     // },
   ],
@@ -19,8 +19,16 @@ export default function appReducer (state = initialState, action) {
 
     case SET_USER_LIST_ACTION:
       return {
-        users: [...state, action.payload.userList]
+        users: action.payload.userList
+        // users: [...action.payload.userList]
+        // users: [...state.users, ...action.payload.userList]
       }
+
+    case SET_TOTAL_USERS_QUANTITY_ACTION://TODO
+      return state
+      // return {
+      //    ...state
+      // }
 
     case FOLLOW_ACTION:
       return {

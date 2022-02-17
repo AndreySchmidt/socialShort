@@ -4,7 +4,8 @@ import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan} from './modules/
 export const getUserList = (currentPage, pageSize) => {
   return  (dispatch) => {
     userApi.getList(currentPage, pageSize).then(data => {
-      dispatch(setUserList(data.items))//TODO
+      dispatch(setUserList(data.items))
+      console.log(data.totalCount)
       dispatch(setTotalUsersQuan(data.totalCount))//TODO
     })
   }
