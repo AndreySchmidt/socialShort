@@ -6,7 +6,6 @@ import {setCurrentPage} from './../actions'
 import {getUserList, follow, unfollow} from './../../../thunk'
 
 // import { useDispatch } from 'react-redux'
-// import * as axios from 'axios'
 
 import PageLayout from './../PageLayout/PageLayout'
 import Pagination from './../components/Pagination/Pagination'
@@ -14,21 +13,9 @@ import Pagination from './../components/Pagination/Pagination'
 import './../components/css/ad_list_page.css'
 import './people_list.css'
 
-
-// const getListHandler = () => {
-//   axios.get("https://social-network.samuraijs.com/api/1.0/users")
-//   .then(response => {
-//     dispatch setUserList(response.data.items)
-//     console.log(response.data.items);
-//   })
-// }
-
 // useEffect(() => {
 //   document.title = `Вы нажали ${count} раз`;
 // }, [count]); // Перезапускать эффект только если count поменялся
-
-
-// const setCurrentPageAAA = setCurrentPage
 
 const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan, currentPage, setCurrentPageDispatch}) => {
  // const dispatchHook = useDispatch()
@@ -41,18 +28,12 @@ const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUs
   //     console.log("--2--")
   //   }
   // }, [count])
+// dispatchHook(setCurrentPageAAA)
 
   useEffect(() => {
-    // console.log("--1--")
     getUserList(currentPage, pageSize)
-    // dispatchHook(setCurrentPageAAA)
-    // setCurrentPage(2)
   }, [currentPage, pageSize])
 
-  // if (!users.length || users.length === 1){
-  //   getUserList(1, 10)
-  // }
-  // console.log(users, "users")
   return (
     <PageLayout>
       <div className="c_ad_search_section">
@@ -193,15 +174,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//      follow: (userId) => {dispatch(follow(userId))},
-//      unfollow: (userId) => {dispatch(unfollow(userId))}
-//   }
-// }
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
-
 const mapDispatchToProps = (dispatch) => {
   return {
      follow: (userId) => {dispatch(follow(userId))},
@@ -213,6 +185,4 @@ const mapDispatchToProps = (dispatch) => {
 
 export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
 // export default connect(mapStateToProps, {follow, unfollow, getUserList, setCurrentPage})(PeopleListPage)
-// export default connect(mapStateToProps, {followBtn, unfollowBtn, getUserList})(PeopleListPage)
-
 // export default PeopleListPage

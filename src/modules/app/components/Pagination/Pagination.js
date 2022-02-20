@@ -22,13 +22,10 @@ const Pagination = ({pageSize, totalUsersQuan, setCurrentPage, currentPage}) => 
   const getPageHandler = useCallback (
     (e, page) => {
       e.preventDefault()
-      // console.log(e, 'getPageHandler')
       setCurrentPage(e.target.getAttribute('data-page'))
     },
     [setCurrentPage]
   )
-
-  // console.log(pageLinks, 'pageLinks')
 
   return (
     <div className="c_pagination_view">
@@ -39,11 +36,7 @@ const Pagination = ({pageSize, totalUsersQuan, setCurrentPage, currentPage}) => 
           return <Link data-page={page} onClick={getPageHandler} key={page} to="" className={classnames('pagination', (currentPage === page) && "active")}>{page}</Link>
 
           // return <Link data-page={page} onClick={getPageHandler} key={page} to="" className={`pagination ${(currentPage === page) && "active"}`}>{page}</Link>
-
           // return <Link data-page={page} onClick={getPageHandler} key={page} to="" className="pagination">{page}</Link>
-
-          // return <Link onClick={(e) => getPageHandler(e, page)} key={page} to="" className="pagination">{page}</Link>
-          // return `<Link to="" className="pagination ${currentPage && active}">{page}</Link>`
         })
       }
     </div>
