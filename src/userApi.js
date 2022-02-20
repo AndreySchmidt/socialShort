@@ -18,7 +18,7 @@ export const userApi = {
     return axiosInstance.get(`users?page=${currentPage}&count=${pageSize}`)
     .then(response => {
       return response.data
-      console.log(response.data.items, 'userApi');
+      // console.log(response.data.items, 'userApi');
     })
   },
   follow(userId) {

@@ -26,7 +26,7 @@ import './people_list.css'
 //   document.title = `Вы нажали ${count} раз`;
 // }, [count]); // Перезапускать эффект только если count поменялся
 
-const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
+const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan}) => {
 
   // const [count, setCount] = useState(0);
   // useEffect(() => {
@@ -39,14 +39,14 @@ const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
   // }, [count])
 
   useEffect(() => {
-    console.log("--1--")
+    // console.log("--1--")
     getUserList(1, 10)
   }, [])
 
   // if (!users.length || users.length === 1){
   //   getUserList(1, 10)
   // }
-  console.log(users, "users")
+  // console.log(users, "users")
   return (
     <PageLayout>
       <div className="c_ad_search_section">
@@ -115,7 +115,7 @@ const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
           </div>
         </form>
       </div>
-      <Pagination />
+      <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} />
 
       <div className="c_people_list clearfix">
 
@@ -173,14 +173,16 @@ const PeopleListPage = ({follow, unfollow, getUserList, users}) => {
           </div>
         </div>
       </div>
-      <Pagination />
+      <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} />
     </PageLayout>
   )
 }
 
 const mapStateToProps = (state) => {
   return {
-    users: state.appReducer.users
+    users: state.appReducer.users,
+    pageSize: state.appReducer.pageSize,
+    totalUsersQuan: state.appReducer.totalUsersQuan
   }
 }
 

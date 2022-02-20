@@ -10,29 +10,34 @@ let initialState = {
     //   followed:true
     // },
   ],
+  pageSize:10,
+  totalUsersQuan:0,
+  currentPage: 1
 }
 
 export default function appReducer (state = initialState, action) {
   switch (action.type) {
     case PAGE_NUMBER_ACTION:
-      return {}
+      return {...state}
 
     case SET_USER_LIST_ACTION:
       return {
+        ...state,
         users: action.payload.userList
         // users: [...action.payload.userList]
         // users: [...state.users, ...action.payload.userList]
       }
 
-    case SET_TOTAL_USERS_QUANTITY_ACTION://TODO
-      return state
-      // return {
-      //    ...state
-      // }
+    case SET_TOTAL_USERS_QUANTITY_ACTION:
+      return {
+         ...state,
+         totalUsersQuan: action.payload.usersQuantity
+      }
 
     case FOLLOW_ACTION:
       return {
         // users : [...state.users], map new arr
+        ...state,
         users : state.users.map(user => {
           if(user.id === Number(action.payload.userId)){
             return {...user, followed: true}
@@ -44,6 +49,7 @@ export default function appReducer (state = initialState, action) {
       }
     case UNFOLLOW_ACTION:
       return {
+        ...state,
         users : state.users.map(user => {
           if(user.id === Number(action.payload.userId)){
             return {...user, followed: false}

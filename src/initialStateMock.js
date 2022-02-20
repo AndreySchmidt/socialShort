@@ -30,6 +30,9 @@ const initialState = {
       //   followed:true
       // },
     ],
+    pageSize:10,
+    totalUsersQuan:0,
+    currentPage: 1
   },
   commonReducer:{},
   // blogLP : [
