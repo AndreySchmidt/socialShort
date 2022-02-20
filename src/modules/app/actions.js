@@ -3,7 +3,7 @@ import {
   SET_TOTAL_USERS_QUANTITY_ACTION,
   FOLLOW_ACTION,
   UNFOLLOW_ACTION,
-  PAGE_NUMBER_ACTION,//TODO
+  SET_CURRENT_PAGE_NUMBER_ACTION,
 } from './../../constants'
 
 
@@ -35,9 +35,11 @@ export function setTotalUsersQuan (quantity) {
     payload:{ usersQuantity: Number(quantity) }
   }
 }
-//TODO
-export function loadPage () {
+
+export function setCurrentPage (currentPage) {
+  // console.log(currentPage, 'action setCurrentPage')
   return {
-    type: PAGE_NUMBER_ACTION,
+    type: SET_CURRENT_PAGE_NUMBER_ACTION,
+    payload:{ currentPage: Number(currentPage) }
   }
 }

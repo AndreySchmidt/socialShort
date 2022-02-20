@@ -6,7 +6,7 @@ export const getUserList = (currentPage, pageSize) => {
     userApi.getList(currentPage, pageSize).then(data => {
       dispatch(setUserList(data.items))
       dispatch(setTotalUsersQuan(data.totalCount))
-      console.log(data.totalCount)
+      // console.log(data.totalCount)
     })
   }
 }

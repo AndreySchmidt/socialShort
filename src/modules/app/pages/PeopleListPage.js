@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-// import {followBtn, unfollowBtn} from './../actions'
+import {setCurrentPage} from './../actions'
 import {getUserList, follow, unfollow} from './../../../thunk'
 
+// import { useDispatch } from 'react-redux'
 // import * as axios from 'axios'
 
 import PageLayout from './../PageLayout/PageLayout'
@@ -26,8 +27,11 @@ import './people_list.css'
 //   document.title = `Вы нажали ${count} раз`;
 // }, [count]); // Перезапускать эффект только если count поменялся
 
-const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan}) => {
 
+// const setCurrentPageAAA = setCurrentPage
+
+const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan, currentPage, setCurrentPageDispatch}) => {
+ // const dispatchHook = useDispatch()
   // const [count, setCount] = useState(0);
   // useEffect(() => {
   //   console.log("--1--")
@@ -40,8 +44,10 @@ const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUs
 
   useEffect(() => {
     // console.log("--1--")
-    getUserList(1, 10)
-  }, [])
+    getUserList(currentPage, pageSize)
+    // dispatchHook(setCurrentPageAAA)
+    // setCurrentPage(2)
+  }, [currentPage, pageSize])
 
   // if (!users.length || users.length === 1){
   //   getUserList(1, 10)
@@ -115,7 +121,7 @@ const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUs
           </div>
         </form>
       </div>
-      <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} />
+      <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} setCurrentPage={setCurrentPageDispatch} currentPage={currentPage} />
 
       <div className="c_people_list clearfix">
 
@@ -173,7 +179,7 @@ const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUs
           </div>
         </div>
       </div>
-      <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} />
+      <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} setCurrentPage={setCurrentPageDispatch} currentPage={currentPage} />
     </PageLayout>
   )
 }
@@ -182,7 +188,8 @@ const mapStateToProps = (state) => {
   return {
     users: state.appReducer.users,
     pageSize: state.appReducer.pageSize,
-    totalUsersQuan: state.appReducer.totalUsersQuan
+    totalUsersQuan: state.appReducer.totalUsersQuan,
+    currentPage: state.appReducer.currentPage,
   }
 }
 
@@ -195,7 +202,17 @@ const mapStateToProps = (state) => {
 //
 // export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
 
-export default connect(mapStateToProps, {follow, unfollow, getUserList})(PeopleListPage)
+const mapDispatchToProps = (dispatch) => {
+  return {
+     follow: (userId) => {dispatch(follow(userId))},
+     unfollow: (userId) => {dispatch(unfollow(userId))},
+     getUserList: (currentPage, pageSize) => {dispatch(getUserList(currentPage, pageSize))},
+     setCurrentPageDispatch: (pageId) => {dispatch(setCurrentPage(pageId))},
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PeopleListPage)
+// export default connect(mapStateToProps, {follow, unfollow, getUserList, setCurrentPage})(PeopleListPage)
 // export default connect(mapStateToProps, {followBtn, unfollowBtn, getUserList})(PeopleListPage)
 
 // export default PeopleListPage

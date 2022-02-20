@@ -1,4 +1,10 @@
-import { SET_USER_LIST_ACTION, SET_TOTAL_USERS_QUANTITY_ACTION, FOLLOW_ACTION, UNFOLLOW_ACTION, PAGE_NUMBER_ACTION } from './../../constants'
+import {
+  SET_USER_LIST_ACTION,
+  SET_TOTAL_USERS_QUANTITY_ACTION,
+  FOLLOW_ACTION,
+  UNFOLLOW_ACTION,
+  SET_CURRENT_PAGE_NUMBER_ACTION
+} from './../../constants'
 
 let initialState = {
   users : [
@@ -16,11 +22,18 @@ let initialState = {
 }
 
 export default function appReducer (state = initialState, action) {
+  // console.log('appReducer', '--')
   switch (action.type) {
-    case PAGE_NUMBER_ACTION:
-      return {...state}
+
+    case SET_CURRENT_PAGE_NUMBER_ACTION:
+    // console.log(action.payload.currentPage, 'SET_CURRENT_PAGE_NUMBER_ACTION')
+      return {
+        ...state,
+        currentPage: action.payload.currentPage
+      }
 
     case SET_USER_LIST_ACTION:
+    // console.log('SET_USER_LIST_ACTION', 'SET_USER_LIST_ACTION')
       return {
         ...state,
         users: action.payload.userList
@@ -29,12 +42,14 @@ export default function appReducer (state = initialState, action) {
       }
 
     case SET_TOTAL_USERS_QUANTITY_ACTION:
+    // console.log('SET_TOTAL_USERS_QUANTITY_ACTION', 'SET_TOTAL_USERS_QUANTITY_ACTION')
       return {
          ...state,
          totalUsersQuan: action.payload.usersQuantity
       }
 
     case FOLLOW_ACTION:
+    // console.log('FOLLOW_ACTION', 'FOLLOW_ACTION')
       return {
         // users : [...state.users], map new arr
         ...state,
@@ -48,6 +63,7 @@ export default function appReducer (state = initialState, action) {
         userId: Number(action.payload.userId),
       }
     case UNFOLLOW_ACTION:
+    // console.log('UNFOLLOW_ACTION', 'UNFOLLOW_ACTION')
       return {
         ...state,
         users : state.users.map(user => {
@@ -60,6 +76,7 @@ export default function appReducer (state = initialState, action) {
         userId: Number(action.payload.userId),
       }
     default:
+      // console.log('default', 'default')
       return state
   }
 }
