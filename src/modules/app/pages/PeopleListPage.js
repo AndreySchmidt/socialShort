@@ -7,12 +7,13 @@ import {getUserList, follow, unfollow} from './../../../thunk'
 
 import PageLayout from './../PageLayout/PageLayout'
 import Pagination from './../components/Pagination/Pagination'
+import IsFetchingBlock from './../components/IsFetchingBlock/IsFetchingBlock'
 import PeopleItem from './components/PeopleItem'
 
 import './../components/css/ad_list_page.css'
 import './people_list.css'
 
-const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan, currentPage, setCurrentPageDispatch}) => {
+const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUsersQuan, currentPage, setCurrentPageDispatch, isFetching}) => {
 
   useEffect(() => {
     getUserList(currentPage, pageSize)
@@ -22,6 +23,7 @@ const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUs
     <PageLayout>
       <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} setCurrentPage={setCurrentPageDispatch} currentPage={currentPage} />
       <div className="c_people_list clearfix">
+        {isFetching? <IsFetchingBlock loadingBlock="People List Block" /> : null}
         <PeopleItem users = {users} follow = {follow} unfollow = {unfollow} />
       </div>
       <Pagination pageSize={pageSize} totalUsersQuan={totalUsersQuan} setCurrentPage={setCurrentPageDispatch} currentPage={currentPage} />
