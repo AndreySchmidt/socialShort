@@ -7,9 +7,9 @@ const PeopleItem = ({users, follow, unfollow}) => {
     {
         users && users.map(user => (
           <div className="person" key = {user.id}>
-            <Link className="photo" to="#"><img alt="" src={user.photos.small != null ? user.photos.small : "images/pic-ava-100x100.jpg"} /></Link>
+            <Link className="photo" to={'/user/'+user.id}><img alt="" src={user.photos.small != null ? user.photos.small : "images/pic-ava-100x100.jpg"} /></Link>
             <div className="first-line">
-              <Link className="name" to="#">{user.name}</Link>
+              <Link className="name" to={'/user/'+user.id}>{user.name}</Link>
             </div>
             <div className="actions">
               {

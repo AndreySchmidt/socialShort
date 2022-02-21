@@ -1,5 +1,15 @@
 import {userApi} from './userApi.js'
+import {setUserProfile} from './modules/personalAccount/actions'
 import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from './modules/app/actions'
+
+export const getUserProfile = (userId) => {
+  return  (dispatch) => {
+    userApi.getItem(userId).then(data => {
+      dispatch(setUserProfile(data))
+      // console.log(data, 'userApi.getItem')
+    })
+  }
+}
 
 export const getUserList = (currentPage, pageSize) => {
   return  (dispatch) => {

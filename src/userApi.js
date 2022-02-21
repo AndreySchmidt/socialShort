@@ -14,6 +14,13 @@ const axiosInstance = axios.create({
 // console.log(response.data.items, 'userApi');
 
 export const userApi = {
+  getItem(userId) {
+    return axiosInstance.get(`profile/${userId}`)
+    .then(response => {
+      return response.data
+      // console.log(response.data, 'userApi getItem');
+    })
+  },
   getList(currentPage = 1, pageSize = 10) {
     return axiosInstance.get(`users?page=${currentPage}&count=${pageSize}`)
     .then(response => {

@@ -15,25 +15,31 @@ const initialState = {
       //   photos:{small:null},
       //   followed:false
       // },
-      // {
-      //   id:3,
-      //   name:"Name Some",
-      //   status:"status",
-      //   photos:{small:null},
-      //   followed:false
-      // },
-      // {
-      //   id:4,
-      //   name:"Name Some",
-      //   status:"status",
-      //   photos:{small:null},
-      //   followed:true
-      // },
     ],
     pageSize:10,
     totalUsersQuan:0,
     currentPage: 1,
     isFetching: false,
+  },
+  personalAccountReducer:{
+    userId: 0,
+    lookingForAJob: false,
+    lookingForAJobDescription: '',
+    fullName: '',
+    contacts: {
+      github: '',
+      vk: '',
+      facebook: '',
+      instagram: '',
+      twitter: '',
+      website: '',
+      youtube: '',
+      mainLink: '',
+    },
+    photos: {
+      small: '',
+      large: ''
+    }
   },
   commonReducer:{},
   // blogLP : [
