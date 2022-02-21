@@ -50,6 +50,13 @@ export default function appReducer (state = initialState, action) {
          totalUsersQuan: action.payload.usersQuantity
       }
 
+    case IS_FETCHING_ACTION:
+    // console.log('IS_FETCHING_ACTION', 'IS_FETCHING_ACTION')
+      return {
+         ...state,
+         isFetching: action.payload.isFetching
+      }
+
     case FOLLOW_ACTION:
     // console.log('FOLLOW_ACTION', 'FOLLOW_ACTION')
       return {

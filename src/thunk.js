@@ -1,13 +1,15 @@
 import {userApi} from './userApi.js'
-import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan} from './modules/app/actions'
+import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from './modules/app/actions'
 
 export const getUserList = (currentPage, pageSize) => {
   return  (dispatch) => {
+    dispatch(isFetching(true))
     userApi.getList(currentPage, pageSize).then(data => {
       dispatch(setUserList(data.items))
       dispatch(setTotalUsersQuan(data.totalCount))
       // console.log(data.totalCount)
     })
+    dispatch(isFetching(false))
   }
 }
 

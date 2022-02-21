@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import {setCurrentPage} from './../actions'
+// import {setCurrentPage, isFetching} from './../actions'
 import {getUserList, follow, unfollow} from './../../../thunk'
 
 import PageLayout from './../PageLayout/PageLayout'
@@ -47,6 +48,7 @@ const mapDispatchToProps = (dispatch) => {
      unfollow: (userId) => {dispatch(unfollow(userId))},
      getUserList: (currentPage, pageSize) => {dispatch(getUserList(currentPage, pageSize))},
      setCurrentPageDispatch: (pageId) => {dispatch(setCurrentPage(pageId))},
+     // isFetchingDispatch: (isFetching) => {dispatch(isFetching(isFetching))},
   }
 }
 
