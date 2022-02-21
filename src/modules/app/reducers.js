@@ -1,4 +1,5 @@
 import {
+  IS_FETCHING_ACTION,
   SET_USER_LIST_ACTION,
   SET_TOTAL_USERS_QUANTITY_ACTION,
   FOLLOW_ACTION,
@@ -18,7 +19,8 @@ let initialState = {
   ],
   pageSize:10,
   totalUsersQuan:0,
-  currentPage: 1
+  currentPage: 1,
+  isFetching: false,
 }
 
 export default function appReducer (state = initialState, action) {

@@ -32,7 +32,8 @@ const initialState = {
     ],
     pageSize:10,
     totalUsersQuan:0,
-    currentPage: 1
+    currentPage: 1,
+    isFetching: false,
   },
   commonReducer:{},
   // blogLP : [

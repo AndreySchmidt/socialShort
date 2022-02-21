@@ -1,4 +1,5 @@
 import {
+  IS_FETCHING_ACTION,
   SET_USER_LIST_ACTION,
   SET_TOTAL_USERS_QUANTITY_ACTION,
   FOLLOW_ACTION,
@@ -41,5 +42,12 @@ export function setCurrentPage (currentPage) {
   return {
     type: SET_CURRENT_PAGE_NUMBER_ACTION,
     payload:{ currentPage: Number(currentPage) }
+  }
+}
+
+export function isFetching (value) {
+  return {
+    type: IS_FETCHING_ACTION,
+    payload:{ isFetching: value }
   }
 }
