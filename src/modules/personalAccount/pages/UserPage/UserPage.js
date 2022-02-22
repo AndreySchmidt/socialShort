@@ -17,8 +17,7 @@ import ShortBlogList from './components/ShortBlogList/ShortBlogList'
 import PlaceMap from './components/PlaceMap/PlaceMap'
 import Wall from './components/Wall/Wall'
 
-const UserPage = ({userId, getUserProfile}) => {
-
+const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile}) => {
   useEffect(() => {
     getUserProfile(userId)
   }, [userId])
@@ -27,7 +26,7 @@ const UserPage = ({userId, getUserProfile}) => {
     <PageLayout>
       <InfoBlock />
       <HeaderSection />
-      <MainContentAside />
+      <MainContentAside photo={photos.small} />
 
       <div className="main_content_column">
         <Link className="change_interface" to="">изменить оформление</Link>
@@ -37,7 +36,14 @@ const UserPage = ({userId, getUserProfile}) => {
 
         <div className="c_main_content_wrapper">
           <div className="title"><span>Анкета</span> <Link to="/user/15/edit_profile">редактировать</Link></div>
-          <ProfileOptionsList />
+
+          <ProfileOptionsList
+            lookingForAJob={lookingForAJob}
+            lookingForAJobDescription={lookingForAJobDescription}
+            fullName={fullName}
+            contacts={contacts}
+          />
+
           <div className="show_full_data">
             <Link to=""><i></i>Показать анкету полностью<i></i></Link>
           </div>
@@ -75,6 +81,11 @@ const UserPage = ({userId, getUserProfile}) => {
 const mapStateToProps = (state) => {
   return {
     userId: state.personalAccountReducer.userId,
+    lookingForAJob: state.personalAccountReducer.lookingForAJob,
+    lookingForAJobDescription: state.personalAccountReducer.lookingForAJobDescription,
+    fullName: state.personalAccountReducer.fullName,
+    contacts: state.personalAccountReducer.contacts,
+    photos: state.personalAccountReducer.photos,
   }
 }
 

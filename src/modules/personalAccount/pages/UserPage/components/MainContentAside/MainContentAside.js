@@ -11,11 +11,11 @@ import VideoList from './../VideoList/VideoList'
 import DocumentsList from './../DocumentsList/DocumentsList'
 import PossibleFriendsList from './../PossibleFriendsList/PossibleFriendsList'
 
-const MainContentAside = () => {
+const MainContentAside = ({photo}) => {
   return (
     <div className="main_content_aside">
       <div className="avatar_image_container">
-        <img className="avatar_image" src={nophoto} alt="" />
+        <img className="avatar_image" src={photo || nophoto} alt="" />
       </div>
       <AsideLinks />
 
