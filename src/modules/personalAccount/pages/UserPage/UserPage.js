@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {getUserProfile} from './../../../../thunk'
 
@@ -17,7 +17,11 @@ import ShortBlogList from './components/ShortBlogList/ShortBlogList'
 import PlaceMap from './components/PlaceMap/PlaceMap'
 import Wall from './components/Wall/Wall'
 
-const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile}) => {
+
+const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+
+console.log(match.params.id)
+
   useEffect(() => {
     getUserProfile(userId)
   }, [userId])
@@ -95,4 +99,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserPage)
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(UserPage))
