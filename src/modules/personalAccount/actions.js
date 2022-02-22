@@ -5,6 +5,6 @@ import {
 export function setUserProfile (userData) {
   return {
     type: SET_USER_PROFILE_ACTION,
-    payload:{ userData }
+    payload: { userData }
   }
 }

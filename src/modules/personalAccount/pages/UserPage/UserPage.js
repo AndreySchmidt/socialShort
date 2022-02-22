@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+import {getUserProfile} from './../../../../thunk'
 
 import contentbg from './../../../../img/content-bg.jpg'
 
@@ -15,7 +17,12 @@ import ShortBlogList from './components/ShortBlogList/ShortBlogList'
 import PlaceMap from './components/PlaceMap/PlaceMap'
 import Wall from './components/Wall/Wall'
 
-const UserPage = () => {
+const UserPage = ({userId, getUserProfile}) => {
+
+  useEffect(() => {
+    getUserProfile(userId)
+  }, [userId])
+
   return (
     <PageLayout>
       <InfoBlock />
@@ -65,4 +72,16 @@ const UserPage = () => {
   )
 }
 
-export default UserPage
+const mapStateToProps = (state) => {
+  return {
+    userId: state.personalAccountReducer.userId,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getUserProfile: (userId) => dispatch(getUserProfile(userId)),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(UserPage)
