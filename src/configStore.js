@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import appReducer from './modules/app/reducers'
+import blogReducer from './modules/blog/reducers'
 import personalAccountReducer from './modules/personalAccount/reducers'
 import commonReducer from './reducers'
 // import createSagaMiddleware from 'redux-saga'
@@ -17,6 +18,7 @@ import thunk from 'redux-thunk'
 let reducers = combineReducers({
     appReducer,
     personalAccountReducer,
+    blogReducer,
     commonReducer,
 });
 

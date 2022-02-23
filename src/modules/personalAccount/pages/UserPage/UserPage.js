@@ -18,9 +18,12 @@ import PlaceMap from './components/PlaceMap/PlaceMap'
 import Wall from './components/Wall/Wall'
 
 
-const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+// const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+const UserPage = ({lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
 
-console.log(match.params.id)
+// console.log(match.params.id)
+
+const userId = match.params.id
 
   useEffect(() => {
     getUserProfile(userId)

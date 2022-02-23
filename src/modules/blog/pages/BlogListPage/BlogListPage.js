@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import {connect} from 'react-redux'
+import {connect} from 'react-redux'
 
 import './../../actions'
 
@@ -13,7 +13,7 @@ import './blog_list.css'
 
 import BlogItem from './BlogItem'
 
-const BlogListPage = (props) => {
+const BlogListPage = ({blogLP}) => {
   return (
     <PageLayout>
       <div className="c_blog_list">
@@ -24,7 +24,7 @@ const BlogListPage = (props) => {
           <Link to="#">Наиболее обсуждаемые</Link>
         </div>
         <Pagination />
-        { props.blogLP && props.blogLP.map(item => <BlogItem
+        { blogLP && blogLP.map(item => <BlogItem
             key={item.id}
             name={item.name}
             online={item.online}
@@ -40,17 +40,17 @@ const BlogListPage = (props) => {
   )
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//     blogLP: state.blogLP
-//   }
-// }
-//
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//      toggleBlogList: () => {dispatch.loadBlogList()}
-//   }
-// }
+const mapStateToProps = (state) => {
+  return {
+    blogLP: state.blogReducer.blogLP
+  }
+}
 
-// export default connect(mapStateToProps, mapDispatchToProps)(BlogListPage)
-export default BlogListPage
+const mapDispatchToProps = (dispatch) => {
+  return {
+     toggleBlogList: () => {dispatch.loadBlogList()}
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BlogListPage)
+// export default BlogListPage

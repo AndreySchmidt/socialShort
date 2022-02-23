@@ -39,6 +39,7 @@ const Pagination = ({pageSize, totalUsersQuan, setCurrentPage, currentPage}) => 
           // return <Link data-page={page} onClick={getPageHandler} key={page} to="" className="pagination">{page}</Link>
         })
       }
+      <Link to="" className="pagination next">вперед</Link>
     </div>
   )
 }
