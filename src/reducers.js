@@ -1,5 +1,6 @@
 import {
-  LOGIN_ACTION,
+  LOGIN_ACTION,//при нажатии сабмита формы логина
+  SET_MY_USER_DATA_ACTION,//при получении данных пользователя с сервера
 } from './constants'
 
 const initialState = {
@@ -11,11 +12,13 @@ const initialState = {
 
 export default function commonReducer (state = initialState, action) {
   switch (action.type) {
+
     case LOGIN_ACTION:
       return {
         ...state,
-        quantity: Number(action.payload.quantity),
+        ...action.payload,
       }
+
     default:
       // console.log('default commonReducer', action)
       return state
