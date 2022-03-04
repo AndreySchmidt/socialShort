@@ -46,6 +46,7 @@ const initialState = {
     id: 0,
     login: '',
     email: '',
+    isAuth: false,
     isFetching: false,
   },
   blogReducer: {

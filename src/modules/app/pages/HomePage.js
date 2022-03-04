@@ -18,7 +18,7 @@ const HomePage = ({authMe}) => {
 
 const mapStateToProps = (state) => {
   return {
-    // userId: state.personalAccountReducer.userId,
+    // userId: state.commonReducer.id,
   }
 }
 

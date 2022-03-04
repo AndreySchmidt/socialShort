@@ -4,9 +4,10 @@ import {
 } from './constants'
 
 const initialState = {
-  userId: 0,
+  id: 0,
   login: '',
   email: '',
+  isAuth: false,
   isFetching: false,
 }
 
@@ -20,10 +21,11 @@ export default function commonReducer (state = initialState, action) {
       }
 
     case SET_MY_USER_DATA_ACTION:
-      console.log('default commonReducer', action.payload)
+      // console.log('default commonReducer', action.payload)
       return {
         ...state,
         ...action.payload,
+        isAuth: true,
       }
 
     default:
