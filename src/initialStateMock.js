@@ -42,7 +42,8 @@ const initialState = {
     }
   },
   commonReducer:{
-    userId: 0,
+    // userId: 0,
+    id: 0,
     login: '',
     email: '',
     isFetching: false,

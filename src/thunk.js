@@ -1,12 +1,25 @@
 import {userApi} from './userApi.js'
 import {setUserProfile} from './modules/personalAccount/actions'
 import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from './modules/app/actions'
+import {setMyUserData} from './actions'
+
+export const authMe = () => {
+  return  (dispatch) => {
+    userApi.authMe().then(response => {
+      if (response.data.resultCode === 0) {
+        dispatch(setMyUserData(response.data.data))
+      }
+      // dispatch(setUserProfile(data))
+      // console.log(data, 'thunk authMe')
+    })
+  }
+}
 
 export const getUserProfile = (userId) => {
   return  (dispatch) => {
     userApi.getItem(userId).then(data => {
       dispatch(setUserProfile(data))
-      // console.log(data, 'userApi.getItem')
+      // console.log(data, 'thunk getItem')
     })
   }
 }

@@ -14,6 +14,13 @@ const axiosInstance = axios.create({
 // console.log(response.data.items, 'userApi');
 
 export const userApi = {
+  authMe(userId) {
+    return axiosInstance.get(`/auth/me`)
+    .then(response => {
+      return response
+      // console.log(response.data, 'userApi authMe');
+    })
+  },
   getItem(userId) {
     return axiosInstance.get(`profile/${userId}`)
     .then(response => {

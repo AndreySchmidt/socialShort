@@ -19,6 +19,13 @@ export default function commonReducer (state = initialState, action) {
         ...action.payload,
       }
 
+    case SET_MY_USER_DATA_ACTION:
+      console.log('default commonReducer', action.payload)
+      return {
+        ...state,
+        ...action.payload,
+      }
+
     default:
       // console.log('default commonReducer', action)
       return state

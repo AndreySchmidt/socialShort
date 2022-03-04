@@ -15,6 +15,6 @@ export function login (userId, email, login) {
 export function setMyUserData (data) {
   return {
     type: SET_MY_USER_DATA_ACTION,
-    payload: { data }
+    payload: data
   }
 }
