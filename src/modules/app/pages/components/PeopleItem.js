@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 const PeopleItem = ({users, follow, unfollow}) => {
   return (
     <>
-    {
+      {
         users && users.map(user => (
           <div className="person" key = {user.id}>
             <Link className="photo" to={'/user/'+user.id}><img alt="" src={user.photos.small != null ? user.photos.small : "images/pic-ava-100x100.jpg"} /></Link>
@@ -20,7 +20,7 @@ const PeopleItem = ({users, follow, unfollow}) => {
             </div>
           </div>
         ))
-    }
+      }
     </>
   )
 }
