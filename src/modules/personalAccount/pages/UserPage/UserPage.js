@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
-import {Link, withRouter, Redirect} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {getUserProfile} from './../../../../thunk'
+import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 
 import contentbg from './../../../../img/content-bg.jpg'
 
@@ -29,9 +30,9 @@ const userId = match.params.id
     getUserProfile(userId)
   }, [userId])
 
-  if (!isAuth) {
-    return <Redirect to = "/" />
-  }
+  // if (!isAuth) {
+  //   return <Redirect to = "/" />
+  // }
 
   return (
     <PageLayout>
@@ -107,4 +108,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(UserPage))
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(AuthRedirect(UserPage)))
