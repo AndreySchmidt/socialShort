@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
-import {Link, withRouter} from 'react-router-dom'
-import {connect} from 'react-redux'
-import {getUserProfile} from './../../../../thunk'
+import React, { useEffect } from 'react'
+import { Link, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+import { getUserProfile } from './../../../../thunk'
 import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 
 import contentbg from './../../../../img/content-bg.jpg'
@@ -109,4 +110,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(AuthRedirect(UserPage)))
+// export default connect(mapStateToProps, mapDispatchToProps)(withRouter(AuthRedirect(UserPage)))
+export default compose( AuthRedirect, withRouter, connect( mapStateToProps, mapDispatchToProps ) )( UserPage )
