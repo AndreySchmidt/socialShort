@@ -20,7 +20,8 @@ import Wall from './components/Wall/Wall'
 
 
 // const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
-const UserPage = ({isAuth, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+// const UserPage = ({isAuth, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+const UserPage = ( {lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match} ) => {
 
 // console.log(match.params.id)
 
@@ -92,7 +93,7 @@ const userId = match.params.id
 
 const mapStateToProps = (state) => {
   return {
-    isAuth: state.commonReducer.isAuth,
+    // isAuth: state.commonReducer.isAuth,
     userId: state.personalAccountReducer.userId,
     lookingForAJob: state.personalAccountReducer.lookingForAJob,
     lookingForAJobDescription: state.personalAccountReducer.lookingForAJobDescription,
