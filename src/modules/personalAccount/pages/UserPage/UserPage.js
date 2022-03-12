@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {Link, withRouter} from 'react-router-dom'
+import {Link, withRouter, Redirect} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {getUserProfile} from './../../../../thunk'
 
@@ -19,7 +19,7 @@ import Wall from './components/Wall/Wall'
 
 
 // const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
-const UserPage = ({lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
+const UserPage = ({isAuth, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
 
 // console.log(match.params.id)
 
@@ -28,6 +28,10 @@ const userId = match.params.id
   useEffect(() => {
     getUserProfile(userId)
   }, [userId])
+
+  if (!isAuth) {
+    return <Redirect to = "/" />
+  }
 
   return (
     <PageLayout>
@@ -87,6 +91,7 @@ const userId = match.params.id
 
 const mapStateToProps = (state) => {
   return {
+    isAuth: state.commonReducer.isAuth,
     userId: state.personalAccountReducer.userId,
     lookingForAJob: state.personalAccountReducer.lookingForAJob,
     lookingForAJobDescription: state.personalAccountReducer.lookingForAJobDescription,
