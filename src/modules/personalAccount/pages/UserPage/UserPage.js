@@ -44,7 +44,7 @@ const userId = match.params.id
 
       <div className="main_content_column">
         <Link className="change_interface" to="">изменить оформление</Link>
-        <Status />
+        <Status status="aaaaaaaaaaaaaa" />
 
         <div className="interface_image"><img src={contentbg} alt="" /></div>
 
