@@ -40,5 +40,12 @@ export const userApi = {
   },
   unfollow(userId) {
     return axiosInstance.delete(`follow/${userId}`)
+  },
+  getStatus(userId) {
+    return axiosInstance.get(`status/${userId}`)
+  },
+  updateStatus(userStatus) {
+    // second param is an object
+    return axiosInstance.put(`status`, {status: userStatus})
   }
 }
