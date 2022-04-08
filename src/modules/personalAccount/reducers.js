@@ -3,6 +3,7 @@ import {
 } from './../../constants'
 
 const initialState = {
+  status: '',
   userId: 0,
   lookingForAJob: false,
   lookingForAJobDescription: '',

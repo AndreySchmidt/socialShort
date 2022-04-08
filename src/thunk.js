@@ -19,7 +19,17 @@ export const getUserProfile = (userId) => {
   return  (dispatch) => {
     userApi.getItem(userId).then(data => {
       dispatch(setUserProfile(data))
+      // dispatch(getUserStatus(userId))
       // console.log(data, 'thunk getItem')
+    })
+  }
+}
+
+export const getUserStatus = (userId) => {
+  return  (dispatch) => {
+    userApi.getStatus(userId).then(data => {
+      // dispatch(setUserStatus(data.statusText))
+      console.log(data, 'thunk getUserStatus')
     })
   }
 }

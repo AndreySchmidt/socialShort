@@ -42,7 +42,7 @@ export const userApi = {
     return axiosInstance.delete(`follow/${userId}`)
   },
   getStatus(userId) {
-    return axiosInstance.get(`status/${userId}`)
+    return axiosInstance.get(`profile/status/${userId}`)
   },
   updateStatus(userStatus) {
     // second param is an object

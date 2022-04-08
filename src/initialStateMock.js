@@ -22,7 +22,8 @@ const initialState = {
     isFetching: false,
   },
   personalAccountReducer:{
-    userId: 2,
+    status: '',
+    userId: 0,
     lookingForAJob: false,
     lookingForAJobDescription: '',
     fullName: '',
