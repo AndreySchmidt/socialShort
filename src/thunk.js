@@ -1,5 +1,5 @@
 import {userApi} from './userApi.js'
-import {setUserProfile} from './modules/personalAccount/actions'
+import {setUserProfile, setUserStatus} from './modules/personalAccount/actions'
 import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from './modules/app/actions'
 import {setMyUserData} from './actions'
 
@@ -29,7 +29,19 @@ export const getUserStatus = (userId) => {
   return  (dispatch) => {
     userApi.getStatus(userId).then(data => {
       // dispatch(setUserStatus(data.statusText))
-      console.log(data, 'thunk getUserStatus')
+      dispatch(setUserStatus(data))
+      // console.log(data, 'thunk getUserStatus')
+    })
+  }
+}
+
+export const updateUserStatus = (userStatus) => {
+  return  (dispatch) => {
+    userApi.updateStatus(userStatus).then(data => {
+      if (data.resultCode === 0) {
+        dispatch(setUserStatus(userStatus))
+      }
+      console.log(data, 'thunk updateUserStatus')
     })
   }
 }

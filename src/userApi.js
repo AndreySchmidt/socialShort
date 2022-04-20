@@ -43,9 +43,17 @@ export const userApi = {
   },
   getStatus(userId) {
     return axiosInstance.get(`profile/status/${userId}`)
+    .then(response => {
+      // console.log(response, 'userApi getStatus');
+      return response.data
+    })
   },
   updateStatus(userStatus) {
     // second param is an object
-    return axiosInstance.put(`status`, {status: userStatus})
+    return axiosInstance.put(`profile/status`, {status: userStatus})
+      .then(response => {
+        return response.data
+        // console.log(response.data, 'userApi updateStatus');
+      })
   }
 }

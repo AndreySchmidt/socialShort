@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 
 const Status = (props) => {
-
+  console.log('status props', props)
   // const state = {
   //   status: {
   //     text: "",
@@ -19,6 +19,8 @@ const Status = (props) => {
 
   const deactivateEditMode = () => {
     toggleEditMode (false)
+    console.log('status', status)
+    props.updateUserStatus(status)
   }
 
   const changeStatus = (e) => {

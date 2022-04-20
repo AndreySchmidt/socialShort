@@ -1,5 +1,6 @@
 import {
   SET_USER_PROFILE_ACTION,
+  SET_USER_STATUS_ACTION,
 } from './../../constants'
 
 const initialState = {
@@ -32,6 +33,14 @@ export default function personalAccountReducer (state = initialState, action) {
       return {
         ...state,
         ...action.payload.userData
+      }
+
+    case SET_USER_STATUS_ACTION:
+    // console.log('SET_USER_STATUS_ACTION', 'SET_USER_STATUS_ACTION')
+    console.log('SET_USER_STATUS_ACTION', action.payload)
+      return {
+        ...state,
+        ...action.payload.status
       }
 
     default:

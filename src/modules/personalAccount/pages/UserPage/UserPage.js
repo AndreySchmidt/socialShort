@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { getUserProfile } from './../../../../thunk'
+import { getUserProfile, getUserStatus, updateUserStatus } from './../../../../thunk'
 import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 
 import contentbg from './../../../../img/content-bg.jpg'
@@ -22,14 +22,20 @@ import Wall from './components/Wall/Wall'
 
 // const UserPage = ({userId, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
 // const UserPage = ({isAuth, lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match}) => {
-const UserPage = ( {lookingForAJob, lookingForAJobDescription, fullName, contacts, photos, getUserProfile, match} ) => {
+const UserPage = ( {
+  lookingForAJob, lookingForAJobDescription, fullName, contacts, photos,
+  status, getUserProfile, getUserStatus, updateUserStatus,
+  match
+} ) => {
 
 // console.log(match.params.id)
+console.log('zzz', status)
 
 const userId = match.params.id
 
   useEffect(() => {
     getUserProfile(userId)
+    getUserStatus(userId)
   }, [userId])
 
   // if (!isAuth) {
@@ -44,7 +50,8 @@ const userId = match.params.id
 
       <div className="main_content_column">
         <Link className="change_interface" to="">изменить оформление</Link>
-        <Status status="" />
+
+        <Status status={status} updateUserStatus={updateUserStatus} />
 
         <div className="interface_image"><img src={contentbg} alt="" /></div>
 
@@ -96,6 +103,7 @@ const mapStateToProps = (state) => {
   return {
     // isAuth: state.commonReducer.isAuth,
     userId: state.personalAccountReducer.userId,
+    status: state.personalAccountReducer.status,
     lookingForAJob: state.personalAccountReducer.lookingForAJob,
     lookingForAJobDescription: state.personalAccountReducer.lookingForAJobDescription,
     fullName: state.personalAccountReducer.fullName,
@@ -107,6 +115,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getUserProfile: (userId) => dispatch(getUserProfile(userId)),
+    getUserStatus: (userId) => dispatch(getUserStatus(userId)),
+    updateUserStatus: (userStatus) => dispatch(updateUserStatus(userStatus)),
   }
 }
 
