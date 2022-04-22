@@ -1,8 +1,10 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
+// import { reducer as formReducer } from 'redux-form'
 import appReducer from './modules/app/reducers'
 import blogReducer from './modules/blog/reducers'
 import personalAccountReducer from './modules/personalAccount/reducers'
 import commonReducer from './reducers'
+
 // import createSagaMiddleware from 'redux-saga'
 import thunk from 'redux-thunk'
 // import rootSaga from './sagas'
@@ -16,6 +18,7 @@ import thunk from 'redux-thunk'
 //     commonReducer:commonReducer,
 // });
 let reducers = combineReducers({
+    // form: formReducer,
     appReducer,
     personalAccountReducer,
     blogReducer,
