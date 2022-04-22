@@ -50,7 +50,7 @@ export const userApi = {
   },
   updateStatus(userStatus) {
     // second param is an object
-    console.log(userStatus, 'userApi updateStatus')
+    // console.log(userStatus, 'userApi updateStatus')
     return axiosInstance.put(`profile/status`, {status: userStatus})
       .then(response => {
         return response.data

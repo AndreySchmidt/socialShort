@@ -29,7 +29,7 @@ const Status = ( {userId, status, getUserStatus, updateUserStatus} ) => {
 
   return (
     <div className="status_text">
-      <span onDoubleClick = { activateEditMode }>{ statusText || "empty"}&nbsp;&nbsp;</span>
+      <span onDoubleClick = { activateEditMode }>{ status || "empty"}&nbsp;&nbsp;</span>
       <Link className="change_status" to="">изменить статус</Link>
 
       { editMode &&
