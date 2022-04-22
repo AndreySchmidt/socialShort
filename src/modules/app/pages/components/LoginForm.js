@@ -29,6 +29,12 @@ const LoginForm = ( props ) => {
 // export default reduxForm( { form: 'login' } )( LoginForm )
 export default LoginForm
 
+
+
+// РАБОЧИЙ КОД НА АПРЕЛЬ 2022
+//  Formik, канал Codevolution, также посмотреть Димыча  видео номер 13 с Путь Самурая 2.0
+// https://www.youtube.com/watch?v=K6f8GAhLGKA&list=PL8zashR68iUcVCSeyqRdX5Y8WV-MbT0MH
+
 // import React from 'react';
 // import {Formik, Form, Field, ErrorMessage} from "formik";
 // import * as Yup from "yup";
