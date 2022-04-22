@@ -1,17 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import { getUserStatus, updateUserStatus } from './../../../../../../thunk'
 
-const Status = (props) => {
-  console.log('status props', props)
-  // const state = {
-  //   status: {
-  //     text: "",
-  //     editMode: false,
-  //   }
-  // }
+const Status = ( {userId, status, getUserStatus, updateUserStatus} ) => {
+
+  useEffect(() => {
+    getUserStatus(userId)
+    // setStatus(status)
+  }, [userId, status])
 
   const [editMode, toggleEditMode] = useState(false)
-  const [status, setStatus] = useState(props.status)
+  const [statusText, setStatus] = useState(status)
 
   const activateEditMode = () => {
     toggleEditMode (true)
@@ -19,8 +19,8 @@ const Status = (props) => {
 
   const deactivateEditMode = () => {
     toggleEditMode (false)
-    console.log('status', status)
-    props.updateUserStatus(status)
+    console.log('status', statusText)
+    updateUserStatus(statusText)
   }
 
   const changeStatus = (e) => {
@@ -29,12 +29,12 @@ const Status = (props) => {
 
   return (
     <div className="status_text">
-      <span onDoubleClick = { activateEditMode }>{ status || "empty"}&nbsp;&nbsp;</span>
+      <span onDoubleClick = { activateEditMode }>{ statusText || "empty"}&nbsp;&nbsp;</span>
       <Link className="change_status" to="">изменить статус</Link>
 
       { editMode &&
         <div onBlur = { deactivateEditMode } className="c_change_status_form">
-          <textarea className="c_post_comment_area" value={ status } autoFocus = { true } onChange = { changeStatus }></textarea>
+          <textarea className="c_post_comment_area" value={ statusText } autoFocus = { true } onChange = { changeStatus }></textarea>
 
           <div className="save_button_wrapper">
             <input className="c_status_button" type="submit" value="Сохранить"/>
@@ -45,4 +45,18 @@ const Status = (props) => {
   )
 }
 
-export default Status
+const mapStateToProps = (state) => {
+  return {
+    status: state.personalAccountReducer.status,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getUserStatus: (userId) => dispatch(getUserStatus(userId)),
+    updateUserStatus: (userStatus) => dispatch(updateUserStatus(userStatus)),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Status)
+// export default Status

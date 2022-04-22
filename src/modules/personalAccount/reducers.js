@@ -37,7 +37,7 @@ export default function personalAccountReducer (state = initialState, action) {
 
     case SET_USER_STATUS_ACTION:
     // console.log('SET_USER_STATUS_ACTION', 'SET_USER_STATUS_ACTION')
-    console.log('SET_USER_STATUS_ACTION', action.payload)
+    // console.log('SET_USER_STATUS_ACTION', action.payload)
       return {
         ...state,
         ...action.payload.status

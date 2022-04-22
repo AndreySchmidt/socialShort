@@ -11,7 +11,7 @@ export function setUserProfile (userData) {
 }
 
 export function setUserStatus (status) {
-  console.log('setUserStatus ACTION', status)
+  // console.log('setUserStatus ACTION', status)
   return {
     type: SET_USER_STATUS_ACTION,
     payload: { status }

@@ -11,28 +11,28 @@ const axiosInstance = axios.create({
 
 // axios.get("https://social-network.samuraijs.com/api/1.0/users")
 // return response.data.items
-// console.log(response.data.items, 'userApi');
+// console.log(response.data.items, 'userApi')
 
 export const userApi = {
   authMe(userId) {
     return axiosInstance.get(`/auth/me`)
     .then(response => {
       return response
-      // console.log(response.data, 'userApi authMe');
+      // console.log(response.data, 'userApi authMe')
     })
   },
   getItem(userId) {
     return axiosInstance.get(`profile/${userId}`)
     .then(response => {
       return response.data
-      // console.log(response.data, 'userApi getItem');
+      // console.log(response.data, 'userApi getItem')
     })
   },
   getList(currentPage = 1, pageSize = 10) {
     return axiosInstance.get(`users?page=${currentPage}&count=${pageSize}`)
     .then(response => {
       return response.data
-      // console.log(response.data.items, 'userApi');
+      // console.log(response.data.items, 'userApi')
     })
   },
   follow(userId) {
@@ -44,16 +44,17 @@ export const userApi = {
   getStatus(userId) {
     return axiosInstance.get(`profile/status/${userId}`)
     .then(response => {
-      // console.log(response, 'userApi getStatus');
+      // console.log(response, 'userApi getStatus')
       return response.data
     })
   },
   updateStatus(userStatus) {
     // second param is an object
+    console.log(userStatus, 'userApi updateStatus')
     return axiosInstance.put(`profile/status`, {status: userStatus})
       .then(response => {
         return response.data
-        // console.log(response.data, 'userApi updateStatus');
+        // console.log(response.data, 'userApi updateStatus')
       })
   }
 }

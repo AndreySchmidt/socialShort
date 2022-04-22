@@ -29,13 +29,13 @@ const UserPage = ( {
 } ) => {
 
 // console.log(match.params.id)
-console.log('zzz', status)
+// console.log('zzz', status)
 
 const userId = match.params.id
 
   useEffect(() => {
     getUserProfile(userId)
-    getUserStatus(userId)
+    // getUserStatus(userId)
   }, [userId])
 
   // if (!isAuth) {
@@ -51,7 +51,7 @@ const userId = match.params.id
       <div className="main_content_column">
         <Link className="change_interface" to="">изменить оформление</Link>
 
-        <Status status={status} updateUserStatus={updateUserStatus} />
+        <Status userId={userId} />
 
         <div className="interface_image"><img src={contentbg} alt="" /></div>
 

@@ -41,7 +41,7 @@ export const updateUserStatus = (userStatus) => {
       if (data.resultCode === 0) {
         dispatch(setUserStatus(userStatus))
       }
-      console.log(data, 'thunk updateUserStatus')
+      // console.log(data, 'thunk updateUserStatus')
     })
   }
 }
