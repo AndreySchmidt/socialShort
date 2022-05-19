@@ -1,5 +1,6 @@
 import React from 'react'
-// import { Field, reduxForm } from 'redux-form'
+import { Formk } from 'formik'
+import * as Yup from 'yup'
 
 const LoginForm = ( props ) => {
 
