@@ -5,14 +5,31 @@ import * as Yup from 'yup'
 const LoginForm = ( props ) => {
 
   // const handleSubmit = ( formData ) = {
-  const handleSubmit = (  ) => {
-
-  }
+  // const handleSubmit = (  ) => {
+  //
+  // }
 
   return (
     <div>
       <h1>Login form</h1>
-
+      <Formik initialValues = {{
+        name: '',
+        secondName: '',
+        email: '',
+        login: '',
+        password: '',
+        confirmPassword: '',
+      }}
+      validateOnBlur
+      onSubmit = {( values ) => { console.log(values) }}>
+      {({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty }) => {
+        return (
+          <div>
+            <label htmlFor = 'name'>Name</label><br />
+            <input type = { `text` } name = { `name` } onChange = { handleChange } onBlur = { handleBlur } value = { values.name } />
+          </div>
+        )}}
+      </Formik>
     </div>
   )
 }

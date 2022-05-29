@@ -14,7 +14,7 @@ const HomePage = ( { authMe, isAuth, login, id } ) => {
   }, [] )
 
   return (
-    <>{ ( login )? <h1><Link to = { '/user/'+ id } >{ login }</Link></h1> : <LoginForm /> }</>
+    <>{ ( login )? <><h1><Link to = { '/user/'+ id } >{ login } </Link></h1><LoginForm /></> : <LoginForm /> }</>
   )
 }
 
