@@ -25,8 +25,9 @@ const LoginForm = ( props ) => {
       {({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty }) => {
         return (
           <div>
-            <label htmlFor = 'name'>Name</label><br />
-            <input type = { `text` } name = { `name` } onChange = { handleChange } onBlur = { handleBlur } value = { values.name } />
+            <p><label htmlFor = 'name'>Name</label></p>
+            <p><input type = 'text' name = 'name' onChange = { handleChange } onBlur = { handleBlur } value = { values.name } /></p>
+            <p><button disabled = { !isValid && !dirty } onClick = { handleSubmit } type = 'submit' >Ok</button></p>
           </div>
         )}}
       </Formik>
