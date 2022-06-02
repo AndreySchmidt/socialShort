@@ -6,10 +6,11 @@ const LoginForm = ( props ) => {
 
   const validationSchemaLoginForm = Yup.object().shape({
     name: Yup.string().typeError('Must be a string').required('Required field name'),
-    secondName: Yup.string().typeError('Must be a string').required('Required field name'),
-    secondName: Yup.string().typeError('Must be a string').required('Required field name'),
+    secondName: Yup.string().typeError('Must be a string').required('Required field second name'),
+    login: Yup.string().typeError('Must be a string').required('Required field loin'),
+    email: Yup.string().email('Email is not correct').required('Required field email'),
     password: Yup.string().typeError('Must be a string').required('Required field password'),
-    confirmPassword: Yup.string().typeError('Must be a string').required('Required field confirmPassword'),
+    confirmPassword: Yup.string().oneOf([Yup.ref('password')], 'Not equal').required('Required field password'),
   })
   // const handleSubmit = ( formData ) = {
   // const handleSubmit = (  ) => {
@@ -40,11 +41,17 @@ const LoginForm = ( props ) => {
             <br /><label htmlFor = 'secondName'>Second Name</label> { touched.secondName && errors.secondName && <span className = 'error'>{ errors.secondName }</span> }<br />
             <input  className = 'input' type = 'text' name = 'secondName' onChange = { handleChange } onBlur = { handleBlur } value = { values.secondName } />
 
+            <br /><label htmlFor = 'login'>Login</label> { touched.login && errors.login && <span className = 'error'>{ errors.login }</span> }<br />
+            <input  className = 'input' type = 'text' name = 'login' onChange = { handleChange } onBlur = { handleBlur } value = { values.login } />
+
+            <br /><label htmlFor = 'email'>Email</label> { touched.email && errors.email && <span className = 'error'>{ errors.email }</span> }<br />
+            <input  className = 'input' type = 'text' name = 'email' onChange = { handleChange } onBlur = { handleBlur } value = { values.email } />
+
             <br /><label htmlFor = 'password'>Password</label> { touched.password && errors.password && <span className = 'error'>{ errors.password }</span> }<br />
-            <input  className = 'input' type = 'text' name = 'password' onChange = { handleChange } onBlur = { handleBlur } value = { values.password } />
+            <input  className = 'input' type = 'password' name = 'password' onChange = { handleChange } onBlur = { handleBlur } value = { values.password } />
 
             <br /><label htmlFor = 'confirmPassword'>Confirm Password</label> { touched.confirmPassword && errors.confirmPassword && <span className = 'error'>{ errors.confirmPassword }</span> }<br />
-            <input  className = 'input' type = 'text' name = 'confirmPassword' onChange = { handleChange } onBlur = { handleBlur } value = { values.confirmPassword } />
+            <input  className = 'input' type = 'password' name = 'confirmPassword' onChange = { handleChange } onBlur = { handleBlur } value = { values.confirmPassword } />
 
             <p><button disabled = { !isValid && !dirty } onClick = { handleSubmit } type = 'submit'>Ok</button></p>
           </div>
