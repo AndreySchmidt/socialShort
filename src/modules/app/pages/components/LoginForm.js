@@ -4,6 +4,13 @@ import * as Yup from 'yup'
 
 const LoginForm = ( props ) => {
 
+  const validationSchemaLoginForm = Yup.object().shape({
+    name: Yup.string().typeError('Must be a string').required('Required field name'),
+    secondName: Yup.string().typeError('Must be a string').required('Required field name'),
+    secondName: Yup.string().typeError('Must be a string').required('Required field name'),
+    password: Yup.string().typeError('Must be a string').required('Required field password'),
+    confirmPassword: Yup.string().typeError('Must be a string').required('Required field confirmPassword'),
+  })
   // const handleSubmit = ( formData ) = {
   // const handleSubmit = (  ) => {
   //
@@ -19,15 +26,27 @@ const LoginForm = ( props ) => {
         login: '',
         password: '',
         confirmPassword: '',
-      }}
-      validateOnBlur
-      onSubmit = {( values ) => { console.log(values) }}>
+        }}
+        validateOnBlur
+        onSubmit = {( values ) => { console.log(values) }}
+        validationSchema = { validationSchemaLoginForm }
+      >
       {({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty }) => {
         return (
-          <div>
-            <p><label htmlFor = 'name'>Name</label></p>
-            <p><input type = 'text' name = 'name' onChange = { handleChange } onBlur = { handleBlur } value = { values.name } /></p>
-            <p><button disabled = { !isValid && !dirty } onClick = { handleSubmit } type = 'submit' >Ok</button></p>
+          <div className = 'form'>
+            <br /><label htmlFor = 'name'>Name</label> { touched.name && errors.name && <span className = 'error'>{ errors.name }</span> }<br />
+            <input  className = 'input' type = 'text' name = 'name' onChange = { handleChange } onBlur = { handleBlur } value = { values.name } />
+
+            <br /><label htmlFor = 'secondName'>Second Name</label> { touched.secondName && errors.secondName && <span className = 'error'>{ errors.secondName }</span> }<br />
+            <input  className = 'input' type = 'text' name = 'secondName' onChange = { handleChange } onBlur = { handleBlur } value = { values.secondName } />
+
+            <br /><label htmlFor = 'password'>Password</label> { touched.password && errors.password && <span className = 'error'>{ errors.password }</span> }<br />
+            <input  className = 'input' type = 'text' name = 'password' onChange = { handleChange } onBlur = { handleBlur } value = { values.password } />
+
+            <br /><label htmlFor = 'confirmPassword'>Confirm Password</label> { touched.confirmPassword && errors.confirmPassword && <span className = 'error'>{ errors.confirmPassword }</span> }<br />
+            <input  className = 'input' type = 'text' name = 'confirmPassword' onChange = { handleChange } onBlur = { handleBlur } value = { values.confirmPassword } />
+
+            <p><button disabled = { !isValid && !dirty } onClick = { handleSubmit } type = 'submit'>Ok</button></p>
           </div>
         )}}
       </Formik>
