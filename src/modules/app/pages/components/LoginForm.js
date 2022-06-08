@@ -34,24 +34,24 @@ const LoginForm = ( props ) => {
       >
       {({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty }) => {
         return (
-          <div className = 'form'>
+          <div className = 'form_line_horiz'>
             <br /><label htmlFor = 'name'>Name</label> { touched.name && errors.name && <span className = 'error'>{ errors.name }</span> }<br />
-            <input  className = 'input' type = 'text' name = 'name' onChange = { handleChange } onBlur = { handleBlur } value = { values.name } />
+            <input className = 'c_input' type = 'text' name = 'name' onChange = { handleChange } onBlur = { handleBlur } value = { values.name } />
 
             <br /><label htmlFor = 'secondName'>Second Name</label> { touched.secondName && errors.secondName && <span className = 'error'>{ errors.secondName }</span> }<br />
-            <input  className = 'input' type = 'text' name = 'secondName' onChange = { handleChange } onBlur = { handleBlur } value = { values.secondName } />
+            <input className = 'c_input' type = 'text' name = 'secondName' onChange = { handleChange } onBlur = { handleBlur } value = { values.secondName } />
 
             <br /><label htmlFor = 'login'>Login</label> { touched.login && errors.login && <span className = 'error'>{ errors.login }</span> }<br />
-            <input  className = 'input' type = 'text' name = 'login' onChange = { handleChange } onBlur = { handleBlur } value = { values.login } />
+            <input className = 'c_input' type = 'text' name = 'login' onChange = { handleChange } onBlur = { handleBlur } value = { values.login } />
 
             <br /><label htmlFor = 'email'>Email</label> { touched.email && errors.email && <span className = 'error'>{ errors.email }</span> }<br />
-            <input  className = 'input' type = 'text' name = 'email' onChange = { handleChange } onBlur = { handleBlur } value = { values.email } />
+            <input className = 'c_input' type = 'text' name = 'email' onChange = { handleChange } onBlur = { handleBlur } value = { values.email } />
 
             <br /><label htmlFor = 'password'>Password</label> { touched.password && errors.password && <span className = 'error'>{ errors.password }</span> }<br />
-            <input  className = 'input' type = 'password' name = 'password' onChange = { handleChange } onBlur = { handleBlur } value = { values.password } />
+            <input className = 'c_input' type = 'password' name = 'password' onChange = { handleChange } onBlur = { handleBlur } value = { values.password } />
 
             <br /><label htmlFor = 'confirmPassword'>Confirm Password</label> { touched.confirmPassword && errors.confirmPassword && <span className = 'error'>{ errors.confirmPassword }</span> }<br />
-            <input  className = 'input' type = 'password' name = 'confirmPassword' onChange = { handleChange } onBlur = { handleBlur } value = { values.confirmPassword } />
+            <input className = 'c_input' type = 'password' name = 'confirmPassword' onChange = { handleChange } onBlur = { handleBlur } value = { values.confirmPassword } />
 
             <p><button disabled = { !isValid && !dirty } onClick = { handleSubmit } type = 'submit'>Ok</button></p>
           </div>
