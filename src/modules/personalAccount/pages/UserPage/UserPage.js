@@ -111,6 +111,19 @@ const mapStateToProps = (state) => {
     photos: state.personalAccountReducer.photos,
   }
 }
+// old (before selectors)
+// const mapStateToProps = (state) => {
+//   return {
+//     // isAuth: state.commonReducer.isAuth,
+//     userId: state.personalAccountReducer.userId,
+//     status: state.personalAccountReducer.status,
+//     lookingForAJob: state.personalAccountReducer.lookingForAJob,
+//     lookingForAJobDescription: state.personalAccountReducer.lookingForAJobDescription,
+//     fullName: state.personalAccountReducer.fullName,
+//     contacts: state.personalAccountReducer.contacts,
+//     photos: state.personalAccountReducer.photos,
+//   }
+// }
 
 const mapDispatchToProps = (dispatch) => {
   return {
