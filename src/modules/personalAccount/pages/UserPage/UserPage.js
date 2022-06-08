@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { getUserProfile, getUserStatus, updateUserStatus } from './../../../../thunk'
 import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
+import { getUserId, getStatus, getLookingForAJob, getLookingForAJobDescription, getFullName, getContacts, getPhotos } from './../../selectors'
 
 import contentbg from './../../../../img/content-bg.jpg'
 
@@ -101,14 +102,13 @@ const userId = match.params.id
 
 const mapStateToProps = (state) => {
   return {
-    // isAuth: state.commonReducer.isAuth,
-    userId: state.personalAccountReducer.userId,
-    status: state.personalAccountReducer.status,
-    lookingForAJob: state.personalAccountReducer.lookingForAJob,
-    lookingForAJobDescription: state.personalAccountReducer.lookingForAJobDescription,
-    fullName: state.personalAccountReducer.fullName,
-    contacts: state.personalAccountReducer.contacts,
-    photos: state.personalAccountReducer.photos,
+    userId: getUserId(state),
+    status: getStatus(state),
+    lookingForAJob: getLookingForAJob(state),
+    lookingForAJobDescription: getLookingForAJobDescription(state),
+    fullName: getFullName(state),
+    contacts: getContacts(state),
+    photos: getPhotos(state),
   }
 }
 // old (before selectors)
