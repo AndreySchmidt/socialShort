@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import {connect} from 'react-redux'
 
 import {setCurrentPage} from './../actions'
+import { usersSelector, pageSizeSelector, totalUsersQuanSelector, currentPageSelector, isFetchingSelector } from './../selectors'
 // import {setCurrentPage, isFetching} from './../actions'
 import {getUserList, follow, unfollow} from './../../../thunk'
 
@@ -33,13 +34,23 @@ const PeopleListPage = ({follow, unfollow, getUserList, users, pageSize, totalUs
 
 const mapStateToProps = (state) => {
   return {
-    users: state.appReducer.users,
-    pageSize: state.appReducer.pageSize,
-    totalUsersQuan: state.appReducer.totalUsersQuan,
-    currentPage: state.appReducer.currentPage,
-    isFetching: state.appReducer.isFetching,
+    users: usersSelector(state),
+    pageSize: pageSizeSelector(state),
+    totalUsersQuan: totalUsersQuanSelector(state),
+    currentPage: currentPageSelector(state),
+    isFetching: isFetchingSelector(state),
   }
 }
+// before selectors
+// const mapStateToProps = (state) => {
+//   return {
+//     users: state.appReducer.users,
+//     pageSize: state.appReducer.pageSize,
+//     totalUsersQuan: state.appReducer.totalUsersQuan,
+//     currentPage: state.appReducer.currentPage,
+//     isFetching: state.appReducer.isFetching,
+//   }
+// }
 
 const mapDispatchToProps = (dispatch) => {
   return {

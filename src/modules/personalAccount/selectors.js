@@ -1,3 +1,11 @@
+// reselect begin
+// import { createSelector } from "reselect"
+//
+// export exampleReselect = createSelector( () => {
+//
+// } )
+// reselect end
+
 export const getUserId = ( state ) => {
   return state.personalAccountReducer.userId
 }
