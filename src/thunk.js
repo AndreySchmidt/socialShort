@@ -9,42 +9,56 @@ export const authMe = () => {
       if (response.data.resultCode === 0) {
         dispatch(setMyUserData(response.data.data))
       }
-      // dispatch(setUserProfile(data))
-      // console.log(data, 'thunk authMe')
     })
   }
 }
 
+// promise chaining
+// export const getUserProfile = (userId) => {
+//   return  ( dispatch ) => {
+//     userApi.getItem(userId).then(data => {
+//       dispatch(setUserProfile(data))
+//     })
+//   }
+// }
+
+// async await
 export const getUserProfile = (userId) => {
-  return  (dispatch) => {
-    userApi.getItem(userId).then(data => {
-      dispatch(setUserProfile(data))
-      // dispatch(getUserStatus(userId))
-      // console.log(data, 'thunk getItem')
-    })
+  return  async ( dispatch ) => {
+    const data = await userApi.getItem(userId)
+    dispatch(setUserProfile(data))
   }
 }
 
 export const getUserStatus = (userId) => {
-  return  (dispatch) => {
+  return  ( dispatch ) => {
     userApi.getStatus(userId).then(data => {
       // dispatch(setUserStatus(data.statusText))
       dispatch(setUserStatus(data))
-      // console.log(data, 'thunk getUserStatus')
     })
   }
 }
 
+// promise chaining
 export const updateUserStatus = (userStatus) => {
-  return  (dispatch) => {
+  return  ( dispatch ) => {
     userApi.updateStatus(userStatus).then(data => {
       if (data.resultCode === 0) {
         dispatch(setUserStatus(userStatus))
       }
-      // console.log(data, 'thunk updateUserStatus')
     })
   }
 }
+
+// async await
+// export const updateUserStatus = (userStatus) => {
+//   return  async ( dispatch ) => {
+//     const data = userApi.updateStatus(userStatus)
+//     if (data.resultCode === 0) {
+//       dispatch(setUserStatus(userStatus))
+//     }
+//   }
+// }
 
 export const getUserList = (currentPage, pageSize) => {
   return  (dispatch) => {
@@ -52,7 +66,6 @@ export const getUserList = (currentPage, pageSize) => {
     userApi.getList(currentPage, pageSize).then(data => {
       dispatch(setUserList(data.items))
       dispatch(setTotalUsersQuan(data.totalCount))
-      // console.log(data.totalCount)
     })
     dispatch(isFetching(false))
   }
