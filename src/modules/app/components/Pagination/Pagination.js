@@ -1,11 +1,14 @@
-import React, {useCallback, useMemo} from 'react'
+import React, {useCallback, useMemo, useState} from 'react'
 import {Link} from 'react-router-dom'
 import classnames from 'classnames'
 
-const Pagination = ({pageSize, totalUsersQuan, setCurrentPage, currentPage}) => {
+const Pagination = ({pageSize, totalUsersQuan, setCurrentPage, currentPage, partSize = 30}) => {
 
+  let pagesQuan = 0
   const pageLinks = useMemo(() => {
-    const pagesQuan = Math.ceil(totalUsersQuan / pageSize)
+    pagesQuan = Math.ceil(totalUsersQuan / pageSize)
+    // const pagesQuan = Math.ceil(totalUsersQuan / pageSize)
+    // console.log(pagesQuan);
     const _pageLinks = []
     for (let i = 1; i <= pagesQuan; i++) {
       _pageLinks.push(i)
@@ -27,19 +30,45 @@ const Pagination = ({pageSize, totalUsersQuan, setCurrentPage, currentPage}) => 
     [setCurrentPage]
   )
 
+  // part
+  let partQuan = Math.ceil(pagesQuan / partSize)
+  let [partNumber, setPartNumber] = useState(1)
+  let leftPartNumber = (partNumber - 1) * partSize + 1
+  let rightPartNumber = partNumber * partSize
+
+
+
   return (
     <div className="c_pagination_view">
       Страницы:
-      <Link to="" className="pagination prev">назад</Link>
+      { partNumber > 1 &&
+        <Link onClick = { ( e ) => {
+              e.preventDefault()
+              setPartNumber(partNumber - 1)
+            }
+          } to="" className="pagination prev">назад
+        </Link>
+      }
+
       {
-        pageLinks.map( page => {
+        pageLinks.filter( (part) => part >= leftPartNumber && part <= rightPartNumber )
+        .map( page => {
           return <Link data-page={page} onClick={getPageHandler} key={page} to="" className={classnames('pagination', (currentPage === page) && "active")}>{page}</Link>
 
           // return <Link data-page={page} onClick={getPageHandler} key={page} to="" className={`pagination ${(currentPage === page) && "active"}`}>{page}</Link>
           // return <Link data-page={page} onClick={getPageHandler} key={page} to="" className="pagination">{page}</Link>
         })
       }
-      <Link to="" className="pagination next">вперед</Link>
+
+      { partQuan > partNumber &&
+        <Link onClick = { ( e ) => {
+              e.preventDefault()
+              setPartNumber(partNumber + 1)
+            }
+          } to="" className="pagination next">вперед
+        </Link>
+      }
+
     </div>
   )
 }
