@@ -1,5 +1,7 @@
 // Switch -> Router
-import React from 'react'
+import React, { Suspense } from 'react'
+import { Switch, Route } from 'react-router-dom'
+
 import Page404 from './pages/Page404'
 import HomePage from './pages/HomePage'
 
@@ -29,20 +31,26 @@ import BlogListPage from './../blog/pages/BlogListPage/BlogListPage'
 import BlogItemPage from './../blog/pages/BlogItemPage/BlogItemPage'
 import ConsultationListPage from './../consultation/pages/ConsultationListPage/ConsultationListPage'
 import ConsultationItemPage from './../consultation/pages/ConsultationItemPage/ConsultationItemPage'
-import NewsItemPage from './../news/pages/NewsItemPage/NewsItemPage'
-import NewsListPage from './../news/pages/NewsListPage/NewsListPage'
-import NewsMainPage from './../news/pages/NewsMainPage/NewsMainPage'
 
-import { Switch, Route } from 'react-router-dom'
+// lazy loading
+// import NewsItemPage from './../news/pages/NewsItemPage/NewsItemPage'
+const NewsItemPage = React.lazy( () => import('./../news/pages/NewsItemPage/NewsItemPage') )
+// import NewsListPage from './../news/pages/NewsListPage/NewsListPage'
+const NewsListPage = React.lazy( () => import('./../news/pages/NewsListPage/NewsListPage') )
+// import NewsMainPage from './../news/pages/NewsMainPage/NewsMainPage'
+const NewsMainPage = React.lazy( () => import('./../news/pages/NewsMainPage/NewsMainPage') )
+
 
 const App = (props) => {
   return (
     <Switch>
       <Route exact path='/' component={HomePage} />
 
-      <Route path='/news' component={NewsMainPage} />
-      <Route path='/news_list' component={NewsListPage} />
-      <Route path='/news_item' component={NewsItemPage} />
+      <Route path='/news' render = { () => { return <Suspense fallback = { <div>Loading...</div> } > <NewsMainPage /> </Suspense> } } />
+      <Route path='/news_list' render = { () => { return <Suspense fallback = { <div>Loading...</div> } > <NewsListPage /> </Suspense> } } />
+      <Route path='/news_item' render = { () => { return <Suspense fallback = { <div>Loading...</div> } > <NewsItemPage /> </Suspense> } } />
+
+
       <Route path='/consultation_item' component={ConsultationItemPage} />
       <Route path='/consultations' component={ConsultationListPage} />
       <Route path='/blog_item' component={BlogItemPage} />
