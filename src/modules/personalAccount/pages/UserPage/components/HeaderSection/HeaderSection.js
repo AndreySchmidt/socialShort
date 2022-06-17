@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const HeaderSection = () => {
+const HeaderSection = ({name}) => {
   return (
     <div className="c_header_section">
         <div className="links_right">
@@ -11,7 +11,7 @@ const HeaderSection = () => {
         </div>
 
         <div className="header">
-            <span className="name">Анна Иванова</span>
+            <span className="name">{name}</span>
             <span className="status online">online</span>
         </div>
 

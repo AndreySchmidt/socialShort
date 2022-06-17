@@ -35,20 +35,20 @@ export const userApi = {
       // console.log(response.data.items, 'userApi')
     })
   },
-  follow(userId) {
+  follow( userId ) {
     return axiosInstance.post(`follow/${userId}`)
   },
-  unfollow(userId) {
+  unfollow( userId ) {
     return axiosInstance.delete(`follow/${userId}`)
   },
-  getStatus(userId) {
+  getStatus( userId ) {
     return axiosInstance.get(`profile/status/${userId}`)
     .then(response => {
       // console.log(response, 'userApi getStatus')
       return response.data
     })
   },
-  updateStatus(userStatus) {
+  updateStatus( userStatus ) {
     // second param is an object
     // console.log(userStatus, 'userApi updateStatus')
     return axiosInstance.put(`profile/status`, {status: userStatus})
@@ -56,5 +56,11 @@ export const userApi = {
         return response.data
         // console.log(response.data, 'userApi updateStatus')
       })
+  },
+  savePhoto( photoFile ) {
+    const formData = new FormData()
+    formData.append("image", photoFile)
+    return axiosInstance.put(`profile/photo`, formData, { headers: {'Content-type': 'multipart/form-data'} })
+      .then(response => { return response })
   }
 }

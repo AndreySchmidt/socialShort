@@ -1,7 +1,17 @@
 import {userApi} from './userApi.js'
 import {setUserProfile, setUserStatus} from './modules/personalAccount/actions'
 import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from './modules/app/actions'
-import {setMyUserData} from './actions'
+import {setMyUserData, setUserPhoto} from './actions'
+
+export const savePhoto = ( photoFile ) => {
+  // console.log('savePhoto', photo)
+  return  async ( dispatch ) => {
+    const response = await userApi.savePhoto( photoFile )
+    if (response.data.resultCode === 0) {
+      dispatch(setUserPhoto(response.data.photos))
+    }
+  }
+}
 
 export const authMe = () => {
   return  (dispatch) => {

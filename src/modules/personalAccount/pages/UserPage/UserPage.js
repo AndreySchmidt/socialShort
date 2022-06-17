@@ -46,7 +46,7 @@ const userId = match.params.id
   return (
     <PageLayout>
       <InfoBlock />
-      <HeaderSection />
+      <HeaderSection name = {fullName} />
       <MainContentAside photo={photos.small} />
 
       <div className="main_content_column">
@@ -57,7 +57,7 @@ const userId = match.params.id
         <div className="interface_image"><img src={contentbg} alt="" /></div>
 
         <div className="c_main_content_wrapper">
-          <div className="title"><span>Анкета</span> <Link to="/user/15/edit_profile">редактировать</Link></div>
+          <div className="title"><span>Анкета</span> <Link to="/user/22510/edit_profile">редактировать</Link></div>
 
           <ProfileOptionsList
             lookingForAJob={lookingForAJob}

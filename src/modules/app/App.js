@@ -32,7 +32,7 @@ import BlogItemPage from './../blog/pages/BlogItemPage/BlogItemPage'
 import ConsultationListPage from './../consultation/pages/ConsultationListPage/ConsultationListPage'
 import ConsultationItemPage from './../consultation/pages/ConsultationItemPage/ConsultationItemPage'
 
-// lazy loading
+// lazy loading Suspense
 // import NewsItemPage from './../news/pages/NewsItemPage/NewsItemPage'
 const NewsItemPage = React.lazy( () => import('./../news/pages/NewsItemPage/NewsItemPage') )
 // import NewsListPage from './../news/pages/NewsListPage/NewsListPage'

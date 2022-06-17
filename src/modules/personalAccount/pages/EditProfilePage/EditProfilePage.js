@@ -1,11 +1,24 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+import { savePhoto } from './../../../../thunk'
+import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 
 import PageLayout from './../../PageLayout/PageLayout'
 
 import './../../components/css/lk_user_data.css'
 
-const EditProfilePage = () => {
+const EditProfilePage = ( { userId, savePhoto } ) => {
+  const onSelectFile = ( e ) => {
+
+    if( e.target.files[0] && e.target.files.length ){
+      // console.log('onSelectFile e', e)
+      savePhoto(e.target.files[0])
+    }
+    // return true
+  }
   return (
     <PageLayout>
       <div className="c_header_section_title">
@@ -16,8 +29,6 @@ const EditProfilePage = () => {
         <div className="setting_sections_block">
           <div className="section_title">Разделы</div>
           <div className="section_link active"><Link to="">Основные настройки</Link></div>
-          <div className="section_link"><Link to="">Основные настройки</Link></div>
-          <div className="section_link"><Link to="">Основные настройки</Link></div>
           <div className="section_link"><Link to="">Основные настройки</Link></div>
         </div>
 
@@ -36,14 +47,6 @@ const EditProfilePage = () => {
               <div className="form_line_horiz">
                 <div className="caption"><label htmlFor="surname">Фамилия:</label></div>
                 <input className="c_input full_width" id="surname" type="text" />
-              </div>
-
-              <div className="form_line_horiz">
-                <div className="caption"><label htmlFor="gender">Пол:</label></div>
-                <select className="full_width" id="gender">
-                  <option>Женский</option>
-                  <option>Мужской</option>
-                </select>
               </div>
 
               <div className="form_line_horiz">
@@ -66,9 +69,13 @@ const EditProfilePage = () => {
               <div className="form_line_horiz">
                 <div className="caption"><label htmlFor="gender">Пол:</label></div>
                 <select className="full_width" id="gender">
-                  <option>Женский</option>
                   <option>Мужской</option>
+                  <option>Женский</option>
                 </select>
+              </div>
+
+              <div className="form_line_horiz">
+                <input className="c_button_settings" type="file" onChange = { onSelectFile } />
               </div>
 
               <div className="form_line_horiz">
@@ -83,4 +90,11 @@ const EditProfilePage = () => {
   )
 }
 
-export default EditProfilePage
+const mapStateToProps = ( state ) => {
+  return {
+    userId: state.commonReducer.id,
+  }
+}
+
+// export default connect( mapStateToProps, { savePhoto })( EditProfilePage )
+export default compose( AuthRedirect, withRouter, connect( mapStateToProps, { savePhoto } ) )( EditProfilePage )

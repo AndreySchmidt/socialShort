@@ -1,6 +1,7 @@
 import {
   SET_USER_PROFILE_ACTION,
   SET_USER_STATUS_ACTION,
+  SET_USER_PHOTO_ACTION,
 } from './../../constants'
 
 const initialState = {
@@ -42,6 +43,12 @@ export default function personalAccountReducer (state = initialState, action) {
         ...state,
         ...action.payload
         // ...action.payload.status
+      }
+
+    case SET_USER_PHOTO_ACTION:
+      return {
+        ...state,
+        photos: { ...action.payload }
       }
 
     default:
