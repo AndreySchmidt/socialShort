@@ -4,10 +4,11 @@ import {followBtn, unfollowBtn, setUserList, setTotalUsersQuan, isFetching} from
 import {setMyUserData, setUserPhoto} from './actions'
 
 export const savePhoto = ( photoFile ) => {
-  // console.log('savePhoto', photo)
+  // console.log('savePhoto th', photoFile)
   return  async ( dispatch ) => {
     const response = await userApi.savePhoto( photoFile )
-    if (response.data.resultCode === 0) {
+    // console.log('savePhoto response th', response)
+    if (response.resultCode === 0) {
       dispatch(setUserPhoto(response.data.photos))
     }
   }

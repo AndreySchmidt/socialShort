@@ -61,6 +61,9 @@ export const userApi = {
     const formData = new FormData()
     formData.append("image", photoFile)
     return axiosInstance.put(`profile/photo`, formData, { headers: {'Content-type': 'multipart/form-data'} })
-      .then(response => { return response })
+      .then(response => {
+        // console.log(response.data, 'userApi savePhoto')
+        return response.data
+      }) //TODO response.data?
   }
 }

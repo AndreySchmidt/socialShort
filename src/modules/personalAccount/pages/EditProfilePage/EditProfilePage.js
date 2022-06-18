@@ -9,8 +9,9 @@ import AuthRedirect from './../../../app/components/HOC/AuthRedirect'
 import PageLayout from './../../PageLayout/PageLayout'
 
 import './../../components/css/lk_user_data.css'
+import nophoto from './../../../../images/no-photo.gif'
 
-const EditProfilePage = ( { userId, savePhoto } ) => {
+const EditProfilePage = ( { userId, photo, savePhoto } ) => {
   const onSelectFile = ( e ) => {
 
     if( e.target.files[0] && e.target.files.length ){
@@ -74,6 +75,9 @@ const EditProfilePage = ( { userId, savePhoto } ) => {
                 </select>
               </div>
 
+              <div className="avatar_image_container">
+                <img className="avatar_image" src={ photo || nophoto } alt="" />
+              </div>
               <div className="form_line_horiz">
                 <input className="c_button_settings" type="file" onChange = { onSelectFile } />
               </div>
@@ -93,6 +97,7 @@ const EditProfilePage = ( { userId, savePhoto } ) => {
 const mapStateToProps = ( state ) => {
   return {
     userId: state.commonReducer.id,
+    photo: state.personalAccountReducer.photos.large,
   }
 }
 
